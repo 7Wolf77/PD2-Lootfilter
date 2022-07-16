@@ -191,13 +191,13 @@ ItemDisplay[GEM<3 (DIFF>0 OR FILTLVL>2) !(gzv OR gpv OR glw OR gpw OR glg OR gpg
 ItemDisplay[GEM<4 (DIFF>1 OR FILTLVL>2) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:
 
 //---Gems flawless---//
-ItemDisplay[gzv OR gzvs]:%PURPLE%* %PURPLE%Amethyst %PURPLE%*
-ItemDisplay[glw OR glws]:%WHITE%* %WHITE%Diamond %WHITE%*
-ItemDisplay[glg OR glgs]:%GREEN%* %GREEN%Emerald %GREEN%*
-ItemDisplay[glr OR glrs]:%RED%* %RED%Ruby %RED%*
-ItemDisplay[glb OR glbs]:%BLUE%* %BLUE%Sapphire %BLUE%*
-ItemDisplay[gly OR glys]:%YELLOW%* %YELLOW%Topaz %YELLOW%*
-ItemDisplay[skl OR skls]:%GRAY%* %GRAY%Skull %GRAY%*
+ItemDisplay[gzv OR gzvs]:%PURPLE%* %PURPLE%Flawless %PURPLE%*
+ItemDisplay[glw OR glws]:%WHITE%* %WHITE%Flawless %WHITE%*
+ItemDisplay[glg OR glgs]:%GREEN%* %GREEN%Flawless %GREEN%*
+ItemDisplay[glr OR glrs]:%RED%* %RED%Flawless %RED%*
+ItemDisplay[glb OR glbs]:%BLUE%* %BLUE%Flawless %BLUE%*
+ItemDisplay[gly OR glys]:%YELLOW%* %YELLOW%Flawless %YELLOW%*
+ItemDisplay[skl OR skls]:%GRAY%* %GRAY%Flawless %GRAY%*
 
 //---Gems Perfect---//
 ItemDisplay[gpv OR gpvs]:%PURPLE%* %PURPLE%P Amethyst %PURPLE%*%WHITE%
