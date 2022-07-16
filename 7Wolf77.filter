@@ -1,39 +1,21 @@
 //
-//Highlight all Sets and Uniques for low lvl characters
-//ItemDisplay[UNI !ID (FILTLVL<3 OR (CLVL<65 AND FILTLVL<4))]: %PX-68%%NAME%
-//ItemDisplay[SET !ID (FILTLVL<3 OR (CLVL<65 AND FILTLVL<4))]: %PX-84%%NAME%
 //
-//HIDE SET RINGS IN FILTER LEVEL 4
-//ItemDisplay[(SET !ID rin) FILTLVL=4]:
-
-//---Sorceress---//
-//ItemDisplay[(ob5 OR oba OR obf) !ID AND ILVL>71]: %NAME% %BLUE%(C) %DOT-97%%PX-68%%TIER-4%
-//Amazon
-//ItemDisplay[((am5 OR ama OR amf) OR (am2 OR am7 OR amc OR am1 OR am6 OR amb)) (RARE OR MAG) !ID ILVL>71]: %DOT-A8%%TIER-4%%NAME%
-//ItemDisplay[((am5 OR ama OR amf) OR (am2 OR am7 OR amc OR am1 OR am6 OR amb)) AMAZON MAG !ID ILVL>71]: %DOT-97%%PX-68%%TIER-4%%NAME%
-
-//---Hide normal and exceptional set/rare items on Filter level 4---//
-//ItemDisplay[SET !ID !ELT FILTLVL=4]:
-//ItemDisplay[RARE !BOOTS !GLOVES !ID !ELT FILTLVL=4]:
-//ItemDisplay[MAG !ID !ELT FILTLVL=4]:
-//ItemDisplay[NMAG !ID !ELT FILTLVL=4]:
-
-//---Hiding Inferior
-//ItemDisplay[INF ILVL>14 !RW !leg]:
-
-
-//DIFF=0-2 NORM-HELL	
+//7Wolf77's Lootfilter
+//
+//	
 //NOTES
-//FIX GOLD
-//map change phys color to grey OR SOMETHING
-
-
-
-	
+//DIFF=0-2 NORM-HELL
+//
+//This filter is geared towards end game farming with some options on leveling. Be **WARNED** at level 4 only good uniques, elite bases, and select magic items will show. All map, WSS, ect will show normally.
+//Level 4 was made to map a dungeon faster without having to stop to check items. 
+//Magic and Set rings are hidden. Norm and Elite bases are hidden. Large Charms are hidden. Low quality uniques are hidden. For a full list of uniques see listing below.
+//Rare gloves and Boots are ALWAYS shown. These can roll GG even from normal bases such as tri-res boots, 2/20 gloves, ect.
+//
+//Big shoutout to Kyrszard for his map, sockets, and armor notes. That is roughly 1,500 lines of code defining sockets, ability rolls on weapons, upgrade recipies, and map information.
+//I could recreate it.. but it would be almost exactly the same. Check his filter out, its awesome but not strict enough for me.
+//Thanks to Talrasha125 for some misc code examples. I combined and heavily modified all the code but it was a good reference to make sure I'm not missing anyhting.
+//OMFG filterbird website is amazing. Without it, this would not be possible. https://betweenwalls.github.io/filterbird/?v=PD2
 /////////////////////////////////////////////////////////
-
-
-
 
 //Define Filter Strict Levels
 ItemDisplayFilterName[]: Hide Trash
