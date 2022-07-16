@@ -69,10 +69,10 @@ ItemDisplay[(ARMOR OR WEAPON) (CLVL>15 OR FILTLVL>2) (NORM OR EXC OR ELT) INF !U
 ItemDisplay[SOCK>0 !RW]: %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%CONTINUE%
 
 //---SUPERIOR INFERIOR TAGS---//
-ItemDisplay[WEAPON (ED>0 AND ED<15)]: %NAME% %RED%ED %MAP-4b%%CONTINUE%
-ItemDisplay[ARMOR (ED>0 AND ED<15)]: %NAME% %BLUE%ED %MAP-4b%%CONTINUE%
-ItemDisplay[WEAPON ED=15]: %NAME% %RED%15 ED %BORDER-4b%%CONTINUE%
-ItemDisplay[ARMOR ED=15]: %NAME% %BLUE%15 ED %BORDER-4b%%CONTINUE%
+ItemDisplay[WEAPON (ED>0 AND ED<15)]: %NAME% %RED%ED %CONTINUE%
+ItemDisplay[ARMOR (ED>0 AND ED<15)]: %NAME% %BLUE%ED %CONTINUE%
+ItemDisplay[WEAPON ED=15]: %NAME% %RED%15 ED %CONTINUE%
+ItemDisplay[ARMOR ED=15]: %NAME% %BLUE%15 ED %CONTINUE%
 ItemDisplay[INF !(ARMOR OR WEAPON) ID]: %GRAY%Inf %NAME%%CONTINUE%
 
 //---Quest Items---//
@@ -142,47 +142,45 @@ ItemDisplay[(aqv OR cqv) RARE FILTLVL=4]:
 ///////////////
 //---Runes---//
 ///////////////
-/01-18
-ItemDisplay[r01 OR r01s]: %ORANGE%El 1 %CONTINUE%
-ItemDisplay[r02 OR r02s]: %ORANGE%Eld 2 %CONTINUE%
-ItemDisplay[r03 OR r03s]: %ORANGE%Tir 3 %CONTINUE%
-ItemDisplay[r04 OR r04s]: %ORANGE%Nef 4 %CONTINUE%
-ItemDisplay[r05 OR r05s]: %ORANGE%Eth 5 %CONTINUE%
-ItemDisplay[r06 OR r06s]: %ORANGE%Ith 6 %CONTINUE%
-ItemDisplay[r07 OR r07s]: %ORANGE%Tal 7 %CONTINUE%
-ItemDisplay[r08 OR r08s]: %ORANGE%Ral 8 %CONTINUE%
-ItemDisplay[r09 OR r09s]: %ORANGE%Ort 9 %CONTINUE%
-ItemDisplay[r10 OR r10s]: %ORANGE%Thul 10 %CONTINUE% 
-ItemDisplay[r11 OR r11s]: %ORANGE%Amn 11 %CONTINUE%
-ItemDisplay[r12 OR r12s]: %ORANGE%Sol 12 %CONTINUE%
-ItemDisplay[r13 OR r13s]: %ORANGE%Shael 13 %CONTINUE%
-ItemDisplay[r14 OR r14s]: %ORANGE%Dol 14 %CONTINUE%
-ItemDisplay[r15 OR r15s]: %ORANGE%Hel 15 %CONTINUE%
-ItemDisplay[r16 OR r16s]: %ORANGE%io 16 %CONTINUE%
-ItemDisplay[r17 OR r17s]: %ORANGE%Lum 17 %CONTINUE%
-ItemDisplay[r18 OR r18s]: %ORANGE%Ko 18 %CONTINUE%
-
-//19-23
-ItemDisplay[r19 OR r19s]: %RED%O %RED%Fal 19 %RED%O %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r20 OR r20s]: %RED%*%YELLOW%* %RED%Oo %RED%Lem 20 %RED%oO %YELLOW%*%RED%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r21 OR r21s]: %RED%*%YELLOW%* %RED%Oo %PURPLE%Pul 21 %RED%oO %YELLOW%*%RED%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r22 OR r22s]: %BLUE%*%RED%*%YELLOW%* %RED%Oo %PURPLE%Um 22 %RED%oO %YELLOW%*%RED%*%BLUE%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r23 OR r23s]: %BLUE%*%RED%*%YELLOW%* %RED%Oo %PURPLE%Mal 23 %RED%oO %YELLOW%*%RED%*%BLUE%* %DOT-62%%BORDER-4B%%CONTINUE%
-
+//Runes
+//1-16
+ItemDisplay[r01 OR r01s]:%ORANGE%El 1
+ItemDisplay[r02 OR r02s]:%ORANGE%Eld 2 
+ItemDisplay[r03 OR r03s]:%ORANGE%Tir 3
+ItemDisplay[r04 OR r04s]:%ORANGE%Nef 4
+ItemDisplay[r05 OR r05s]:%ORANGE%Eth 5
+ItemDisplay[r06 OR r06s]:%ORANGE%Ith 6 
+ItemDisplay[r07 OR r07s]:%ORANGE%Tal 7 
+ItemDisplay[r08 OR r08s]:%ORANGE%Ral 8  
+ItemDisplay[r09 OR r09s]:%ORANGE%Ort 9 
+ItemDisplay[r10 OR r10s]:%ORANGE%Thul 10  
+ItemDisplay[r11 OR r11s]:%ORANGE%Amn 11
+ItemDisplay[r12 OR r12s]:%ORANGE%Sol 12  
+ItemDisplay[r13 OR r13s]:%ORANGE%Shael 13
+ItemDisplay[r14 OR r14s]:%ORANGE%Dol 14 
+ItemDisplay[r15 OR r15s]:%ORANGE%Hel 15 
+ItemDisplay[r16 OR r16s]:%ORANGE%io 16 
+//17-23
+ItemDisplay[r17 OR r17s]:%ORANGE%Lum 17 
+ItemDisplay[r18 OR r18s]:%ORANGE%Ko 18 
+ItemDisplay[r19 OR r19s]:%ORANGE%Fal 19 
+ItemDisplay[r20 OR r20s]: %RED%o %PURPLE%Lem 20%RED% o %DOT-62%%BORDER-4B%
+ItemDisplay[r21 OR r21s]: %RED%o %PURPLE%Pul 21%RED% o %DOT-62%%BORDER-4B%
+ItemDisplay[r22 OR r22s]: %RED%oo %PURPLE%Um 22%RED% oo %DOT-62%%BORDER-4B%
+ItemDisplay[r23 OR r23s]: %RED%oo %PURPLE%Mal 23%RED% oo %DOT-62%%BORDER-4B%
 //24-33
-ItemDisplay[r24 OR r24s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OoO %PURPLE%Ist 24 %RED%OoO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-76%%MAP-0B%%BORDER-50%%CONTINUE% 
-ItemDisplay[r25 OR r25s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OooO %PURPLE%Gul 25 %RED%OooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-76%%MAP-0B%%BORDER-50%%CONTINUE% 
-ItemDisplay[r26 OR r26s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OoooO %PURPLE%Vex 26 %RED%OoooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r27 OR r27s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OooooO %PURPLE%Ohm 27 %RED%OooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r28 OR r28s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OoooooO %PURPLE%Lo 28 %RED%OoooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r29 OR r29s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OooooooO %PURPLE%Sur 29 %RED%OooooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r30 OR r30s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OoooooooO %PURPLE%Ber 30 %RED%OoooooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r31 OR r31s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OooooooO %PURPLE%Jah 31 %RED%OooooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r32 OR r32s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OoooooO %PURPLE%Cham 32 %RED%OoooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
-ItemDisplay[r33 OR r33s]: %GREEN%*%BLUE%*%RED%*%YELLOW%* %RED%OooooO %PURPLE%Zod 33 %RED%OooooO %YELLOW%*%RED%*%BLUE%*%GREEN%* %DOT-62%%BORDER-4B%%CONTINUE%
+ItemDisplay[r24 OR r24s]: %RED%ooo %PURPLE%Ist 24%RED% ooo %DOT-76%%MAP-0B%%BORDER-50% 
+ItemDisplay[r25 OR r25s]: %RED%oooo %PURPLE%Gul 25%RED% oooo %DOT-76%%MAP-0B%%BORDER-50% 
+ItemDisplay[r26 OR r26s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%ooooo %PURPLE%Vex 26%RED% ooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[r27 OR r27s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%oooooo %PURPLE%Ohm 27%RED% oooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[r28 OR r28s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%ooooooo %PURPLE%Lo 28%RED% ooooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[r29 OR r29s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%oooooooo %PURPLE%Sur 29%RED% oooooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[r30 OR r30s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%oooooooooooo %PURPLE%Ber 30%RED% oooooooooooo %RED%*%YELLOW%*%GREEN%*%DOT-62%%BORDER-4B%
+ItemDisplay[r31 OR r31s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%oooooooooo %PURPLE%Jah 31%RED% oooooooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[r32 OR r32s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%ooooo %PURPLE%Cham 32%RED% ooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[r33 OR r33s]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%ooooo %PURPLE%Zod 33%RED% ooooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
 
-//Stack runes show Quanty
-ItemDisplay[(r01s OR r02s OR r03s OR r04s OR r05s OR r06s OR r07s OR r08s OR r09s OR r10s OR r11s OR r12s OR r13s OR r14s OR r15s OR r16s OR r17s OR r18s OR r19s OR r20s OR r21s OR r22s OR r23s OR r24s OR r25s OR r26s OR r27s OR r28s OR r29s OR r30s OR r31s OR r32s OR r33s)]: %NAME% %WHITE%(x %QTY%)%CONTINUE% 
+
 
 //////////////
 //---GEMS---//
@@ -218,8 +216,9 @@ ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<4]: %
 ////////////////
 
 //Global Charms Settings
-ItemDisplay[cm2 MAG FILTLVL>3]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
-ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%  			//MAP PING FOR GC
+ItemDisplay[cm2 !ID MAG FILTLVL>3]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
+ItemDisplay[cm2 MAG !ID FILTLVL>3]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%  			//MAP PING FOR GC
+ItemDisplay[(cm1 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%  			//MAP PING FOR GC
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*  %NAME%  %TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%* %BORDER-61%
 
 //--UNIQUE ANNI/TORCH/GHEEDS---//
@@ -228,34 +227,34 @@ ItemDisplay[UNI ID cm2]:%TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*   %GOLD%Hellfire T
 ItemDisplay[UNI ID cm3]:%TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*   %GOLD%Gheed's Fortune   %TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%*%DOT-0A%%BORDER-61%%CONTINUE%
 
 //---SKILLERS---//
-ItemDisplay[cm3 !UNI TABSK0]: %PURPLE%Bow and Crossbow %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK2]: %PURPLE%Javelin and Spear %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK1]: %PURPLE%Passive and Magic %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK8]: %PURPLE%Fire Spells %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK9]: %PURPLE%Lightning Spells %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK10]: %PURPLE%Cold Spells %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK16]: %PURPLE%Curses %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK17]: %PURPLE%Poison & Bone Spells %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK18]: %GRAY%Nec %PURPLE%Summoning Spells %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK24]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK25]: %PURPLE%Offensive Auras %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK26]: %PURPLE%Defensive Auras %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK32]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK33]: %GRAY%Barb %PURPLE%Masteries %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK34]: %PURPLE%Warcries %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK40]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK41]: %PURPLE%Shape Shifting %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK42]: %PURPLE%Elemental %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK48]: %PURPLE%Traps %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK49]: %PURPLE%Shadow Disciplines %TAN%Skiller%BLUE%%CONTINUE%
-ItemDisplay[cm3 !UNI TABSK50]: %PURPLE%Martial Arts %TAN%Skiller%BLUE%%CONTINUE%
-
 //---GRAND CHARM TAGS---//
 ItemDisplay[cm3 !UNI RES>1]:%RED%A%GREEN%L%BLUE%L %WHITE%R%YELLOW%E%PURPLE%S %BLUE%GC%CONTINUE%
 ItemDisplay[cm3 !UNI MAXDMG>7]:%TAN%Max Dmg %BLUE%GC%CONTINUE%
 ItemDisplay[cm3 !UNI LIFE>25]:%NAME% %RED%Life%CONTINUE%
 ItemDisplay[cm3 !UNI FHR=12]:%NAME% %WHITE%FHR%CONTINUE%
 ItemDisplay[cm3 !UNI FRW=7]:%NAME% %WHITE%FRW%CONTINUE%
+
+ItemDisplay[cm3 !UNI TABSK0=1]: %PURPLE%Bow and Crossbow %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK2=1]: %PURPLE%Javelin and Spear %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK1=1]: %PURPLE%Passive and Magic %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK8=1]: %PURPLE%Fire Spells %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK9=1]: %PURPLE%Lightning Spells %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK10=1]: %PURPLE%Cold Spells %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK16=1]: %PURPLE%Curses %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK17=1]: %PURPLE%Poison & Bone Spells %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK18=1]: %GRAY%Nec %PURPLE%Summoning Spells %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK24=1]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK25=1]: %PURPLE%Offensive Auras %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK26=1]: %PURPLE%Defensive Auras %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK32=1]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK33=1]: %GRAY%Barb %PURPLE%Masteries %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK34=1]: %PURPLE%Warcries %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK40=1]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK41=1]: %PURPLE%Shape Shifting %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK42=1]: %PURPLE%Elemental %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK48=1]: %PURPLE%Traps %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK49=1]: %PURPLE%Shadow Disciplines %TAN%Skiller%BLUE%
+ItemDisplay[cm3 !UNI TABSK50=1]: %PURPLE%Martial Arts %TAN%Skiller%BLUE%
 
 //---SMALL CHARMS---//
 //PREFIXES
@@ -281,11 +280,12 @@ ItemDisplay[cm1 !UNI MFIND=7 !(MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%
 /////////////////////
 
 //---MAGIC CIRC RING AMULET---//
-ItemDisplay[(GLOVES OR BOOTS OR CIRC OR rin OR amu) MAG !ID]:%BLUE%*** %NAME% ***%MAP-A8%%BORDER-62%%CONTINUE%
+ItemDisplay[(CIRC OR amu) MAG !ID]:%BLUE%*** %NAME% ***%DOT-97%%CONTINUE%
+ItemDisplay[(GLOVES OR BOOTS OR rin) MAG !ID]:%BLUE%*** %NAME%%CONTINUE%
 
 //---JEWEL FRAGMENTS---//
-ItemDisplay[jewf]:%BLUE%Jewel Fragments %WHITE%(x %QTY%)%MAP-97%%PX-62%
-ItemDisplay[jew]:%BLUE%Jewel Fragments %WHITE%(x %QTY%)%MAP-97%%PX-62%
+ItemDisplay[jewf]:%BLUE%Jewel Fragments %WHITE%(x %QTY%)%DOT-97%%PX-62%
+ItemDisplay[jew]:%NAME% %DOT-97%
 
 ///////////////
 //---Rares---//
@@ -1104,7 +1104,7 @@ ItemDisplay[MAG (xlg OR ulg) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]
 ItemDisplay[MAG (xlb OR ulb) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]%NAME% %PX-41%
 ItemDisplay[MAG (xsk OR usk) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]%NAME% %PX-41%
 ItemDisplay[MAG (xtp OR utp) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]%NAME% %PX-41%
-ItemDisplay[MAG (STAFF OR SCEPTER OR WAND) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]%NAME% %PX-41%
+ItemDisplay[MAG (STAFF OR SCEPTER OR WAND OR SOR) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]%NAME% %PX-41%
 
 //---ARMOR AND WEAPON W/ ED SHOW ALL FILTER LEVELS---//
 //ItemDisplay[CHEST ED=15 !SOCK=1 ELT !UNI !MAG !RARE !CRAFT !RW !leg]:%NAME%
@@ -1113,8 +1113,8 @@ ItemDisplay[MAG (STAFF OR SCEPTER OR WAND) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Cast
 //ItemDisplay[WEAPON ED>9  !SOCK=1 ELT !UNI !MAG !RARE !CRAFT !RW !leg]:%NAME%%CONTINUE%
 
 //---Hiding ARMOR & WEAPONS NMAG---//
-ItemDisplay[ARMOR (CLVL>25 OR FILTLVL>2) (NORM OR EXC OR ELT) !UNI !MAG !RARE !CRAFT !RW !leg]: //HIDE ALL NORMAL EXCEPTION NON-MAG ITEMS PAST LVL 25
-ItemDisplay[WEAPON (CLVL>25 OR FILTLVL>2) (NORM OR EXC OR ELT) !UNI !MAG !RARE !CRAFT !RW !leg]: //HIDE ALL NORMAL EXCEPTION NON-MAG ITEMS PAST LVL 25
+ItemDisplay[ARMOR (CLVL>25 OR FILTLVL>2) (NORM OR EXC OR ELT) !SET !UNI !MAG !RARE !CRAFT !RW !leg]: //HIDE ALL NORMAL EXCEPTION NON-MAG ITEMS PAST LVL 25
+ItemDisplay[WEAPON (CLVL>25 OR FILTLVL>2) (NORM OR EXC OR ELT) !SET !UNI !MAG !RARE !CRAFT !RW !leg]: //HIDE ALL NORMAL EXCEPTION NON-MAG ITEMS PAST LVL 25
 
 //---FILTER LEVEL 3---MAGICAL WEAPON HIDE GENEAL NORM AND EXC---GOES BELOW SPECIFIC ITEMS---//
 ItemDisplay[ARMOR !ELT !UNI MAG !RARE !CRAFT !RW !leg !BOOTS !GLOVES FILTLVL=3]:
