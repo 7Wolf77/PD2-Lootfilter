@@ -1293,9 +1293,11 @@ ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK257>2 (SOCK
 ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
 //---BLOOD CRAFTING---//
-ItemDisplay[(7gm SOCK=0 !CRAFT !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft}
-ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl) !CRAFT ETH !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft} %PX-41%
-ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl) !CRAFT !RW !UNI FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft} %PX-41%
+ItemDisplay[(7gm OR 7b8 OR 7bk OR 7ts OR 7gl OR 7s7) !CRAFT !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft%NL%%ORANGE%BloodCraft:PRuby+Ort+Jewel}%CONTINUE%
+
+ItemDisplay[7gm SOCK=0 (NMAG OR MAG) !CRAFT !RW !UNI]:%NAME%{%NAME%} %PX-41%
+ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl OR 7s7) !CRAFT ETH !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%%PX-41%
+ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl OR 7s7) !CRAFT !RW !UNI FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%%PX-41%
 ItemDisplay[MAG (xvg OR uvg) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
 ItemDisplay[MAG (zmb OR umc) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
 ItemDisplay[MAG (xtb OR utb) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
