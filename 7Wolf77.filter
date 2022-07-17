@@ -320,7 +320,7 @@ ItemDisplay[ubaa OR ubab OR ubac]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%*
 ItemDisplay[uba]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %MAP-60%
 
 //---WSS---//
-ItemDisplay[wss]:%PURPLE%*%RED%*%BLUE%* %RED%Worldstone Shard %BLUE%*%RED%*%PURPLE%*%WHITE%(x %QTY%)%MAP-0A%
+ItemDisplay[wss]:%PURPLE%*%RED%*%BLUE%* %PURPLE%Worldstone Shard %BLUE%*%RED%*%PURPLE%* %TAN%x %WHITE%%QTY%%MAP-0A%
 
 //---PUZZLEPIECE AND PUZZLEBOX---//
 ItemDisplay[lbox OR lpp]:%GREEN%*%PURPLE%*%RED%*%BLUE%*%RED%P%GREEN%I%BLUE%C%YELLOW%K %PURPLE%U%RED%P %NAME% %RED%P%PURPLE%I%YELLOW%C%BLUE%K %GREEN%U%RED%P%BLUE%*%RED%*%PURPLE%*%GREEN%*%WHITE%(x %QTY%)%MAP-0A%
@@ -1024,6 +1024,7 @@ ItemDisplay[CHEST EXC ED>9 !SOCK=1 !SOCK=2 !UNI !MAG !RARE !CRAFT !RW !leg FILTL
 ItemDisplay[CHEST ELT ED>9 !SOCK=1 !SOCK=2 !UNI !MAG !RARE !CRAFT !RW !leg]:%NAME% %PX-20% //ELITE ARMOR
 //---Armor SPECIFIC---//
 ItemDisplay[CHEST ED>9 !SOCK=1 !SOCK=2 xtp !UNI !MAG !RARE !CRAFT !RW !leg]:%NAME%{%WHITE%Note:%TAN%Enigma Base} %PX-20% //ENIGMA BASE
+ItemDisplay[CIRC MAG !UNI !RARE !CRAFT !RW !leg]:%NAME% %PX-20%
 
 //---SWORDS GENERAL---//
 ItemDisplay[SWORD EXC ED>9 !SOCK=1 !SOCK=2 !UNI !MAG !RARE !CRAFT !RW !leg FILTLVL<4]:%NAME% %PX-20% //EXCEPTIONAL WEAPON
@@ -1128,7 +1129,7 @@ ItemDisplay[WEAPON !UNI MAG !RARE !CRAFT !RW !leg FILTLVL=4]:
 ItemDisplay[(MAG OR SET) !ID rin FILTLVL=4]:
 
 //---FINAL HIDE ALL---//
-ItemDisplay[ARMOR !ID !CRAFT !RW !leg FILTLVL=4]:
+ItemDisplay[ARMOR  !ID !CRAFT !RW !leg FILTLVL=4]:
 ItemDisplay[WEAPON !ID !CRAFT !RW !leg FILTLVL=4]:
 
 
