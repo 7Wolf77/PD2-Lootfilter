@@ -1,3 +1,4 @@
+
 //
 //7Wolf77's Lootfilter
 //
@@ -253,7 +254,7 @@ ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<4]: %
 
 //Global Charms Settings
 ItemDisplay[cm2 !ID MAG FILTLVL>3]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
-ItemDisplay[(cm1 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%  			//MAP PING FOR GC
+ItemDisplay[(cm1 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%//MAP PING FOR GC
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*  %NAME%  %TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%* %BORDER-61%
 
 //--UNIQUE ANNI/TORCH/GHEEDS---//
@@ -319,7 +320,7 @@ ItemDisplay[cm1 !UNI MFIND=7 !(MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%
 ItemDisplay[amu MAG !ID]:%BLUE%*** %NAME% ***%DOT-97%%CONTINUE%
 ItemDisplay[(GLOVES OR BOOTS OR rin) MAG !ID FILTLVL<4]:%BLUE%*** %NAME% ***%DOT-97%%CONTINUE%
 ItemDisplay[CIRC MAG !ID !UNI !RARE !CRAFT !RW !leg]:%BLUE%*** %NAME% ***%DOT-97%  // ALLWAYS SHOW MAGIC CIRC
-ItemDisplay[CIRC MAG ID !UNI !RARE !CRAFT !RW !leg]:%BLUE%*** %NAME% ***  // ALLWAYS SHOW MAGIC CIRC
+ItemDisplay[CIRC MAG ID !UNI !RARE !CRAFT !RW !leg]:%BLUE% %NAME% // ALLWAYS SHOW MAGIC CIRC
 
 //---JEWEL FRAGMENTS---//
 ItemDisplay[jewf]:%BLUE%Jewel Fragments %WHITE%(x %QTY%)%DOT-97%%PX-62%
@@ -330,7 +331,7 @@ ItemDisplay[jew !UNI !ID]:%BLUE%*** %NAME% %BLUE%***%DOT-97%
 ///////////////
 
 //---RARE GLOVES BOOTS CIRC JEWEL RING AMULET---//
-ItemDisplay[(GLOVES OR BOOTS OR CIRC OR jew OR rin OR amu) RARE !ID]:%YELLOW%*** %NAME% ***%MAP-A8%%BORDER-62%
+ItemDisplay[(GLOVES OR BOOTS OR CIRC OR jew OR rin OR amu) RARE !ID]:%YELLOW%*** %NAME% ***%MAP-A8%
 
 //////////////////////////////////////////////////////////////////////
 //---UBERS, TOKENS, WSS, MIRROW, PUZZLE P/B, ANCIENTS, AND RATHMA---//
@@ -373,12 +374,12 @@ ItemDisplay[scrb]:%GREEN%*%PURPLE%*%RED%*%BLUE%*%RED%P%GREEN%I%BLUE%C%YELLOW%K %
 ItemDisplay[std]:%RED%*%BLUE%*%TAN%* %ORANGE%%NAME% %TAN%*%BLUE%*%RED%* %WHITE%(x %QTY%){%WHITE%10% Exp%NL%20% Monster Density%NL%20% MF & Gold Find%NL%%TAN%Cube w/Map to make Heroic}%MAP-97%
 
 ////////////////
-//---UNIQUE---//
+//---UNIQUES---//
 ////////////////
 
 //--UNIQUE RINGS/AMMY/JEWELS---//
 ItemDisplay[UNI !ID jew]:%RED%*%YELLOW%*%GREEN%*%BLUE%*%PURPLE%R%RED%a%YELLOW%i%GREEN%n%BLUE%b%PURPLE%o%RED%w %GOLD%Facet %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-ItemDisplay[UNI !ID (rin OR amu)]:%TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*     %NAME%     %TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID (rin OR amu)]:%RED%***PICK %PURPLE%UP  %NAME%  %PURPLE%PICK %RED%UP***%BORDER-4B%%CONTINUE%
 
 //---PD2 SPECIAL UNIQUES---// Credit to Talrasha125 for the Unique and Sets
 ItemDisplay[UNI !ID utg]:%PURPLE%* %GOLD%Occultist %PURPLE%* %BORDER-A5%%DOT-62%
@@ -1292,14 +1293,14 @@ ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK257>2 (SOCK
 ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
 //---BLOOD CRAFTING---//
-ItemDisplay[(7gm OR 7wh) !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft}
-ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl) ETH !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft} %PX-41%
-ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl) !RW !UNI FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft} %PX-41%
-ItemDisplay[MAG (xvg OR uvg) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
-ItemDisplay[MAG (zmb OR umc) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
-ItemDisplay[MAG (xtb OR utb) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
-ItemDisplay[MAG (xlm OR ulm) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
-ItemDisplay[MAG (xlt OR ult) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
+ItemDisplay[(7gm SOCK=0 !CRAFT !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft}
+ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl) !CRAFT ETH !RW !UNI]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft} %PX-41%
+ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl) !CRAFT !RW !UNI FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME%{%TAN%Note:%WHITE%Slam for Mag/Rare to craft} %PX-41%
+ItemDisplay[MAG (xvg OR uvg) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
+ItemDisplay[MAG (zmb OR umc) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
+ItemDisplay[MAG (xtb OR utb) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
+ItemDisplay[MAG (xlm OR ulm) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
+ItemDisplay[MAG (xlt OR ult) !CRAFT ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Blood Craft%TAN%]%NAME% %PX-41%
 
 //---CASTER CRAFTING---//
 ItemDisplay[MAG (zvb OR uvc) ILVL>70 FILTLVL<4]:%TAN%[%ORANGE%Caster Craft%TAN%]%NAME% %PX-41%
