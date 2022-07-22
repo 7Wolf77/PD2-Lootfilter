@@ -122,8 +122,9 @@ ItemDisplay[tsc]: %BLUE%* %GRAY%tp %WHITE%scroll%CONTINUE%
 ItemDisplay[isc]: %RED%* %GRAY%id %WHITE%scroll%CONTINUE%
 ItemDisplay[vps]: %GREEN%!%WHITE%stamina%CONTINUE%
 ItemDisplay[wms]: %GREEN%!%WHITE%thaw%CONTINUE%
+ItemDisplay[yps FILTLVL<4]: %GREEN%!%WHITE%ant %CONTINUE%
+ItemDisplay[yps FILTLVL=4]:{%NAME%}
 ItemDisplay[(tsc OR isc OR vps OR wms) (CLVL>30 OR FILTLVL>2)]: {%NAME%}
-ItemDisplay[yps]: %GREEN%!%WHITE%ant %CONTINUE%
 ItemDisplay[key]: %GRAY%key{%WHITE%Key} %CONTINUE%
 ItemDisplay[key (ASSASSIN OR CLVL>30 OR FILTLVL>2)]:{%NAME%}
 
@@ -385,7 +386,8 @@ ItemDisplay[uba]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %MAP-60%
 ItemDisplay[wss]:%PURPLE%* %RED%* %BLUE%* %PURPLE%Worldstone Shard %BLUE%* %RED%* %PURPLE%* %TAN%x %WHITE%%QTY%%MAP-0A%
 
 //---PUZZLEPIECE AND PUZZLEBOX---//
-ItemDisplay[lbox OR lpp]:%GREEN%*%PURPLE%*%RED%*%BLUE%*%RED%P%GREEN%I%BLUE%C%YELLOW%K %PURPLE%U%RED%P %NAME% %RED%P%PURPLE%I%YELLOW%C%BLUE%K %GREEN%U%RED%P%BLUE%*%RED%*%PURPLE%*%GREEN%*%WHITE%(x %QTY%)%MAP-0A%
+ItemDisplay[lbox]:%GREEN%*%PURPLE%*%RED%*%BLUE%*%RED%P%GREEN%I%BLUE%C%YELLOW%K %PURPLE%U%RED%P %NAME% %RED%P%PURPLE%I%YELLOW%C%BLUE%K %GREEN%U%RED%P%BLUE%*%RED%*%PURPLE%*%GREEN%*%WHITE%(x %QTY%){%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}%MAP-0A%
+ItemDisplay[lpp]:%GREEN%*%PURPLE%*%RED%*%BLUE%*%RED%P%GREEN%I%BLUE%C%YELLOW%K %PURPLE%U%RED%P %NAME% %RED%P%PURPLE%I%YELLOW%C%BLUE%K %GREEN%U%RED%P%BLUE%*%RED%*%PURPLE%*%GREEN%*%WHITE%(x %QTY%){%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}%MAP-0A%
 
 //---Vial, Mirror, Skeleton Key, H Alminac, Naigator, Tainted WSS---//
 ItemDisplay[lsvl OR llmr OR rkey OR rtp OR rid OR cwss]:%GREEN%*%PURPLE%*%RED%*%BLUE%*%RED%P%GREEN%I%BLUE%C%YELLOW%K %PURPLE%U%RED%P %NAME% %RED%P%PURPLE%I%YELLOW%C%BLUE%K %GREEN%U%RED%P%BLUE%*%RED%*%PURPLE%*%GREEN%*%MAP-0A%
@@ -405,416 +407,320 @@ ItemDisplay[UNI !ID jew]:%RED%*%YELLOW%*%GREEN%*%BLUE%*%PURPLE%R%RED%a%YELLOW%i%
 ItemDisplay[UNI !ID (rin OR amu)]:%RED%***PICK %PURPLE%UP  %NAME%  %PURPLE%PICK %RED%UP***%BORDER-4B%%CONTINUE%
 ItemDisplay[UNI !ID ram]:%RED%o %PURPLE%The Third Eye %RED%o%BORDER-A5%%DOT-62%
 
-//---PD2 SPECIAL UNIQUES---// Credit to Talrasha125 for the Unique and Sets
-ItemDisplay[UNI !ID utg]:%PURPLE%* %GOLD%Occultist %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID 7fb]:%PURPLE%* %GOLD%Odium %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID ame]:%PURPLE%* %GOLD%Zerae's Resolve %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID ulb]:%PURPLE%* %GOLD%Merman's Sprocket %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID ned]:%PURPLE%* %GOLD%Martyrdom %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID 7tw]:%PURPLE%* %GOLD%Stalker's Call %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID baf]:%PURPLE%* %GOLD%Raekor's Virtue %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID utp]:%PURPLE%* %GOLD%Purgatory %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID drf]:%PURPLE%* %GOLD%Ursa's Nightmare %PURPLE%* %BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID ne6]:%RED%o %GOLD%Kalan's Legacy %RED%o%BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID ba6]:%RED%o %PURPLE%Cyclopean Roar %RED%o%BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID am5]:%RED%o %GOLD%True Silver %RED%o%BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID pa3]:%RED%o %GOLD%Sankekur's Fall %RED%o%BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID ob6]:%RED%o %GOLD%Tempest %RED%o%BORDER-A5%%DOT-62%
-ItemDisplay[UNI !ID dr2]:%RED%o %GOLD%Quetzalcoatl %RED%o%BORDER-A5%%DOT-62%
+//ItemDisplay[UNI !ID baf]:%PURPLE%* %GOLD%Raekor's Virtue %PURPLE%* %BORDER-A5%%DOT-62%
 
 //---Helms---//
-//Crown of Thieves
-ItemDisplay[UNI !ID xrn]:%RED%o %PURPLE%Crown of Thieves %RED%o%BORDER-A5%%DOT-62% 
-//Overlord's Helm
-ItemDisplay[UNI !ID uhl]:%RED%o %PURPLE%Overlord's Helm %RED%o%BORDER-A5%%DOT-62% 
-//Demonhorn's Edge
-ItemDisplay[UNI !ID bad]:%RED%o %PURPLE%Demonhorn's Edge %RED%o%BORDER-A5%%DOT-62% 
-//Wolfhowl
-ItemDisplay[UNI !ID bac]:%RED%o %PURPLE%Wolfhowl %RED%o%BORDER-A5%%DOT-62% 
-//Spirit Keeper
-ItemDisplay[UNI !ID drd]:%RED%o %PURPLE%Spirit Keeper %RED%o%BORDER-A5%%DOT-62% 
-//Valkyrie Wing
-ItemDisplay[UNI !ID xhm]:%RED%o %PURPLE%Valkyrie Wing %RED%o%BORDER-A5%%DOT-62% 
-//Giant Skull
-ItemDisplay[UNI !ID uh9]:%RED%o %PURPLE%Giant Skull %RED%o%BORDER-A5%%DOT-62% 
-//Nightwings/Veil of Steel
-ItemDisplay[UNI !ID uhm]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Nightwings/Veil of Steel %RED%o %RED%*%YELLOW%*%GREEN%*%BLUE%* %BORDER-A5%%DOT-62% 
-//Halaberd's Reign
-ItemDisplay[UNI !ID bae]:%RED%o %GOLD%Halaberd's Reign %RED%o%BORDER-A5%%DOT-62% 
-//Kira's Guardian
-ItemDisplay[UNI !ID ci2]:%RED%o %GOLD%Kira's Guardian %RED%o%BORDER-A5%%DOT-62% 
-//Griffon's Eye
-ItemDisplay[UNI !ID ci3]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Griffon's Eye%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Shako
-ItemDisplay[UNI !ID uap]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Harlequin Crest%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Crown of Ages
-ItemDisplay[UNI !ID urn]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Crown of Ages%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Andariel's Visage
-ItemDisplay[UNI !ID usk]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Andariel's Visage%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Vampire Gaze
-ItemDisplay[UNI !ID xh9]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Vampire Gaze%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Arreat's Face
-ItemDisplay[UNI !ID baa]:%RED%o %PURPLE%Arreat's Face%RED% o%BORDER-A5%%DOT-62% 
-//Jalal's Mane
-ItemDisplay[UNI !ID dra]:%RED%o %PURPLE%Jalal's Mane%RED% o%BORDER-A5%%DOT-62% 
-//Cerebus' Bite
-ItemDisplay[UNI !ID drb]:%RED%o %PURPLE%Cerebus' Bite %RED%o%BORDER-A5%%DOT-62% 
-//Ravenlore
-ItemDisplay[UNI !ID dre]:%RED%o %PURPLE%Ravenlore %RED%o%BORDER-A5%%DOT-62% 
-//Steel Shade
-ItemDisplay[UNI !ID ulm]:%RED%o %PURPLE%Steel Shade %RED%o%DOT-0C%%BORDER-4B%
-//Stealskull
-ItemDisplay[UNI !ID xlm]:%RED%* %GOLD%Stealskull%RED% *%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID skp]:%RED%*   %GOLD%Tarnhelm   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID xlm]:%RED%*   %GOLD%Stealskull   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID xhm]:%ORANGE%**%RED%**  %RED%Valkyrie Wing   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xrn]:%ORANGE%**%RED%**  %RED%Crown of Thieves   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID ulm]:%ORANGE%**%RED%**  %RED%Steel Shade   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uh9]:%ORANGE%**%RED%**  %RED%Giant Skull   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID urn]:%ORANGE%**%RED%**  %RED%Crown of Ages   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uhl]:%ORANGE%**%RED%**  %RED%Overlord's Helm   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uhm]:%ORANGE%**%RED%**  %RED%Nightwings/Veil of Steel   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID xh9]:%ORANGE%*PICK %RED%UP*   %PURPLE%Vampire Gaze   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uap]:%ORANGE%*PICK %RED%UP*   %PURPLE%Harlequin Crest   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID usk]:%ORANGE%*PICK %RED%UP*   %PURPLE%Andariel's Visage   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID ci2]:%ORANGE%*PICK %RED%UP*   %PURPLE%	Kira's Guardian   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID ci3]:%ORANGE%*PICK %RED%UP*   %PURPLE%	Griffon's Eye   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+//---BARBARIAN HELMS---//
+ItemDisplay[UNI !ID ba6]:%RED%*   %GOLD%Cyclopean Roar   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID bac]:%RED%*   %GOLD%Wolfhowl   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID bad]:%ORANGE%**%RED%**  %RED%Demonhorn's Edge   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID baa]:%ORANGE%*PICK %RED%UP*   %PURPLE%Arreat's Face   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID bae]:%ORANGE%*PICK %RED%UP*   %PURPLE%Halaberd's Reign   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID baf]:%ORANGE%*PICK %RED%UP*   %PURPLE%Raekor's Virtue   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+//---DRUID HELMS---//
+ItemDisplay[UNI !ID dr2]:%RED%*   %GOLD%Quetzalcoatl   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID dra]:%ORANGE%**%RED%**  %RED%Jalal's Mane   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID drb]:%ORANGE%**%RED%**  %RED%Cerebus' Bite   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID dre]:%ORANGE%**%RED%**  %RED%Ravenlore   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID drd]:%ORANGE%**%RED%**  %RED%Spirit Keeper   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID drf]:%ORANGE%*PICK %RED%UP*  %PURPLE%Ursa's Nightmare   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---Armor---//
-//Venom Ward
-ItemDisplay[UNI !ID brs]:%RED%o %GOLD%Venom Ward %RED%o%BORDER-A5%%DOT-62%
-//Atma's Wail
-ItemDisplay[UNI !ID xth]:%RED%o %GOLD%Atma's Wail %RED%o%BORDER-A5%%DOT-62%
-//Spirit Shroud
-ItemDisplay[UNI !ID xui]:%RED%o %GOLD%Spirit Shroud %RED%o%BORDER-A5%%DOT-62%
-//Steel Carapace
-ItemDisplay[UNI !ETH !ID uul]:%RED%o %GOLD%Steel Carapace %RED%o%BORDER-A5%%DOT-62%
-ItemDisplay[UNI ETH !ID uul]:%RED%o %PURPLE%Eth Steel Carapace %RED%o%BORDER-A5%%DOT-62%
-//Toothrow
-ItemDisplay[UNI !ID xld]:%RED%o %PURPLE%Toothrow %RED%o%BORDER-A5%%DOT-62% 
-//Que-Hegan's Wisdom
-ItemDisplay[UNI !ID xtp]:%RED%o %PURPLE%Que-Hegan's Wisdom %RED%o%BORDER-A5%%DOT-62% 
-//Skullder's Ire
-ItemDisplay[UNI !ID xpl]:%RED%o %PURPLE%Skullder's Ire %RED%o%BORDER-A5%%DOT-62% 
-//Arkaine's Valor
-ItemDisplay[UNI !ID upl]:%RED%o %PURPLE%Arkaine's Valor %RED%o%BORDER-A5%%DOT-62% 
-//Gladiator's Bane
-ItemDisplay[UNI !ID utu]:%RED%o %PURPLE%Gladiator's Bane %RED%o%BORDER-A5%%DOT-62% 
-//Ormus' Robes
-ItemDisplay[UNI !ID uui]:%RED%o %PURPLE%Ormus' Robes %RED%o%BORDER-A5%%DOT-62% 
-//Viper Magi
-ItemDisplay[UNI !ID xea]:%RED%o %PURPLE%Skin of the Vipermagi %RED%o%DOT-0C%%BORDER-4B%
-//Leviathan
-ItemDisplay[UNI !ID uld]:%RED%o %PURPLE%Leviathan %RED%o%BORDER-A5%%DOT-62% 
-//Duriel's Shell
-ItemDisplay[UNI !ID xrs]:%RED%o %PURPLE%Duriel's Shell %RED%*%BORDER-A5%%DOT-62% 
-//Shaftstop
-ItemDisplay[UNI !ID xhn]:%RED%o %PURPLE%Shaftstop %RED%*%BORDER-A5%%DOT-62% 
-//Tyrael's Might
-ItemDisplay[UNI !ID uar]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%ooo %PURPLE%U%RED%n%YELLOW%i%GREEN%q%BLUE%u%PURPLE%e %GOLD%%NAME% %RED%ooo %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Guardian Angel
-ItemDisplay[UNI !ID xlt]:%RED%o %PURPLE%Guardian Angel %RED%o%BORDER-A5%%DOT-62% 
-//Dark Abyss
-ItemDisplay[UNI !ID uth]:%RED%o %PURPLE%Dark Abyss %RED%o%BORDER-A5%%DOT-62% 
-//Cage of the Unsullied
-ItemDisplay[UNI !ID rar]:%RED%o %PURPLE%Dark Abyss %RED%o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID brs]:%RED%*   %GOLD%Venom Ward   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID xui]:%RED%*   %GOLD%Spirit Shroud   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ETH !ID uul]:%RED%*   %GOLD%Steel Carapace   %RED%*%BORDER-A5%
+ItemDisplay[UNI ETH !ID uul]:%RED%*   %GOLD%Eth Steel Carapace   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID xld]:%RED%*   %GOLD%Toothrow   %RED%*%BORDER-A5% 
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID xth]:%ORANGE%**%RED%**  %RED%Atma's Wail   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID utu]:%ORANGE%**%RED%**  %RED%Gladiator's Bane   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B% 
+ItemDisplay[UNI !ID xrs]:%ORANGE%**%RED%**  %RED%Duriel's Shell   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xhn]:%ORANGE%**%RED%**  %RED%Shaftstop   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B% 
+ItemDisplay[UNI !ID xlt]:%ORANGE%**%RED%**  %RED%Guardian Angel   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B% 
+//---HIGH TIER---//
+ItemDisplay[UNI !ID xtp]:%ORANGE%*PICK %RED%UP*  %PURPLE%Que-Hegan's Wisdom   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xpl]:%ORANGE%*PICK %RED%UP*  %PURPLE%Skullder's Ire   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID upl]:%ORANGE%*PICK %RED%UP*  %PURPLE%Arkaine's Valor   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uui]:%ORANGE%*PICK %RED%UP*  %PURPLE%Ormus' Robes   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xea]:%ORANGE%*PICK %RED%UP*  %PURPLE%Skin of the Vipermagi   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uld]:%ORANGE%*PICK %RED%UP*  %PURPLE%Leviathan   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+//Tyrael's or Templar's
+ItemDisplay[UNI !ID uar]:%ORANGE%*PICK %RED%UP*  %PURPLE%Tyreal/Templar  %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uth]:%ORANGE%*PICK %RED%UP*  %PURPLE%Dark Abyss   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID rar]:%ORANGE%*PICK %RED%UP*  %PURPLE%Cage of the Unsullied   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID utp]:%ORANGE%*PICK %RED%UP*  %PURPLE%Purgatory   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---Gloves---//
-//Lava Gout
-ItemDisplay[UNI !ID xtg]:%RED%o %GOLD%Lava Gout %RED%o%BORDER-A5%%DOT-62% 
-//Venom Grip
-ItemDisplay[UNI !ID xlg]:%RED%o %GOLD%Venom Grip %RED%o%BORDER-A5%%DOT-62% 
-//Gravepalm
-ItemDisplay[UNI !ID xvg]:%RED%o %PURPLE%Gravepalm %RED%o%BORDER-A5%%DOT-62% 
-//Bloodfist
-ItemDisplay[UNI !ID vgl]:%RED%o %GOLD%Bloodfist %RED%o%BORDER-A5%%DOT-62% 
-//Hellmouth
-ItemDisplay[UNI !ID xhg]:%RED%o %PURPLE%Hellmouth %RED%o%BORDER-A5%%DOT-62% 
-//Frostburn
-ItemDisplay[UNI !ID hgl]:%RED%o %GOLD%Frostburn %RED%o%BORDER-A5%%DOT-62% 
-//Ghoulhide
-ItemDisplay[UNI !ID xmg]:%RED%o %GOLD%Ghoulhide%RED% o%BORDER-A5%%DOT-62% 
-//Chance Guards 
-ItemDisplay[UNI !ID mgl]:%RED%o %GOLD%Chance Guards %RED%o%BORDER-A5%%DOT-62% 
-//Magefist
-ItemDisplay[UNI !ID tgl]:%RED%o %PURPLE%Magefist %RED%o%BORDER-A5%%DOT-62% 
-//Dracul's Grasp
-ItemDisplay[UNI !ID uvg]:%RED%o %PURPLE%Dracul's Grasp %RED%o%BORDER-A5%%DOT-62% 
-//Steelrend
-ItemDisplay[UNI !ID uhg]:%RED%o %PURPLE%Steelrend %RED%o%BORDER-A5%%DOT-62% 
-//Soul Drainer
-ItemDisplay[UNI !ID umg]:%RED%o %PURPLE%Soul Drainer %RED%o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID xlg]:%RED%*   %GOLD%Venom Grip   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID vgl]:%RED%*   %GOLD%Bloodfist   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID xvg]:%RED%*   %GOLD%Gravepalm   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID hgl]:%RED%*   %GOLD%Frostburn   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID xmg]:%RED%*   %GOLD%Ghoulhide   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID xtg]:%ORANGE%**%RED%**  %RED%Lava Gout   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xhg]:%ORANGE%**%RED%**  %RED%Hellmouth   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID mgl]:%ORANGE%**%RED%**  %RED%Chance Guards   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID tgl]:%ORANGE%**%RED%**  %RED%Magefist   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID utg]:%ORANGE%**%RED%**  %RED%Occultist   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID uvg]:%ORANGE%*PICK %RED%UP*  %PURPLE%Dracul's Grasp   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uhg]:%ORANGE%*PICK %RED%UP*  %PURPLE%Steelrend   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID umg]:%ORANGE%*PICK %RED%UP*  %PURPLE%Soul Drainer   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---Belts---//
-//Gloom's Trap
-ItemDisplay[UNI !ID zmb]:%RED%o %GOLD%Gloom's Trap %RED%o%BORDER-A5%%DOT-62%
-//Goldwrap
-ItemDisplay[UNI !ID tbl]:%RED%o %GOLD%Goldwrap %RED%o%BORDER-A5%%DOT-62% 
-//Snowclash
-ItemDisplay[UNI !ID ztb]:%RED%o %PURPLE%Snowclash %RED%o%BORDER-A5%%DOT-62% 
-//Nosferatu's Coil
-ItemDisplay[UNI !ID uvc]:%RED%o %PURPLE%Nosferatu's Coil %RED%o%BORDER-A5%%DOT-62% 
-//Arachnid Mesh
-ItemDisplay[UNI !ID ulc]:%RED%ooo %PURPLE%Arachnid Mesh %RED%ooo%DOT-0C%%BORDER-4B%
-//Verdungo's Hearty Cord
-ItemDisplay[UNI !ID umc]:%RED%o %PURPLE%Verdungo's Hearty Cord %RED%o%BORDER-A5%%DOT-62% 
-//String of Ears
-ItemDisplay[UNI !ID zlb]:%RED%o %PURPLE%String of Ears %RED%o%BORDER-A5%%DOT-62% 
-//Razortail
-ItemDisplay[UNI !ID zvb]:%RED%o %PURPLE%Razortail %RED%o%BORDER-A5%%DOT-62% 
-//Thundergod's Vigor
-ItemDisplay[UNI !ID zhb]:%RED%o %PURPLE%Thundergod's Vigor %RED%o%BORDER-A5%%DOT-62% 
-//Band of Skulls
-ItemDisplay[UNI !ID rbe]:%RED%ooo %PURPLE%Band of Skulls %RED%ooo%DOT-0C%%BORDER-4B%
+//---LOW TIER---//
+ItemDisplay[UNI !ID zmb]:%RED%*   %GOLD%Gloom's Trap   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID tbl]:%RED%*   %GOLD%Goldwrap   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID ztb]:%ORANGE%**%RED%**  %RED%Snowclash   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID zlb]:%ORANGE%**%RED%**  %RED%String of Ears   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID zvb]:%ORANGE%**%RED%**  %RED%Razortail   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID zhb]:%ORANGE%**%RED%**  %RED%Thundergod's Vigor   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID uvc]:%ORANGE%*PICK %RED%UP*  %PURPLE%Nosferatu's Coil   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID ulc]:%ORANGE%*PICK %RED%UP*  %PURPLE%Arachnid Mesh   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID umc]:%ORANGE%*PICK %RED%UP*  %PURPLE%Verdungo's Hearty Cord   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID rbe]:%ORANGE%*PICK %RED%UP*  %PURPLE%Band of Skulls   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---Boots---//
-//Goblin Toe
-ItemDisplay[UNI !ID tbt]:%RED%o %PURPLE%Goblin Toe %RED%o%BORDER-A5%%DOT-62%
-//Gorefoot
-ItemDisplay[UNI !ID vbt]:%RED%o %PURPLE%Gorefoot %RED%o%BORDER-A5%%DOT-62%
-//Infernostride
-ItemDisplay[UNI !ID xlb]:%RED%o %PURPLE%Infernostride %RED%o%BORDER-A5%%DOT-62%
-//Hotspurs
-ItemDisplay[UNI !ID lbt]:%RED%o %PURPLE%Hotspurs %RED%o%BORDER-A5%%DOT-62%
-//Marrowwalk
-ItemDisplay[UNI !ID umb]:%RED%o %PURPLE%Marrowwalk %RED%o%BORDER-A5%%DOT-62%
-//Waterwalk
-ItemDisplay[UNI !ID xvb]:%RED%o %PURPLE%Waterwalk %RED%o%BORDER-A5%%DOT-62% 
-//Silkweave
-ItemDisplay[UNI !ID xmb]:%RED%o %PURPLE%Silkweave %RED%o%BORDER-A5%%DOT-62% 
-//War Traveler
-ItemDisplay[UNI !ID xtb]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%War Traveler%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Shadow Dancer
-ItemDisplay[UNI !ID uhb]:%RED%o %PURPLE%Shadow Dancer %RED%o%DOT-0C%%BORDER-4B%
-//Sandstorm Trek
-ItemDisplay[UNI !ID uvb]:%RED%o %PURPLE%Sandstorm Trek %RED%o%BORDER-A5%%DOT-62% 
-//Gore Rider
-ItemDisplay[UNI !ID xhb]:%RED%o %PURPLE%Gore Rider %RED%o%BORDER-A5%%DOT-62% 
-//Itherael's Path
-ItemDisplay[UNI !ID utb]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Itherael's Path%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
+//---LOW TIER---//
+ItemDisplay[UNI !ID xlb]:%RED%*   %GOLD%Infernostride   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID lbt]:%RED%*   %GOLD%Hotspurs   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID umb]:%RED%*   %GOLD%Marrowwalk   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID xvb]:%RED%*   %GOLD%Waterwalk   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID ulb]:%ORANGE%**%RED%**  %RED%Merman's Sprocket   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID tbt]:%ORANGE%**%RED%**  %RED%Goblin Toe   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID vbt]:%ORANGE%**%RED%**  %RED%Gorefoot   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xmb]:%ORANGE%**%RED%**  %RED%Silkweave   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uvb]:%ORANGE%**%RED%**  %RED%Sandstorm Trek   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID xtb]:%ORANGE%*PICK %RED%UP*  %PURPLE%War Traveler   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uhb]:%ORANGE%*PICK %RED%UP*  %PURPLE%Shadow Dancer   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xhb]:%ORANGE%*PICK %RED%UP*  %PURPLE%Gore Rider   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID utb]:%ORANGE%*PICK %RED%UP*  %PURPLE%Itherael's Path   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 ////////////////////////
 //---UNIQUE WEAPONS---//
 ////////////////////////
 
-//---ELITE AXES---//
-//Death Cleaver
-ItemDisplay[UNI !ID 7wa]:%RED%o %PURPLE%Death Cleaver%RED% o%BORDER-A5%%DOT-62% 
-//Executioner's Justice
-ItemDisplay[UNI !ID 7gi]:%RED%o %GOLD%Executioner's Justice %RED%o%BORDER-A5%%DOT-62% 
+//---AXES---//
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7wa]:%ORANGE%**%RED%**  %RED%Death Cleaver   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7gi]:%ORANGE%*PICK %RED%UP*  %PURPLE%Executioner's Justice   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
-//---EXCEPTIONAL BOWS---//
-//Witchwild String
-ItemDisplay[UNI !ID 8s8]:%RED%o %PURPLE%Witchwild String %RED%o%BORDER-A5%%DOT-62% 
-//Goldstrike Arch
-ItemDisplay[UNI !ID 8lw]:%RED%o %PURPLE%Goldstrike Arch %RED%o%BORDER-A5%%DOT-62%
-//---ELITE BOWS---//
-//Eaglehorn
-ItemDisplay[UNI !ID 6l7]:%RED%o %PURPLE%Eaglehorn %RED%o%BORDER-A5%%DOT-62% 
-//Widowmaker
-ItemDisplay[UNI !ID 6sw]:%RED%o %PURPLE%Widowmaker %RED%o%BORDER-A5%%DOT-62% 
-//Windforce
-ItemDisplay[UNI !ID 6lw]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Windforce%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
+//---BOWS---//
+//---LOW TIER---//
+ItemDisplay[UNI !ID 8s8]:%RED%*   %GOLD%Witchwild String   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 8lw]:%ORANGE%**%RED%**  %RED%Goldstrike Arch   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 6l7]:%ORANGE%**%RED%**  %RED%Eaglehorn   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 6sw]:%ORANGE%**%RED%**  %RED%Widowmaker   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 6lw]:%ORANGE%*PICK %RED%UP*  %PURPLE%Windforce   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
-//---EXCEPTION CROSSBOWS---//
-//Pus Spitter
-ItemDisplay[UNI !ID 8mx]:%RED%o %GOLD%Pus Spitter %RED%o%BORDER-A5%%DOT-62%
-//Buriza
-ItemDisplay[UNI !ID 8hx]:%RED%o %PURPLE%Buriza-Do Kyanon %RED%o%BORDER-A5%%DOT-62% 
-//Demon Machine
-ItemDisplay[UNI !ID 8rx]:%RED%o %GOLD%Demon Machine %RED%o%BORDER-A5%%DOT-62%
-//---ELITE CROSSBOWS---//
-//Gut Siphon
-ItemDisplay[UNI !ID 6rx]:%RED%o %GOLD%Gut Siphon %RED%o%BORDER-A5%%DOT-62%
-//Hellrack
-ItemDisplay[UNI !ID 6hx]:%RED%o %GOLD%Hellrack %RED%o%BORDER-A5%%DOT-62%
+//---CROSSBOWS---//
+//---LOW TIER---//
+ItemDisplay[UNI !ID 8rx]:%RED%*   %GOLD%Demon Machine   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 8hx]:%ORANGE%**%RED%**  %RED%Buriza   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 6rx]:%ORANGE%**%RED%**  %RED%Gut Siphon   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 6hx]:%ORANGE%**%RED%**  %RED%Hellrack   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 8mx]:%ORANGE%*PICK %RED%UP*  %PURPLE%Pus Spitter   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---DAGGERS---//
-//Gull
-ItemDisplay[UNI !ID dgr]:%RED%o %GOLD%Gull%RED% o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID dgr]:%RED%*   %GOLD%Gull   %RED%*%BORDER-A5%
 
 //---JAVELINS---//
-//Demon's Arch
-ItemDisplay[UNI !ID 7s7]:%RED%o %GOLD%Demon's Arch %RED%o%BORDER-A5%%DOT-62% 
-//Wraith Flight
-ItemDisplay[UNI !ID 7gl]:%RED%o %GOLD%Wraith Flight %RED%o%BORDER-A5%%DOT-62% 
-//Gargoyle's Bite
-ItemDisplay[UNI !ID 7ts]:%RED%o %GOLD%Gargoyle's Bite %RED%o%BORDER-A5%%DOT-62% 
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7s7]:%ORANGE%**%RED%**  %RED%Demon's Arch   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 7gl]:%ORANGE%**%RED%**  %RED%Wraith Flight   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7ts]:%ORANGE%*PICK %RED%UP*  %PURPLE%Gargoyle's Bite   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
-//---MACES---//
-//---1H EXCEPTION MACES---//
-//Earthshaker
-ItemDisplay[UNI !ID 9wh]:%RED%o %PURPLE%Earthshaker %RED%o%BORDER-A5%%DOT-62% 
-//---1H ELITE MACES---//
-//Horizon's Tornado/Stormlash
-ItemDisplay[UNI !ID 7fl]:%RED%o %PURPLE%Horizon's Tornado/Stormlash%RED% o%BORDER-A5%%DOT-62% 
-// Schaefer's Hammer
-ItemDisplay[UNI !ID 7wh]:%RED%o %PURPLE%Schaefer's/Stone Crusher %RED%o%DOT-0C%%BORDER-4B%
-//---2H EXCEPTION MACES---//
-//Gavel of Pain
-ItemDisplay[UNI !ID 9gm]:%RED%o %PURPLE%Gavel of Pain %RED%o%BORDER-A5%%DOT-62%
-//---2H ELITE MACES---//
-//Windhammer
-ItemDisplay[UNI !ID 7m7]:%RED%o %GOLD%Windhammer %RED%o%BORDER-A5%%DOT-62%
-//The Cranium Basher/Earth shifter
-ItemDisplay[UNI !ID 7gm]:%RED%o %PURPLE%Earth Shifter/The Cranium Basher%RED% o%BORDER-A5%%DOT-62% 
+//---1H MACES---//
+//---LOW TIER---//
+ItemDisplay[UNI !ID 7fl]:%RED%*   %GOLD%Horizon's Tornado/Stormlash   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7wh]:%ORANGE%**%RED%**  %RED%Schaefer's/Stone Crusher   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 9wh]:%ORANGE%*PICK %RED%UP*  %PURPLE%Earthshaker   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+
+//---2H MACES---//
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7m7]:%ORANGE%**%RED%**  %RED%Windhammer   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 9gm]:%ORANGE%*PICK %RED%UP*  %PURPLE%Gavel of Pain   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 7gm]:%ORANGE%*PICK %RED%UP*  %PURPLE%Earth Shifter/The Cranium Basher   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---POLEARMS---//
-//---ELITE POLEARMS---//
-//Bonehew
-ItemDisplay[UNI !ETH !ID 7o7]:%RED%o %GOLD%Bonehew %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI ETH !ID 7o7]:%RED%o %PURPLE%Eth Bonehew %RED%o%BORDER-A5%%DOT-62% 
-//Reaper's Toll
-ItemDisplay[UNI !ETH !ID 7s8]:%RED%o %PURPLE%Reaper's Toll %RED%o%DOT-0C%%BORDER-4B%
-ItemDisplay[UNI ETH !ID 7s8]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Eth Reaper's Toll %RED%o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Tombreaver
-ItemDisplay[UNI !ETH !ID 7pa]:%RED%o %GOLD%Tomb Reaver %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI ETH !ID 7pa]:%RED%o %PURPLE%Eth Tomb Reaver %RED%o%BORDER-A5%%DOT-62% 
-//Stormspire
-ItemDisplay[UNI !ETH !ID 7wc]:%RED%o %GOLD%Stormspire %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI ETH !ID 7wc]:%RED%o %PURPLE%Eth Stormspire %RED%o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ETH !ID 7o7]:%RED%*   %GOLD%Bonehew   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ETH !ID 7s8]:%ORANGE%**%RED%**  %RED%Reaper's Toll   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ETH !ID 7pa]:%ORANGE%**%RED%**  %RED%Tomb Reaver   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ETH !ID 7wc]:%ORANGE%**%RED%**  %RED%Stormspire   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI ETH !ID 7o7]:%ORANGE%*PICK %RED%UP*  %PURPLE%Eth Bonehew   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI ETH !ID 7s8]:%ORANGE%*PICK %RED%UP*  %PURPLE%Eth Reaper's Toll   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI ETH !ID 7pa]:%ORANGE%*PICK %RED%UP*  %PURPLE%Eth Tomb Reaver   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI ETH !ID 7wc]:%ORANGE%*PICK %RED%UP*  %PURPLE%Eth Stormspire   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---SCEPTERS---//
-//---EXCEPTIONAL SCEPTERS---//
-//Hand of Blessed Light
-ItemDisplay[UNI !ID 9ws]:%RED%o %PURPLE%Hand of Blessed Light%RED% o%BORDER-A5%%DOT-62% 
-//---ELITE SCEPTERS---//
-//Akarat's Devotion
-ItemDisplay[UNI !ID 7qs]:%PURPLE%* %GOLD%Akarat's Devotion %PURPLE%* %BORDER-A5%%DOT-62%
-//Astreon's Iron Ward
-ItemDisplay[UNI !ID 7ws]:%RED%o %PURPLE%Astreon's Iron Ward%RED% o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID 9ws]:%RED%*   %GOLD%Hand of Blessed Light   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7qs]:%ORANGE%**%RED%**  %RED%Akarat's Devotion   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7ws]:%ORANGE%*PICK %RED%UP*  %PURPLE%Astreon's Iron Ward   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---SPEARS---//
-//---ELITE SPEARS---//
-//Steel Pillar
-ItemDisplay[UNI !ID 7p7]:%RED%o %PURPLE%Steel Pillar %RED%o%BORDER-A5%%DOT-62% 
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7p7]:%ORANGE%*PICK %RED%UP*  %PURPLE%Steel Pillar   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---STAVES---//
-//---EXCEPTION STAVES---//
-//Ribcracker
-ItemDisplay[UNI !ETH !ID 8ls]:%RED%o %GOLD%Ribcracker %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI ETH !ID 8ls]:%RED%o %PURPLE%Eth Ribcracker %RED%o%BORDER-A5%%DOT-62% 
-//Skull Collector
-ItemDisplay[UNI !ID 8ws]:%PURPLE%* %GOLD%Skull Collector %PURPLE%* %BORDER-A5%%DOT-62%
-//---ELITE STAVES---//
-//Brimstone Rain
-ItemDisplay[UNI !ID 6bs]:%PURPLE%* %GOLD%Brimstone Rain %PURPLE%* %BORDER-A5%%DOT-62%
-//Ondal's Wisdom
-ItemDisplay[UNI !ID 6cs]:%RED%o %GOLD%Ondal's Wisdom %RED%o%DOT-0C%%BORDER-4B%
-//Mang Song's Lesson
-ItemDisplay[UNI !ID 6ws]:%RED%o %PURPLE%Mang Song's Lesson%RED% o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ETH !ID 8ls]:%RED%*   %GOLD%Ribcracker   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI ETH !ID 8ls]:%ORANGE%**%RED%**  %RED%Eth Ribcracker   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 8ws]:%ORANGE%**%RED%**  %RED%Skull Collector   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 6bs]:%ORANGE%**%RED%**  %RED%Brimstone Rain   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 6cs]:%ORANGE%*PICK %RED%UP*  %PURPLE%Ondal's Wisdom   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 6ws]:%ORANGE%*PICK %RED%UP*  %PURPLE%Mang Song's Lesson   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
-//---SWORDS---//
-//---1H EXCEPTIONAL SWORD---//
-//Hexfire
-ItemDisplay[UNI !ID 9sb]:%RED%o %GOLD%Hexfire %RED%o%BORDER-A5%%DOT-62% 
-//Blade of Ali Baba
-ItemDisplay[UNI !ID 9fc]:%RED%o %PURPLE%Blade of Ali Baba %RED%o%DOT-0C%%BORDER-4B%
-//Plague Bearer
-ItemDisplay[UNI !ID 9ls]:%RED%o %GOLD%Plague Bearer %RED%o%BORDER-A5%%DOT-62% 
-//---1H ELITE SWORDS---//
-//Azurewrath & Lightsabre
-ItemDisplay[UNI !ID 7cr]:%RED%o %PURPLE%Lightsabre/Azurewrath %RED%o%DOT-0C%%BORDER-4B%
-//Frostwind
-ItemDisplay[UNI !ID 7ls]:%RED%o %PURPLE%Frostwind%RED% o%BORDER-A5%%DOT-62%
-//Hadriel's Hand
-ItemDisplay[UNI !ID 7bs]:%RED%o %PURPLE%Hadriel's Hand%RED% o%BORDER-A5%%DOT-62%
-//---2H EXCEPTIONAL SWORDS---//
-//The Vile Husk
-ItemDisplay[UNI !ID 9gs]:%RED%o %PURPLE%The Vile Husk%RED% o%BORDER-A5%%DOT-62% 
-//---2H ELITE SWORDS---//
-//Flamebellow
-ItemDisplay[UNI !ID 7gs]:%RED%o %PURPLE%Flamebellow%RED% o%BORDER-A5%%DOT-62% 
-//The Grandfather
-ItemDisplay[UNI !ID 7gd]:%RED%o %PURPLE%The Grandfather%RED% o%BORDER-A5%%DOT-62% 
+//---1H SWORD---//
+//---LOW TIER---//
+ItemDisplay[UNI !ID 9sb]:%RED%*   %GOLD%Hexfire   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID 9fc]:%RED%*   %GOLD%Blade of Ali Baba   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 9ls]:%ORANGE%**%RED%**  %RED%Plague Bearer   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 7ls]:%ORANGE%**%RED%**  %RED%Frostwind   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7cr]:%ORANGE%*PICK %RED%UP*  %PURPLE%Lightsabre/Azurewrath   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 7bs]:%ORANGE%*PICK %RED%UP*  %PURPLE%Hadriel's Hand   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+
+//---2H SWORDS---//
+//---LOW TIER---//
+ItemDisplay[UNI !ID 9gs]:%RED%*   %GOLD%The Vile Husk   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7gs]:%ORANGE%**%RED%**  %RED%Flamebellow   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7gd]:%ORANGE%*PICK %RED%UP*  %PURPLE%The Grandfather   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---THROWING---//
-//Gimmershread
-ItemDisplay[UNI !ID 7ta]:%RED%o %GOLD%Gimmershread %RED%o%BORDER-A5%%DOT-62%
-// Warshrike
-ItemDisplay[UNI !ID 7bk]:%RED%o %GOLD%Warshrike %RED%o%BORDER-A5%%DOT-62% 
-//Lacerator
-ItemDisplay[UNI !ETH !ID 7b8]:%RED%o %GOLD%Lacerator %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI ETH !ID 7b8]:%RED%o %PURPLE%Eth Lacerator %RED%o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID 7ta]:%RED%*   %GOLD%Gimmershread   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7bk]:%ORANGE%**%RED%**  %RED%Warshrike   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ETH !ID 7b8]:%ORANGE%**%RED%**  %RED%Lacerator   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI ETH !ID 7b8]:%ORANGE%*PICK %RED%UP*  %PURPLE%Eth Lacerator   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---WANDS---//
-//Carin Shard
-ItemDisplay[UNI !ID 9yw]:%RED%o %PURPLE%Carin Shard %RED%o%BORDER-A5%%DOT-62%
-//Arm of King Leoric
-ItemDisplay[UNI !ID 9bw]:%RED%o %PURPLE%Arm of King Leoric %RED%o%BORDER-A5%%DOT-62%
-//Blackhand Key
-ItemDisplay[UNI !ID 9gw]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Blackhand Key %RED%o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Boneshade
-ItemDisplay[UNI !ID 7bw]:%RED%o %PURPLE%Boneshade %RED%o%BORDER-A5%%DOT-62% 
-//Death's Web
-ItemDisplay[UNI !ID 7gw]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Death's Web %RED%o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
+//---LOW TIER---//
+ItemDisplay[UNI !ID 9yw]:%RED%*   %GOLD%Carin Shard   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID 9bw]:%RED%*   %GOLD%Arm of King Leoric   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7bw]:%ORANGE%**%RED%**  %RED%Boneshade   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 9gw]:%ORANGE%*PICK %RED%UP*  %PURPLE%Blackhand Key   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID 7gw]:%ORANGE%*PICK %RED%UP*  %PURPLE%Death's Web   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
+///////////////////////
 //---CLASS WEAPONS---//
+///////////////////////
 //---AMAZON BOWS---//
+//---LOW TIER---//
 //Blood Raven's Charge
-ItemDisplay[UNI !ID amb]:%RED%o %PURPLE%Blood Raven's Charge %RED%o%BORDER-A5%%DOT-62% 
+ItemDisplay[UNI !ID amb]:%RED%o %PURPLE%Blood Raven's Charge %RED%o%BORDER-A5%%DOT-62%
+
 //---AMAZON SPEARS---//
+//---MEDIUM TIER---//
 //Zerae's Resolve
 ItemDisplay[UNI !ID ame]:%RED%o %PURPLE%Zerae's Resolve %RED%o%BORDER-A5%%DOT-62%
+
 //---AMAZON JAVELINS---//
-//Thunderstroke
-//ItemDisplay[UNI !ID !ETH amf]:%RED%o %GOLD%Thunderstroke %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI !ID ETH amf]:%RED%o %PURPLE%Eth Thunderstroke %RED%o%BORDER-A5%%DOT-62% 
-//Titan's Revenge
-//ItemDisplay[UNI !ETH !ID ama]:%RED%o %GOLD%Titan's Revenge %RED%o%BORDER-A5%%DOT-62% 
-ItemDisplay[UNI ETH !ID ama]:%RED%o %PURPLE%Eth Titan's Revenge %RED%o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID !ETH amf]:%RED%*   %GOLD%Thunderstroke   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ETH !ID ama]:%RED%*   %GOLD%Titan's Revenge   %RED%*%BORDER-A5% 
+//---MEDIUM TIER---//
+ItemDisplay[UNI ETH !ID ama]:%ORANGE%**%RED%**  %RED%Eth Titan's Revenge   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID ETH amf]:%ORANGE%**%RED%**  %RED%Eth Thunderstroke   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+
 //---CLAWS---//
-//Mage Slayer
-ItemDisplay[UNI !ID 9ar]:%RED%o %GOLD%Mage Slayer %RED%o%BORDER-A5%%DOT-62%
-//Bartuc's Cut-Throat
-ItemDisplay[UNI !ID 9tw]:%RED%o %PURPLE%Bartuc's Cut-Throat %RED%o%DOT-0C%%BORDER-4B%
-//Jade Talon
-ItemDisplay[UNI !ID 7wb]:%RED%o %GOLD%Jade Talon %RED%o%BORDER-A5%%DOT-62% 
-//Firelizard's Talons
-ItemDisplay[UNI !ID 7lw]:%RED%o %GOLD%Firelizard's Talons %RED%o%BORDER-A5%%DOT-62% 
-//Shadow Killer
-//ItemDisplay[UNI !ID 7cs]:%RED%o %PURPLE%Shadow Killer %RED%o%DOT-0C%%BORDER-4B%
-//Aidan's Scar
-ItemDisplay[UNI !ID 7qr]:%RED%o %GOLD%Aidan's Scar %RED%o%BORDER-A5%%DOT-62% 
+//---LOW TIER---//
+ItemDisplay[UNI !ID 7tw]:%RED%*   %GOLD%Stalker's Call   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID 9ar]:%RED%*   %GOLD%Mage Slayer   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID 9tw]:%RED%*   %GOLD%Bartuc's Cut-Throat   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID 7wb]:%RED%*   %GOLD%Jade Talon   %RED%*%BORDER-A5%
+ItemDisplay[UNI !ID 7lw]:%RED%*   %GOLD%Firelizard's Talons   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID 7cs]:%ORANGE%**%RED%**  %RED%Shadow Killer   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID 7qr]:%ORANGE%*PICK %RED%UP*  %PURPLE%Aidan's Scar   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B% 
+
 //---SORCERESS ORBS---//
-//The Oculus
-ItemDisplay[UNI !ID oba]:%RED%o %PURPLE%The Oculus%RED% o%BORDER-A5%%DOT-62% 
-//Eschuta's Temper
-ItemDisplay[UNI !ID obc]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Eschuta's Temper %RED%o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Death's Fathom
-ItemDisplay[UNI !ID obf]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Death's Fathom %RED%o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-
- 
-
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID oba]:%ORANGE%**%RED%**  %RED%The Oculus   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID obc]:%ORANGE%*PICK %RED%UP*  %PURPLE%Eschuta's Temper   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID obf]:%ORANGE%*PICK %RED%UP*  %PURPLE%Death's Fathom   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---Shields---//
-//Boneflame
-ItemDisplay[UNI !ID nee]:%RED%o %PURPLE%Boneflame %RED%o%BORDER-A5%%DOT-62% 
-//Stormshield
-ItemDisplay[UNI !ID uit]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Stormshield%RED% o %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
-//Homunculus
-ItemDisplay[UNI !ID nea]:%RED%o %PURPLE%Homunculus %RED%o%BORDER-A5%%DOT-62% 
-//Herald of Zakarum
-ItemDisplay[UNI !ID pa9]:%RED%o %PURPLE%Herald of Zakarum %RED%o%BORDER-A5%%DOT-62% 
-//Darkforce Spawn
-ItemDisplay[UNI !ID nef]:%RED%o %PURPLE%Darkforce Spawn %RED%o%BORDER-A5%%DOT-62% 
-//Medusa's Gaze
-ItemDisplay[UNI !ID uow]:%RED%o %PURPLE%Medusa's Gaze %RED%o%BORDER-A5%%DOT-62% 
-//Alma Negra
-ItemDisplay[UNI !ID pac]:%RED%o %PURPLE%Alma Negra %RED%o%BORDER-A5%%DOT-62% 
-//Radament's Sphere
-ItemDisplay[UNI !ID xts]:%RED%o %GOLD%Radament's Sphere %RED%o%BORDER-A5%%DOT-62% 
-//Lidless Wall
-ItemDisplay[UNI !ID xsh]:%RED%o %PURPLE%Lidless Wall %RED%o%DOT-0C%%BORDER-4B%
-//Gerke's Sanctuary
-ItemDisplay[UNI !ID xow]:%RED%o %PURPLE%Gerke's Sanctuary %RED%o%DOT-0C%%BORDER-4B%
-//Spirit Ward
-ItemDisplay[UNI !ID uts]:%RED%o %PURPLE%Spirit Ward %RED%o%DOT-0C%%BORDER-4B%
-//Head Hunter's Glory
-ItemDisplay[UNI !ID ush]:%RED%o %PURPLE%Head Hunter's Glory %RED%o%DOT-0C%%BORDER-4B%
-//Dragonscale
-ItemDisplay[UNI !ID pae]:%RED%o %PURPLE%Dragonscale %RED%o%DOT-0C%%BORDER-4B%
-
+//---LOW TIER---//
+ItemDisplay[UNI !ID ned]:%RED%*   %GOLD%Martyrdom   %RED%*%BORDER-A5%
+//---MEDIUM TIER---//
+ItemDisplay[UNI !ID nee]:%ORANGE%**%RED%**  %RED%Boneflame   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID nea]:%ORANGE%**%RED%**  %RED%Homunculus   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uow]:%ORANGE%**%RED%**  %RED%Medusa's Gaze   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID pac]:%ORANGE%**%RED%**  %RED%Alma Negra   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xts]:%ORANGE%**%RED%**  %RED%Radament's Sphere   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xsh]:%ORANGE%**%RED%**  %RED%Lidless Wall   %RED%**%ORANGE%**%DOT-0C%%BORDER-4B%
+//---HIGH TIER---//
+ItemDisplay[UNI !ID uit]:%ORANGE%*PICK %RED%UP*  %PURPLE%Stormshield   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID pa9]:%ORANGE%*PICK %RED%UP*  %PURPLE%Herald of Zakarum   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID nef]:%ORANGE%*PICK %RED%UP*  %PURPLE%Darkforce Spawn   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID xow]:%ORANGE%*PICK %RED%UP*  %PURPLE%Gerke's Sanctuary   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID uts]:%ORANGE%*PICK %RED%UP*  %PURPLE%Spirit Ward   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID ush]:%ORANGE%*PICK %RED%UP*  %PURPLE%Head Hunter's Glory   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
+ItemDisplay[UNI !ID pae]:%ORANGE%*PICK %RED%UP*  %PURPLE%Dragonscale   %RED%*PICK %ORANGE%UP*%DOT-0C%%BORDER-4B%
 
 //---Sets---//
 //Jewelry
 ItemDisplay[SET !ID amu]:%GREEN%o Amulet o%DOT-84% 
 ItemDisplay[SET !ID rin FILTLVL>4]:%GREEN%o Ring o%DOT-84%%CONTINUE%
 //IK SET
-ItemDisplay[SET !ID uar]:%GREEN%* %PURPLE%o %GREEN%IK Armor%PURPLE% o %GREEN%*%DOT-84%%BORDER-4B%
+ItemDisplay[SET !ID uar]:%ORANGE%*PICK %RED%UP*  %GREEN%IK Armor   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B%
 ItemDisplay[SET !ID xhb]:%GREEN%o IK Boots o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID zhb]:%GREEN%o IK Belt o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID ba5]:%GREEN%o IK Helm o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID xhg]:%GREEN%o IK Gloves o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID 7m7]:%GREEN%o IK Maul o%DOT-62%%BORDER-84%  
 //Tal Rasha's
-ItemDisplay[SET !ID uth]:%GREEN%* %PURPLE%o %GREEN%Tal Rasha's Armor%PURPLE% o %GREEN%*%DOT-84%%BORDER-4B%
+ItemDisplay[SET !ID uth]:%ORANGE%*PICK %RED%UP*  %GREEN%Tal Rasha's Armor   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B%
 ItemDisplay[SET !ID oba]:%GREEN%o Tal Rasha's Orb o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID zmb]:%GREEN%o Tal Rasha's Belt o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID xsk]:%GREEN%o Tal Rasha's Mask o%DOT-62%%BORDER-84% 
@@ -837,7 +743,7 @@ ItemDisplay[SET !ID utc]:%GREEN%o Trang Oul's Belt o%DOT-62%%BORDER-84%
 ItemDisplay[SET !ID ne9]:%GREEN%o Trang Oul's Shield o%DOT-62%%BORDER-84%  
 ItemDisplay[SET !ID xmg]:%GREEN%o Trang Oul's Gloves o%DOT-62%%BORDER-84%  
 //Naj's
-ItemDisplay[SET !ID 6cs]:%GREEN%o Naj's Puzzler o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID 6cs]:%ORANGE%*PICK %RED%UP*  %GREEN%Naj's Puzzler   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B% 
 ItemDisplay[SET !ID ult]:%GREEN%o Naj's Light Plate o%DOT-62%%BORDER-84% 
 //Griswald's
 ItemDisplay[SET !ID xar]:%GREEN%o Griswold's Armor o%DOT-62%%BORDER-84%  
@@ -1417,8 +1323,8 @@ ItemDisplay[DIN NMAG RES=45 ELT (SOCK=0 OR SOCK>1)]: %TAN%[%GREEN%45%WHITE%res%T
 //---CLAW GENERAL---//
 ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) CL5 ASSASSIN RARE]: %NAME%{%NAME%}%PX-46%
 
-ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK280>2 (SOCK=0 OR SOCK=3) (SK275>0 OR SK277>0 OR SK278>0 OR SK267>0 OR SK258>0 OR SK263) !RW NMAG]: %NAME%{%NAME%} %RED%T1 Phoenix Strik Claw%PX-46%
-ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK280>2 (SOCK=0 OR SOCK=3) (SK264>0 OR SK268>0 OR SK279>0) !RW NMAG]: %NAME%{%NAME%} %RED%T2 Phoenix Strik Claw%PX-46%
+ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK280>2 (SOCK=0 OR SOCK=3) (SK275>0 OR SK277>0 OR SK278>0 OR SK267>0 OR SK258>0 OR SK263) !RW NMAG]: %NAME%{%NAME%} %RED%T1 Phoenix Strike Claw%PX-46%
+ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK280>2 (SOCK=0 OR SOCK=3) (SK264>0 OR SK268>0 OR SK279>0) !RW NMAG]: %NAME%{%NAME%} %RED%T2 Phoenix Strike Claw%PX-46%
 
 ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK278>2 (SOCK=0 OR SOCK=3) (SK275>0 OR SK277>0 OR SK267>0 OR SK258>0 OR SK263) !RW NMAG]: %NAME%{%NAME%} %RED%T1 Venom Claw%PX-46%
 ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK278>2 (SOCK=0 OR SOCK=3) (SK264>0 OR SK268>0 OR SK279>0) !RW NMAG]: %NAME%{%NAME%} %RED%T2 Venom Claw%PX-46%
