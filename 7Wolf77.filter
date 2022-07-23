@@ -247,7 +247,7 @@ ItemDisplay[gpy OR gpys]:%YELLOW%* %YELLOW%P Topaz %YELLOW%*{%NAME%} %WHITE%(x %
 ItemDisplay[skz OR skzs]:%GRAY%* %GRAY%P Skull %GRAY%*{%NAME%} %WHITE%(x %QTY%)%CONTINUE%
 
 //---FLAWLESS GEM NOTIFICATION only on filter 3 or lower---//
-ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<4]: %DOT-70%%TIER-2%%NAME%%CONTINUE%
+ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<4]: %DOT-97%%TIER-2%%NAME%%CONTINUE%
 
 //Gems Notes THANKS Kyrszard
 ItemDisplay[gzvs]: %NAME%{%NAME%%ORANGE%%NL%%WHITE%Shield: +24 Defense%NL%Armor/Helm: +8 to Strength%NL%Weapon: +100 to Attack Rating}
@@ -272,7 +272,8 @@ ItemDisplay[skzs]: %NAME%{%NAME%%ORANGE%%NL%%WHITE%Shield: Atcker+20Dmg%NL%Armor
 ////////////////
 
 //Global Charms Settings
-ItemDisplay[cm2 !ID MAG FILTLVL>3]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
+ItemDisplay[cm2 !ID MAG FILTLVL<4]:%NAME%%PX-97%%CONTINUE%
+ItemDisplay[cm2 !ID MAG FILTLVL=4]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
 ItemDisplay[(cm1 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%//MAP PING FOR GC
 //ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*  %NAME%  %TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%* %BORDER-61%
 
@@ -331,7 +332,7 @@ ItemDisplay[cm1 !UNI (MFIND<7 AND MFIND>4)]:%NAME% %GREEN%MF%CONTINUE%
 ItemDisplay[cm1 !UNI FHR=5]:%NAME% %WHITE%FHR%CONTINUE%
 ItemDisplay[cm1 !UNI FRW=3]:%NAME% %WHITE%FRW%CONTINUE%
 ItemDisplay[cm1 !UNI MAXDMG>0 AR=0]:%NAME% %TAN%Max Dmg%CONTINUE%
-ItemDisplay[cm1 !UNI (LIFE>14 AND LIFE<19) !(MFIND OR MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%RED%Life %BLUE%SC
+ItemDisplay[cm1 !UNI (LIFE>14 AND LIFE<20) !(MFIND OR MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%RED%Life %BLUE%SC%CONTINUE%
 ItemDisplay[cm1 !UNI LIFE=20 !(MFIND OR MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%RED%20 Life %BLUE%SC
 ItemDisplay[cm1 !UNI MFIND=7 !(MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%GREEN%7MF %BLUE%SC
 
@@ -714,53 +715,53 @@ ItemDisplay[SET !ID amu]:%GREEN%o Amulet o%DOT-84%
 ItemDisplay[SET !ID rin FILTLVL>4]:%GREEN%o Ring o%DOT-84%%CONTINUE%
 //IK SET
 ItemDisplay[SET !ID uar]:%ORANGE%*PICK %RED%UP*  %GREEN%IK Armor   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B%
-ItemDisplay[SET !ID xhb]:%GREEN%o IK Boots o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID zhb]:%GREEN%o IK Belt o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID ba5]:%GREEN%o IK Helm o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xhg]:%GREEN%o IK Gloves o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID 7m7]:%GREEN%o IK Maul o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID xhb]:%GREEN%o IK Boots o%DOT-62%  
+ItemDisplay[SET !ID zhb]:%GREEN%o IK Belt o%DOT-62%  
+ItemDisplay[SET !ID ba5]:%GREEN%o IK Helm o%DOT-62%  
+ItemDisplay[SET !ID xhg]:%GREEN%o IK Gloves o%DOT-62%  
+ItemDisplay[SET !ID 7m7]:%GREEN%o IK Maul o%DOT-62%  
 //Tal Rasha's
 ItemDisplay[SET !ID uth]:%ORANGE%*PICK %RED%UP*  %GREEN%Tal Rasha's Armor   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B%
-ItemDisplay[SET !ID oba]:%GREEN%o Tal Rasha's Orb o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID zmb]:%GREEN%o Tal Rasha's Belt o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xsk]:%GREEN%o Tal Rasha's Mask o%DOT-62%%BORDER-84% 
+ItemDisplay[SET !ID oba]:%GREEN%o Tal Rasha's Orb o%DOT-62%  
+ItemDisplay[SET !ID zmb]:%GREEN%o Tal Rasha's Belt o%DOT-62%  
+ItemDisplay[SET !ID xsk]:%GREEN%o Tal Rasha's Mask o%DOT-62% 
 //Nats
 ItemDisplay[SET !ID 7qr]:%GREEN%o Natalya's Claw o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xmb]:%GREEN%o Natalya's Boots o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xh9]:%GREEN%o Natalya's Helm o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID ucl]:%GREEN%o Natalya's Armor o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID xmb]:%GREEN%o Natalya's Boots o%DOT-62%  
+ItemDisplay[SET !ID xh9]:%GREEN%o Natalya's Helm o%DOT-62%  
+ItemDisplay[SET !ID ucl]:%GREEN%o Natalya's Armor o%DOT-62%  
 //The Disciple
-ItemDisplay[SET !ID ulg]:%GREEN%o Laying of Hands o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xhm]:%GREEN%o Guillaume's Face o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID ulg]:%GREEN%o Laying of Hands o%DOT-62%  
+ItemDisplay[SET !ID xhm]:%GREEN%o Guillaume's Face o%DOT-62%  
 //Cow Kings
-ItemDisplay[SET !ID xap]:%GREEN%o Cow King's Horns o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID stu]:%GREEN%o Cow King's Hide o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID vbt !MAPID=39]:%GREEN%o Cow Kings Boots o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID xap]:%GREEN%o Cow King's Horns o%DOT-62%  
+ItemDisplay[SET !ID stu]:%GREEN%o Cow King's Hide o%DOT-62%  
+ItemDisplay[SET !ID vbt !MAPID=39]:%GREEN%o Cow Kings Boots o%DOT-62%  
 //Trang Oul's
-ItemDisplay[SET !ID xul]:%GREEN%o Trang Oul's Armor o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID uh9]:%GREEN%o Trang Oul's Helm o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID utc]:%GREEN%o Trang Oul's Belt o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID ne9]:%GREEN%o Trang Oul's Shield o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xmg]:%GREEN%o Trang Oul's Gloves o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID xul]:%GREEN%o Trang Oul's Armor o%DOT-62%  
+ItemDisplay[SET !ID uh9]:%GREEN%o Trang Oul's Helm o%DOT-62%  
+ItemDisplay[SET !ID utc]:%GREEN%o Trang Oul's Belt o%DOT-62%  
+ItemDisplay[SET !ID ne9]:%GREEN%o Trang Oul's Shield o%DOT-62%  
+ItemDisplay[SET !ID xmg]:%GREEN%o Trang Oul's Gloves o%DOT-62%  
 //Naj's
 ItemDisplay[SET !ID 6cs]:%ORANGE%*PICK %RED%UP*  %GREEN%Naj's Puzzler   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B% 
-ItemDisplay[SET !ID ult]:%GREEN%o Naj's Light Plate o%DOT-62%%BORDER-84% 
+ItemDisplay[SET !ID ult]:%GREEN%o Naj's Light Plate o%DOT-62% 
 //Griswald's
-ItemDisplay[SET !ID xar]:%GREEN%o Griswold's Armor o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID 7ws]:%GREEN%o Griswold's Caddy o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID urn]:%GREEN%o Griswold's Helm o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID paf]:%GREEN%o Griswold's Shield o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID xar]:%GREEN%o Griswold's Armor o%DOT-62%  
+ItemDisplay[SET !ID 7ws]:%GREEN%o Griswold's Caddy o%DOT-62%  
+ItemDisplay[SET !ID urn]:%GREEN%o Griswold's Helm o%DOT-62%  
+ItemDisplay[SET !ID paf]:%GREEN%o Griswold's Shield o%DOT-62%  
 //Aldur's
-ItemDisplay[SET !ID xtb]:%GREEN%o Aldur's Boots o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID dr8]:%GREEN%o Aldur's Helm o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID uul]:%GREEN%o Aldur's Armor o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID 9mt]:%GREEN%o Aldur's Weapon o%DOT-62%%BORDER-84%  
+ItemDisplay[SET !ID xtb]:%GREEN%o Aldur's Boots o%DOT-62%  
+ItemDisplay[SET !ID dr8]:%GREEN%o Aldur's Helm o%DOT-62%  
+ItemDisplay[SET !ID uul]:%GREEN%o Aldur's Armor o%DOT-62%  
+ItemDisplay[SET !ID 9mt]:%GREEN%o Aldur's Weapon o%DOT-62%  
 //Mavina's
-ItemDisplay[SET !ID zvb]:%GREEN%o Mavina's Belt o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID ci3]:%GREEN%o Mavina's Helm o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID amc]:%GREEN%o Mavina's Bow o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID uld]:%GREEN%o Mavina's Armor o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xtg]:%GREEN%o Mavina's Gloves o%DOT-62%%BORDER-84%
+ItemDisplay[SET !ID zvb]:%GREEN%o Mavina's Belt o%DOT-62%  
+ItemDisplay[SET !ID ci3]:%GREEN%o Mavina's Helm o%DOT-62%  
+ItemDisplay[SET !ID amc]:%GREEN%o Mavina's Bow o%DOT-62%  
+ItemDisplay[SET !ID uld]:%GREEN%o Mavina's Armor o%DOT-62%  
+ItemDisplay[SET !ID xtg]:%GREEN%o Mavina's Gloves o%DOT-62%
 
 
 ////////////////////
@@ -1362,11 +1363,12 @@ ItemDisplay[(xvg OR uvg) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%RED%B%WHITE%
 ItemDisplay[(xtb OR utb) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%RED%B%WHITE%) %NAME% {%WHITE%(%RED%B%WHITE%)%WHITE%Eth+PRuby+Jewel} //BOOTS
 ItemDisplay[(xlm OR ulm) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%RED%B%WHITE%) %NAME% {%WHITE%(%RED%B%WHITE%)%WHITE%Ral+PRuby+Jewel} //HELM
 ItemDisplay[(xlt OR ult) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%RED%B%WHITE%) %NAME% {%WHITE%(%RED%B%WHITE%)%WHITE%Thul+PRuby+Jewel} //ARMOR
-ItemDisplay[(7gm OR 7b8 OR 7bk OR 7ts OR 7gl OR 7s7) MAG !RW !CRAFT ETH FILTLVL<4]:%NAME%{%NAME%} //WEAPON
+ItemDisplay[(7b8 OR 7bk OR 7ts OR 7gl OR 7s7) MAG !RW !CRAFT ETH FILTLVL<4]:%WHITE%(%RED%B%WHITE%) %NAME% {%WHITE%(%RED%B%WHITE%)%WHITE%Ort+PRuby+Jewel}//WEAPON
+ItemDisplay[(7gm) MAG !RW !CRAFT FILTLVL<4]:%WHITE%(%RED%B%WHITE%) %NAME% {%WHITE%(%RED%B%WHITE%)%WHITE%Ort+PRuby+Jewel}//WEAPON
 
 //---CASTER CRAFTING---//
 ItemDisplay[(zvb OR uvc) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Ith+PAmy+Jewel} //BELT
-ItemDisplay[(xlg OR ulg) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Ral+PAmy+Jewel} //GLOVES
+ItemDisplay[(xlg OR ulg) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Ort+PAmy+Jewel} //GLOVES
 ItemDisplay[(xlb OR ulb) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Thul+PAmy+Jewel} //BOOTS
 ItemDisplay[(xsk OR usk) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Nef+PAmy+Jewel} //HELM
 ItemDisplay[(xtp OR utp) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Tal+PAmy+Jewel} //ARMOR
@@ -1394,12 +1396,9 @@ ItemDisplay[WEAPON !UNI MAG !RARE !CRAFT !RW !leg FILTLVL=4]:
 ItemDisplay[(MAG OR SET) !ID rin FILTLVL=4]:
 
 //---FINAL HIDE ALL---//
+ItemDisplay[(ARMOR OR WEAPON) !ID UNI !CRAFT !RW !leg FILTLVL<4]:%NAME%%DOT-0E%
 ItemDisplay[ARMOR !ID ELT UNI !CRAFT !RW !leg FILTLVL=4]:%NAME%
 ItemDisplay[WEAPON !ID ELT UNI !CRAFT !RW !leg FILTLVL=4]:
 
 ItemDisplay[ARMOR !ID !CRAFT !RW !leg FILTLVL=4]:
 ItemDisplay[WEAPON !ID !CRAFT !RW !leg FILTLVL=4]:
-
-
-
-
