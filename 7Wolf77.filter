@@ -141,10 +141,16 @@ ItemDisplay[(aqv OR cqv) RARE FILTLVL=4]:
 ///////////////
 
 //---RUNES STACKABLE---//
-ItemDisplay[r01s OR r02s OR r03s OR r04s OR r05s OR r06s OR r07s OR r08s OR r09s OR r10s OR r11s OR r12s OR r13s OR r14s OR r15s OR r16s OR r17s OR r18s OR r19s]:%NAME% %TAN%x %WHITE%%QTY%%CONTINUE%
-ItemDisplay[r20s OR r21s OR r22s OR r23s]: %RED%OOOO %ORANGE%%NAME% %RED%OOOO %TAN%x %WHITE%%QTY%%BORDER-50%%CONTINUE%
-ItemDisplay[r24s OR r25s OR r26s OR r27s]: %RED%OOOOO %ORANGE%%NAME% %RED%OOOOO %TAN%x %WHITE%%QTY%%BORDER-62%%CONTINUE%
-ItemDisplay[r28s OR r29s OR r30s OR r31s OR r32s OR r33s]:%PURPLE%OOOOOO %ORANGE%%NAME% %PURPLE%OOOOOO %TAN%x %WHITE%%QTY%%BORDER-9B%%CONTINUE%
+//ItemDisplay[r01s OR r02s OR r03s OR r04s OR r05s OR r06s OR r07s OR r08s OR r09s OR r10s OR r11s OR r12s OR r13s OR r14s OR r15s OR r16s OR r17s OR r18s OR r19s]:%NAME% %TAN%x %WHITE%%QTY%%CONTINUE%
+//ItemDisplay[r20s OR r21s OR r22s OR r23s]: %RED%OOOO %ORANGE%%NAME% %RED%OOOO %TAN%x %WHITE%%QTY%%BORDER-50%%CONTINUE%
+//ItemDisplay[r24s OR r25s OR r26s OR r27s]: %RED%OOOOO %ORANGE%%NAME% %RED%OOOOO %TAN%x %WHITE%%QTY%%BORDER-62%%CONTINUE%
+//ItemDisplay[r28s OR r29s OR r30s OR r31s OR r32s OR r33s]:%PURPLE%OOOOOO %ORANGE%%NAME% %PURPLE%OOOOOO %TAN%x %WHITE%%QTY%%BORDER-9B%%CONTINUE%
+//---RUNES---//
+ItemDisplay[RUNE<20]:%NAME%%WHITE%[%RUNENUM%] %TAN%x %WHITE%%QTY%%CONTINUE%
+ItemDisplay[RUNE>19 RUNE<24]: %RED%OOOO %ORANGE%%NAME%%WHITE%[%RUNENUM%] %RED%OOOO %TAN%x %WHITE%%QTY%%BORDER-50%%CONTINUE%
+ItemDisplay[RUNE>23 RUNE<28]: %RED%OOOOO %ORANGE%%NAME%%WHITE%[%RUNENUM%] %RED%OOOOO %TAN%x %WHITE%%QTY%%BORDER-62%%CONTINUE%
+ItemDisplay[RUNE>27]:%PURPLE%OOOOOO %ORANGE%%NAME%%WHITE%[%RUNENUM%] %PURPLE%OOOOOO %TAN%x %WHITE%%QTY%%BORDER-9B%%CONTINUE%
+
 
 //---RUNE INFO---//THANKS Kyrszard!
 ItemDisplay[(r01 OR r01s)]: %NAME%{%NAME%%TAN%Note%WHITE%: 3x %ORANGE%El %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Eld %GRAY%[%TAN%2%GRAY%]%NL%}%CONTINUE%
@@ -380,7 +386,9 @@ ItemDisplay[bet OR ceh OR fed OR tes]:%RED%*%BLUE%*%TAN%* %ORANGE%%NAME% %TAN%*%
 ItemDisplay[toa]:%RED%*%BLUE%*%TAN%* %ORANGE%%NAME% %TAN%*%BLUE%*%RED%* %WHITE%(x %QTY%)%MAP-97%{%TAN%Respec Token}
 
 //---UBER ANCIENTS---//
-ItemDisplay[ubaa OR ubab OR ubac]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %WHITE%(x %QTY%) %MAP-60%
+ItemDisplay[ubaa]:%RED%*%YELLOW%* %ORANGE%%NAME%{Uber Ancients ingredient, from T1 maps} %YELLOW%*%RED%* %WHITE%(x %QTY%) %MAP-60%
+ItemDisplay[ubab]:%RED%*%YELLOW%* %ORANGE%%NAME%{Uber Ancients ingredient, from T2 maps} %YELLOW%*%RED%* %WHITE%(x %QTY%) %MAP-60%
+ItemDisplay[ubac]:%RED%*%YELLOW%* %ORANGE%%NAME%{Uber Ancients ingredient, from T3 maps} %YELLOW%*%RED%* %WHITE%(x %QTY%) %MAP-60%
 ItemDisplay[uba]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %MAP-60%
 
 //---WSS---//
@@ -407,8 +415,6 @@ ItemDisplay[std]:%RED%*%BLUE%*%TAN%* %ORANGE%%NAME% %TAN%*%BLUE%*%RED%* %WHITE%(
 ItemDisplay[UNI !ID jew]:%RED%*%YELLOW%*%GREEN%*%BLUE%*%PURPLE%R%RED%a%YELLOW%i%GREEN%n%BLUE%b%PURPLE%o%RED%w %GOLD%Facet %RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-0C%%BORDER-4B%
 ItemDisplay[UNI !ID (rin OR amu)]:%RED%***PICK %PURPLE%UP  %NAME%  %PURPLE%PICK %RED%UP***%BORDER-4B%%CONTINUE%
 ItemDisplay[UNI !ID ram]:%RED%o %PURPLE%The Third Eye %RED%o%BORDER-A5%%DOT-62%
-
-//ItemDisplay[UNI !ID baf]:%PURPLE%* %GOLD%Raekor's Virtue %PURPLE%* %BORDER-A5%%DOT-62%
 
 //---Helms---//
 //---LOW TIER---//
@@ -715,52 +721,52 @@ ItemDisplay[SET !ID amu]:%GREEN%o Amulet o%DOT-84%
 ItemDisplay[SET !ID rin FILTLVL>4]:%GREEN%o Ring o%DOT-84%%CONTINUE%
 //IK SET
 ItemDisplay[SET !ID uar]:%ORANGE%*PICK %RED%UP*  %GREEN%IK Armor   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B%
-ItemDisplay[SET !ID xhb]:%GREEN%o IK Boots o%DOT-62%  
-ItemDisplay[SET !ID zhb]:%GREEN%o IK Belt o%DOT-62%  
-ItemDisplay[SET !ID ba5]:%GREEN%o IK Helm o%DOT-62%  
-ItemDisplay[SET !ID xhg]:%GREEN%o IK Gloves o%DOT-62%  
-ItemDisplay[SET !ID 7m7]:%GREEN%o IK Maul o%DOT-62%  
+ItemDisplay[SET !ID xhb]:%GREEN%o IK Boots o 
+ItemDisplay[SET !ID zhb]:%GREEN%o IK Belt o 
+ItemDisplay[SET !ID ba5]:%GREEN%o IK Helm o 
+ItemDisplay[SET !ID xhg]:%GREEN%o IK Gloves o 
+ItemDisplay[SET !ID 7m7]:%GREEN%o IK Maul o 
 //Tal Rasha's
 ItemDisplay[SET !ID uth]:%ORANGE%*PICK %RED%UP*  %GREEN%Tal Rasha's Armor   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B%
-ItemDisplay[SET !ID oba]:%GREEN%o Tal Rasha's Orb o%DOT-62%  
-ItemDisplay[SET !ID zmb]:%GREEN%o Tal Rasha's Belt o%DOT-62%  
-ItemDisplay[SET !ID xsk]:%GREEN%o Tal Rasha's Mask o%DOT-62% 
+ItemDisplay[SET !ID oba]:%GREEN%o Tal Rasha's Orb o 
+ItemDisplay[SET !ID zmb]:%GREEN%o Tal Rasha's Belt o 
+ItemDisplay[SET !ID xsk]:%GREEN%o Tal Rasha's Mask o
 //Nats
 ItemDisplay[SET !ID 7qr]:%GREEN%o Natalya's Claw o%DOT-62%%BORDER-84%  
-ItemDisplay[SET !ID xmb]:%GREEN%o Natalya's Boots o%DOT-62%  
-ItemDisplay[SET !ID xh9]:%GREEN%o Natalya's Helm o%DOT-62%  
-ItemDisplay[SET !ID ucl]:%GREEN%o Natalya's Armor o%DOT-62%  
+ItemDisplay[SET !ID xmb]:%GREEN%o Natalya's Boots o 
+ItemDisplay[SET !ID xh9]:%GREEN%o Natalya's Helm o 
+ItemDisplay[SET !ID ucl]:%GREEN%o Natalya's Armor o 
 //The Disciple
-ItemDisplay[SET !ID ulg]:%GREEN%o Laying of Hands o%DOT-62%  
-ItemDisplay[SET !ID xhm]:%GREEN%o Guillaume's Face o%DOT-62%  
+ItemDisplay[SET !ID ulg]:%GREEN%o Laying of Hands o 
+ItemDisplay[SET !ID xhm]:%GREEN%o Guillaume's Face o 
 //Cow Kings
-ItemDisplay[SET !ID xap]:%GREEN%o Cow King's Horns o%DOT-62%  
-ItemDisplay[SET !ID stu]:%GREEN%o Cow King's Hide o%DOT-62%  
-ItemDisplay[SET !ID vbt !MAPID=39]:%GREEN%o Cow Kings Boots o%DOT-62%  
+ItemDisplay[SET !ID xap]:%GREEN%o Cow King's Horns o 
+ItemDisplay[SET !ID stu]:%GREEN%o Cow King's Hide o 
+ItemDisplay[SET !ID vbt !MAPID=39]:%GREEN%o Cow Kings Boots o 
 //Trang Oul's
-ItemDisplay[SET !ID xul]:%GREEN%o Trang Oul's Armor o%DOT-62%  
-ItemDisplay[SET !ID uh9]:%GREEN%o Trang Oul's Helm o%DOT-62%  
-ItemDisplay[SET !ID utc]:%GREEN%o Trang Oul's Belt o%DOT-62%  
-ItemDisplay[SET !ID ne9]:%GREEN%o Trang Oul's Shield o%DOT-62%  
-ItemDisplay[SET !ID xmg]:%GREEN%o Trang Oul's Gloves o%DOT-62%  
+ItemDisplay[SET !ID xul]:%GREEN%o Trang Oul's Armor o 
+ItemDisplay[SET !ID uh9]:%GREEN%o Trang Oul's Helm o 
+ItemDisplay[SET !ID utc]:%GREEN%o Trang Oul's Belt o 
+ItemDisplay[SET !ID ne9]:%GREEN%o Trang Oul's Shield o 
+ItemDisplay[SET !ID xmg]:%GREEN%o Trang Oul's Gloves o 
 //Naj's
 ItemDisplay[SET !ID 6cs]:%ORANGE%*PICK %RED%UP*  %GREEN%Naj's Puzzler   %RED%*PICK %ORANGE%UP*%DOT-84%%BORDER-4B% 
-ItemDisplay[SET !ID ult]:%GREEN%o Naj's Light Plate o%DOT-62% 
+ItemDisplay[SET !ID ult]:%GREEN%o Naj's Light Plate o
 //Griswald's
-ItemDisplay[SET !ID xar]:%GREEN%o Griswold's Armor o%DOT-62%  
-ItemDisplay[SET !ID 7ws]:%GREEN%o Griswold's Caddy o%DOT-62%  
-ItemDisplay[SET !ID urn]:%GREEN%o Griswold's Helm o%DOT-62%  
-ItemDisplay[SET !ID paf]:%GREEN%o Griswold's Shield o%DOT-62%  
+ItemDisplay[SET !ID xar]:%GREEN%o Griswold's Armor o 
+ItemDisplay[SET !ID 7ws]:%GREEN%o Griswold's Caddy o 
+ItemDisplay[SET !ID urn]:%GREEN%o Griswold's Helm o 
+ItemDisplay[SET !ID paf]:%GREEN%o Griswold's Shield o 
 //Aldur's
-ItemDisplay[SET !ID xtb]:%GREEN%o Aldur's Boots o%DOT-62%  
-ItemDisplay[SET !ID dr8]:%GREEN%o Aldur's Helm o%DOT-62%  
-ItemDisplay[SET !ID uul]:%GREEN%o Aldur's Armor o%DOT-62%  
-ItemDisplay[SET !ID 9mt]:%GREEN%o Aldur's Weapon o%DOT-62%  
+ItemDisplay[SET !ID xtb]:%GREEN%o Aldur's Boots o 
+ItemDisplay[SET !ID dr8]:%GREEN%o Aldur's Helm o 
+ItemDisplay[SET !ID uul]:%GREEN%o Aldur's Armor o 
+ItemDisplay[SET !ID 9mt]:%GREEN%o Aldur's Weapon o 
 //Mavina's
-ItemDisplay[SET !ID zvb]:%GREEN%o Mavina's Belt o%DOT-62%  
-ItemDisplay[SET !ID ci3]:%GREEN%o Mavina's Helm o%DOT-62%  
-ItemDisplay[SET !ID amc]:%GREEN%o Mavina's Bow o%DOT-62%  
-ItemDisplay[SET !ID uld]:%GREEN%o Mavina's Armor o%DOT-62%  
+ItemDisplay[SET !ID zvb]:%GREEN%o Mavina's Belt o 
+ItemDisplay[SET !ID ci3]:%GREEN%o Mavina's Helm o 
+ItemDisplay[SET !ID amc]:%GREEN%o Mavina's Bow o 
+ItemDisplay[SET !ID uld]:%GREEN%o Mavina's Armor o 
 ItemDisplay[SET !ID xtg]:%GREEN%o Mavina's Gloves o%DOT-62%
 
 
@@ -1402,3 +1408,7 @@ ItemDisplay[WEAPON !ID ELT UNI !CRAFT !RW !leg FILTLVL=4]:
 
 ItemDisplay[ARMOR !ID !CRAFT !RW !leg FILTLVL=4]:
 ItemDisplay[WEAPON !ID !CRAFT !RW !leg FILTLVL=4]:
+
+
+
+
