@@ -77,7 +77,7 @@ ItemDisplay[bks]:*%NAME%* // Scroll of Inifuss
 ItemDisplay[bkd]:*%NAME%* // Scroll of Inifuss, deciphered
 ItemDisplay[leg]:*%NAME%* // Wirt's Leg
 ItemDisplay[ass]:%GOLD%*Book of Skill*{%TAN%Right click to add +1 skill pt}%MAP-00% // Book of Skill
-ItemDisplay[tr1]:                 // Horadric Scroll
+ItemDisplay[tr1]:*%NAME%* // Horadric Scroll
 ItemDisplay[box]:*%NAME%* // Horadric Cube
 ItemDisplay[hst]:*%NAME%* // Horadric Staff
 ItemDisplay[msf]:*%NAME%* // Staff of Kings
@@ -94,7 +94,7 @@ ItemDisplay[mss]:*%NAME%* // Mephisto's Soulstone
 ItemDisplay[xyz]:%GOLD%*Potion of Life*{%TAN%Right click to add +20 to life}
 ItemDisplay[g34]:*%NAME%* // The Golden Bird
 ItemDisplay[hfh]:*%NAME%*%MAP-00% // Hellforge Hammer
-ItemDisplay[ice]:%GOLD%*Malah's Potion*{%TAN%Touch Anya to thaw}
+ItemDisplay[ice]:%GOLD%*Malah's Potion*{%TAN%Give Anya to thaw}
 ItemDisplay[tr2]:%GOLD%*Scroll of Resistance*{%TAN%Right click to increase all resistance by +10%}
 
 ////////////////////////////////
@@ -124,9 +124,9 @@ ItemDisplay[vps]: %GREEN%!%WHITE%stamina%CONTINUE%
 ItemDisplay[wms]: %GREEN%!%WHITE%thaw%CONTINUE%
 ItemDisplay[yps FILTLVL<4]: %GREEN%!%WHITE%ant %CONTINUE%
 ItemDisplay[yps FILTLVL=4]:{%NAME%}
-ItemDisplay[(tsc OR isc OR vps OR wms) (CLVL>30 OR FILTLVL>2)]: {%NAME%}
-ItemDisplay[key]: %GRAY%key{%WHITE%Key} %CONTINUE%
-ItemDisplay[key (ASSASSIN OR CLVL>30 OR FILTLVL>2)]:{%NAME%}
+ItemDisplay[(tsc OR isc OR vps OR wms) (CLVL>30 OR DIFF>0 OR FILTLVL>2)]: {%NAME%}
+ItemDisplay[key (CLVL>30 OR DIFF>0 OR FILTLVL>2)]: %GRAY%key{%WHITE%Key} %TAN%x %WHITE%%QTY% %CONTINUE%
+//ItemDisplay[key (CLVL>30 OR DIFF>0 OR FILTLVL>2)]:{%NAME%}
 
 //---Choking, Exploding, Fulminating, Oil, Rancid, Strangling---//
 ItemDisplay[(CLVL>20 OR FILTLVL>2) (gpm OR opl OR ops OR gps OR gpl OR opm)]:
@@ -134,7 +134,7 @@ ItemDisplay[(CLVL>20 OR FILTLVL>2) (gpm OR opl OR ops OR gps OR gpl OR opm)]:
 //---Arrows & Bolts---//
 ItemDisplay[(aqv OR cqv) NMAG (CLVL>10)]:
 ItemDisplay[(cqv OR aqv) MAG !ID (CLVL>30 OR FILTLVL>2)]:
-ItemDisplay[(aqv OR cqv) RARE FILTLVL=4]: 
+ItemDisplay[(aqv OR cqv) !AMAZON RARE FILTLVL=4]: 
 
 ///////////////
 //---Runes---//
@@ -252,8 +252,8 @@ ItemDisplay[gpb OR gpbs]:%BLUE%* %BLUE%P Sapphire %BLUE%*{%NAME%} %WHITE%(x %QTY
 ItemDisplay[gpy OR gpys]:%YELLOW%* %YELLOW%P Topaz %YELLOW%*{%NAME%} %WHITE%(x %QTY%)%CONTINUE%
 ItemDisplay[skz OR skzs]:%GRAY%* %GRAY%P Skull %GRAY%*{%NAME%} %WHITE%(x %QTY%)%CONTINUE%
 
-//---FLAWLESS GEM NOTIFICATION only on filter 3 or lower---//
-ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<4]: %DOT-97%%TIER-2%%NAME%%CONTINUE%
+//---FLAWLESS GEM NOTIFICATION only on filter 2 or lower---//
+ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<3]: %DOT-97%%TIER-2%%NAME%%CONTINUE%
 
 //Gems Notes THANKS Kyrszard
 ItemDisplay[gzvs]: %NAME%{%NAME%%ORANGE%%NL%%WHITE%Shield: +24 Defense%NL%Armor/Helm: +8 to Strength%NL%Weapon: +100 to Attack Rating}
@@ -278,49 +278,53 @@ ItemDisplay[skzs]: %NAME%{%NAME%%ORANGE%%NL%%WHITE%Shield: Atcker+20Dmg%NL%Armor
 ////////////////
 
 //Global Charms Settings
-ItemDisplay[cm2 !ID MAG FILTLVL<4]:%NAME%%PX-97%%CONTINUE%
-ItemDisplay[cm2 !ID MAG FILTLVL=4]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
-ItemDisplay[(cm1 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%//MAP PING FOR GC
-//ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*  %NAME%  %TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%* %BORDER-61%
+//ItemDisplay[cm2 !ID MAG FILTLVL=4]:   //HIDES ALL MAGIC LARGE CHARMS ON END GAME FILTER
+ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%* %DOT-97%
 
-//--UNIQUE ANNI/TORCH/GHEEDS---//
-ItemDisplay[UNI ID cm1]:%GOLD%Annihilus%CONTINUE%
-ItemDisplay[UNI ID cm2]:%GOLD%Hellfire Torch%CONTINUE%
-ItemDisplay[UNI ID cm3]:%GOLD%Gheed's Fortune%CONTINUE%
-ItemDisplay[UNI ID (cm1 OR cm2 OR cm3)]:%BORDER-61%%PURPLE%* * * * %NAME% %PURPLE%* * * *
-ItemDisplay[UNI !ID (cm1 OR cm2 OR cm3)]:%BORDER-61%%PURPLE%* * * * %NAME% %PURPLE%* * * *
+//--UNIQUE ANNI/GHEEDS---//
+ItemDisplay[UNI !ID (cm1 OR cm2 OR cm3)]:%BORDER-61%%PURPLE%* * * %NAME% %PURPLE%* * *
+ItemDisplay[UNI ID cm1]:%BORDER-61%%PURPLE%* * * %RED%Annihilus %PURPLE%* * *
+ItemDisplay[UNI ID cm3]:%BORDER-61%%PURPLE%* * * %GOLD%Gheed's Fortune %PURPLE%* * *
 
-//ItemDisplay[UNI (cm1 OR cm2 OR cm3)]:%TAN%*%RED%PICK%TAN%*%PURPLE%UP%TAN%*%NAME%%TAN%*%PURPLE%PICK%TAN%*%RED%UP%TAN%*%BORDER-61%
+//--CLASS TORCH SHOWN--//
+ItemDisplay[cm2 CLSK0>1]:%BORDER-61%%PURPLE%* %WHITE%Amazon %TAN%Torch %PURPLE%*
+ItemDisplay[cm2 CLSK1>1]:%BORDER-61%%PURPLE%* %WHITE%Sorceress %TAN%Torch %PURPLE%*
+ItemDisplay[cm2 CLSK2>1]:%BORDER-61%%PURPLE%* %WHITE%Necromancer %TAN%Torch %PURPLE%*
+ItemDisplay[cm2 CLSK3>1]:%BORDER-61%%PURPLE%* %WHITE%Paladin %TAN%Torch %PURPLE%*
+ItemDisplay[cm2 CLSK4>1]:%BORDER-61%%PURPLE%* %WHITE%Barbarian %TAN%Torch %PURPLE%*
+ItemDisplay[cm2 CLSK5>1]:%BORDER-61%%PURPLE%* %WHITE%Druid %TAN%Torch %PURPLE%*
+ItemDisplay[cm2 CLSK6>1]:%BORDER-61%%PURPLE%* %WHITE%Assassin %TAN%Torch %PURPLE%*
+
 
 //---SKILLERS---//
 //---GRAND CHARM TAGS---//
+ItemDisplay[cm3 !UNI TABSK0=1]: %PURPLE%Bow and Crossbow %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK2=1]: %PURPLE%Javelin and Spear %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK1=1]: %PURPLE%Passive and Magic %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK8=1]: %PURPLE%Fire %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK9=1]: %PURPLE%Lightning %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK10=1]: %PURPLE%Cold %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK16=1]: %PURPLE%Curses %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK17=1]: %PURPLE%Poison & Bone %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK18=1]: %GRAY%Nec %PURPLE%Summoning %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK24=1]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK25=1]: %PURPLE%Offensive Auras %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK26=1]: %PURPLE%Defensive Auras %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK32=1]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK33=1]: %GRAY%Barb %PURPLE%Masteries %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK34=1]: %PURPLE%Warcries %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK40=1]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK41=1]: %PURPLE%Shape Shifting %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK42=1]: %PURPLE%Elemental %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK48=1]: %PURPLE%Traps %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK49=1]: %PURPLE%Shadow Disciplines %TAN%Skiller%BLUE%%CONTINUE%
+ItemDisplay[cm3 !UNI TABSK50=1]: %PURPLE%Martial Arts %TAN%Skiller%BLUE%%CONTINUE%
+
 ItemDisplay[cm3 !UNI RES>1]:%RED%A%GREEN%L%BLUE%L %WHITE%R%YELLOW%E%PURPLE%S %BLUE%GC%CONTINUE%
 ItemDisplay[cm3 !UNI MAXDMG>7]:%TAN%Max Dmg %BLUE%GC%CONTINUE%
 ItemDisplay[cm3 !UNI LIFE>34]:%NAME% %RED%Life%CONTINUE%
 ItemDisplay[cm3 !UNI FHR=12]:%NAME% %WHITE%FHR%CONTINUE%
 ItemDisplay[cm3 !UNI FRW=7]:%NAME% %WHITE%FRW%CONTINUE%
-
-ItemDisplay[cm3 !UNI TABSK0=1]: %PURPLE%Bow and Crossbow %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK2=1]: %PURPLE%Javelin and Spear %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK1=1]: %PURPLE%Passive and Magic %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK8=1]: %PURPLE%Fire Spells %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK9=1]: %PURPLE%Lightning Spells %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK10=1]: %PURPLE%Cold Spells %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK16=1]: %PURPLE%Curses %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK17=1]: %PURPLE%Poison & Bone Spells %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK18=1]: %GRAY%Nec %PURPLE%Summoning Spells %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK24=1]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK25=1]: %PURPLE%Offensive Auras %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK26=1]: %PURPLE%Defensive Auras %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK32=1]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK33=1]: %GRAY%Barb %PURPLE%Masteries %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK34=1]: %PURPLE%Warcries %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK40=1]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK41=1]: %PURPLE%Shape Shifting %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK42=1]: %PURPLE%Elemental %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK48=1]: %PURPLE%Traps %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK49=1]: %PURPLE%Shadow Disciplines %TAN%Skiller%BLUE%
-ItemDisplay[cm3 !UNI TABSK50=1]: %PURPLE%Martial Arts %TAN%Skiller%BLUE%
 
 //---SMALL CHARMS---//
 //PREFIXES
@@ -329,18 +333,38 @@ ItemDisplay[cm1 !UNI FRES>8]:%RED%Fire %WHITE%Res %BLUE%SC%CONTINUE%
 ItemDisplay[cm1 !UNI CRES>8]:%BLUE%Cold %WHITE%Res %BLUE%SC%CONTINUE%
 ItemDisplay[cm1 !UNI LRES>8]:%YELLOW%Light %WHITE%Res %BLUE%SC%CONTINUE%
 ItemDisplay[cm1 !UNI PRES>8]:%GREEN%Psn %WHITE%Res %BLUE%SC%CONTINUE%
-ItemDisplay[cm1 !UNI MAXDMG>1]:%TAN%Max Dmg %BLUE%SC%CONTINUE%
+ItemDisplay[cm1 !UNI MAXDMG=3]:%TAN%Max Dmg %BLUE%SC%CONTINUE%
 //SUFFIXS
-ItemDisplay[cm1 !UNI (LIFE>14 AND LIFE<19)]:%NAME% %RED%Life%CONTINUE%
+ItemDisplay[cm1 !UNI (LIFE>14 AND LIFE<20)]:%NAME% %RED%Life%CONTINUE%
 ItemDisplay[cm1 !UNI LIFE=20]:%NAME% %RED%20Life%CONTINUE%
 ItemDisplay[cm1 !UNI MFIND=7]:%NAME% %GREEN%7MF%CONTINUE%
 ItemDisplay[cm1 !UNI (MFIND<7 AND MFIND>4)]:%NAME% %GREEN%MF%CONTINUE%
 ItemDisplay[cm1 !UNI FHR=5]:%NAME% %WHITE%FHR%CONTINUE%
 ItemDisplay[cm1 !UNI FRW=3]:%NAME% %WHITE%FRW%CONTINUE%
 ItemDisplay[cm1 !UNI MAXDMG>0 AR=0]:%NAME% %TAN%Max Dmg%CONTINUE%
-ItemDisplay[cm1 !UNI (LIFE>14 AND LIFE<20) !(MFIND OR MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%RED%Life %BLUE%SC%CONTINUE%
-ItemDisplay[cm1 !UNI LIFE=20 !(MFIND OR MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%RED%20 Life %BLUE%SC
-ItemDisplay[cm1 !UNI MFIND=7 !(MAXDMG OR RES OR FRES OR CRES OR LRES OR PRES)]:%GREEN%7MF %BLUE%SC
+ItemDisplay[cm1 !UNI (LIFE>14 AND LIFE<20) !(MAXDMG=3 OR RES OR FRES>8 OR CRES>8 OR LRES>8 OR PRES>8)]:%RED%Life %BLUE%SC
+ItemDisplay[cm1 !UNI LIFE=20 !(MAXDMG=3 OR RES OR FRES>8 OR CRES>8 OR LRES>8 OR PRES>8)]:%RED%20 Life %BLUE%SC
+ItemDisplay[cm1 !UNI MFIND=7 !(MAXDMG=3 OR RES OR FRES>8 OR CRES>8 OR LRES>8 OR PRES>8)]:%GREEN%7MF %BLUE%SC
+ItemDisplay[cm1 !UNI (MFIND<7 AND MFIND>4) !(MAXDMG=3 OR RES OR FRES>8 OR CRES>8 OR LRES>8 OR PRES>8)]:%GREEN%MF %BLUE%SC
+
+//---LARGE CHARMS---//
+//PREFIXES
+ItemDisplay[cm2 !UNI RES>0]:%RED%A%GREEN%L%BLUE%L %WHITE%R%YELLOW%E%PURPLE%S %BLUE%LC%CONTINUE%
+ItemDisplay[cm2 !UNI FRES>10]:%RED%Fire %WHITE%Res %BLUE%LC%CONTINUE%
+ItemDisplay[cm2 !UNI CRES>10]:%BLUE%Cold %WHITE%Res %BLUE%LC%CONTINUE%
+ItemDisplay[cm2 !UNI LRES>10]:%YELLOW%Light %WHITE%Res %BLUE%LC%CONTINUE%
+ItemDisplay[cm2 !UNI PRES>10]:%GREEN%Psn %WHITE%Res %BLUE%LC%CONTINUE%
+ItemDisplay[cm2 !UNI MAXDMG>4]:%TAN%Max Dmg %BLUE%LC%CONTINUE%
+//SUFFIXS
+ItemDisplay[cm2 !UNI (LIFE>29 AND LIFE<35)]:%NAME% %RED%Life%CONTINUE%
+ItemDisplay[cm2 !UNI LIFE=35]:%NAME% %RED%35Life%CONTINUE%
+ItemDisplay[cm2 !UNI MFIND=6]:%NAME% %GREEN%6MF%CONTINUE%
+ItemDisplay[cm2 !UNI (MFIND<6 AND MFIND>4)]:%NAME% %GREEN%MF%CONTINUE%
+ItemDisplay[cm2 !UNI FHR]:%NAME% %WHITE%FHR%CONTINUE%
+ItemDisplay[cm2 !UNI FRW]:%NAME% %WHITE%FRW%CONTINUE%
+ItemDisplay[cm2 !UNI MAXDMG>2 AR=0]:%NAME% %TAN%Max Dmg%CONTINUE%
+ItemDisplay[cm2 !UNI (LIFE>29 AND LIFE<35) !(MFIND>4 OR MAXDMG>4 OR RES OR FRES OR CRES OR LRES OR PRES)]:%RED%Life %BLUE%LC
+ItemDisplay[cm2 !UNI LIFE=35 !(MFIND=6 OR MAXDMG>4 OR RES OR FRES>10 OR CRES>10 OR LRES>10 OR PRES>10)]:%RED%35 Life %BLUE%LC
 
 /////////////////////
 //---Magic Items---//
@@ -1357,7 +1381,37 @@ ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK257>2 (SOCK
 ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
 //---MAGIC AMULET +3 SKILLS---//
-ItemDisplay[amu ID !CRAFT !RARE !UNI (TABSK0=3 OR TABSK2=3 OR TABSK2=3 OR TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=3 OR TABSK17=3 OR TABSK18=3 OR TABSK34=3 OR TABSK34=3 OR TABSK40=3 OR TABSK42=3 OR TABSK48=3)]:%NAME%{%NAME%}%RED%+3 Skill Ammy
+//ItemDisplay[amu ID !CRAFT !RARE !UNI (TABSK0=3 OR TABSK2=3 OR TABSK2=3 OR TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=3 OR TABSK17=3 OR TABSK18=3 OR TABSK34=3 OR TABSK34=3 OR TABSK40=3 OR TABSK42=3 OR TABSK48=3)]:%NAME%{%NAME%}%RED%+3 Skill Ammy
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK0=3]:%TAN%+3 Bow/Crossbow Skills Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK1=3]:%TAN%+3 Passive/Magic Skills Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK2=3]:%TAN%+3 Javelin/Spear Skills Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK8=3]:%TAN%+3 Fire Spells Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK9=3]:%TAN%+3 Lightning Spells Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK10=3]:%TAN%+3 Cold Spells Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK16=3]:%TAN%+3 Curses Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK17=3]:%TAN%+3 PnB Spells Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK18=3]:%TAN%+3 Necro Summ Spells Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK24=3]:%TAN%+3 Pal Combat Skills Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK25=3]:%TAN%+3 Off Auras Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK26=3]:%TAN%+3 Def Auras Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK32=3]:%TAN%+3 Barb Combat Skills Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK33=3]:%TAN%+3 Masteries Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK34=3]:%TAN%+3 Warcries Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK40=3]:%TAN%+3 Druid Summ Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK41=3]:%TAN%+3 Shape Shifting Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK42=3]:%TAN%+3 Elemental Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK48=3]:%TAN%+3 Traps Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK49=3]:%TAN%+3 Shadow Discp Amulet%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI TABSK50=3]:%TAN%+3 Martial Arts Amulet%CONTINUE%
+
+ItemDisplay[amu ID !CRAFT !RARE !UNI FCR=10]:%NAME% %GREEN%FCR%CONTINUE%
+ItemDisplay[amu ID !CRAFT !RARE !UNI ALLSK=1]:%NAME% %RED%+1 Skills%CONTINUE%
 
 //---AMULET AND RING CRAFTING---//
 ItemDisplay[rin ID !CRAFT !RARE !UNI]:%NAME%{%RED%(B)%WHITE%Sol+PRuby+Jewel%NL%%TAN%Crafting: %BLUE%(C)%WHITE%Amn+PAmy+Jewel}%CONTINUE%
@@ -1408,7 +1462,3 @@ ItemDisplay[WEAPON !ID ELT UNI !CRAFT !RW !leg FILTLVL=4]:
 
 ItemDisplay[ARMOR !ID !CRAFT !RW !leg FILTLVL=4]:
 ItemDisplay[WEAPON !ID !CRAFT !RW !leg FILTLVL=4]:
-
-
-
-
