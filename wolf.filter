@@ -77,7 +77,7 @@ ItemDisplay[bks]:*%NAME%* // Scroll of Inifuss
 ItemDisplay[bkd]:*%NAME%* // Scroll of Inifuss, deciphered
 ItemDisplay[leg]:*%NAME%* // Wirt's Leg
 ItemDisplay[ass]:%GOLD%*Book of Skill*{%TAN%Right click to add +1 skill pt}%MAP-00% // Book of Skill
-ItemDisplay[tr1]:*%NAME%* // Horadric Scroll
+ItemDisplay[tr1]:		  // Horadric Scroll
 ItemDisplay[box]:*%NAME%* // Horadric Cube
 ItemDisplay[hst]:*%NAME%* // Horadric Staff
 ItemDisplay[msf]:*%NAME%* // Staff of Kings
@@ -125,8 +125,8 @@ ItemDisplay[wms]: %GREEN%!%WHITE%thaw%CONTINUE%
 ItemDisplay[yps FILTLVL<4]: %GREEN%!%WHITE%ant %CONTINUE%
 ItemDisplay[yps FILTLVL=4]:{%NAME%}
 ItemDisplay[(tsc OR isc OR vps OR wms) (CLVL>30 OR DIFF>0 OR FILTLVL>2)]: {%NAME%}
-ItemDisplay[key (CLVL>30 OR DIFF>0 OR FILTLVL>2)]: %GRAY%key{%WHITE%Key} %TAN%x %WHITE%%QTY% %CONTINUE%
-//ItemDisplay[key (CLVL>30 OR DIFF>0 OR FILTLVL>2)]:{%NAME%}
+ItemDisplay[key (CLVL<30 OR DIFF<3 OR FILTLVL<3)]: %GRAY%key{%WHITE%Key} %TAN%x %WHITE%%QTY% %CONTINUE%
+ItemDisplay[key FILTLVL>2]:{%NAME%}
 
 //---Choking, Exploding, Fulminating, Oil, Rancid, Strangling---//
 ItemDisplay[(CLVL>20 OR FILTLVL>2) (gpm OR opl OR ops OR gps OR gpl OR opm)]:
@@ -816,7 +816,7 @@ ItemDisplay[(SK262=3 OR SK276=3 OR SK271=3 OR SK366=3) MAG TABSK48>1]: %NAME% %R
 
 //---Barb Helm/WC Jav---//
 ItemDisplay[MAG CLSK4=2 (SK149=3 OR SK154=3)]: %NAME% %RED%(Warcries Helm)
-ItemDisplay[MAG TABSK34=3 WEAPON]: %GREEN%OoO %PURPLE%+3 Warcries Jav %GREEN%OoO //+3 Warcries weapon
+ItemDisplay[MAG TABSK34=3 WEAPON]:%GREEN%OoO %PURPLE%+3 Warcries Jav %GREEN%OoO //+3 Warcries weapon
 
 //---2/3 20IAS Gloves---//
 ItemDisplay[(MAG OR RARE) (TABSK0=3 OR TABSK1=3 OR TABSK2=3 OR TABSK50=3) IAS=20 GLOVES]: %RED%(3 Skill 20 IAS)%WHITE%Gloves // 3 SKILL 20 IAS 
@@ -829,7 +829,7 @@ ItemDisplay[MAG (CHSK54>0 OR CHSK357>0) STAFF]: %NAME% %GREEN%(Tele Staff)
 ItemDisplay[MAG (CHSK66>0 OR CHSK87>0 OR CHSK82>0 OR CHSK91>0) WAND]: %NAME% %RED%(Curse Wand)
 
 //---Charsi Imbue CIRC---//
-ItemDisplay[NMAG CIRC !ETH FILTLVL<4]:%NAME% {%GREEN%Imbue at Charsi}
+ItemDisplay[NMAG CIRC !RW !ETH FILTLVL<4]:%NAME% {%GREEN%Imbue at Charsi}
 
 //////////////
 //---Maps---// Thanks to Kyrszard for base data! I could do it myself.. but why reinvent the wheel when it would be the exact same.
@@ -847,7 +847,7 @@ ItemDisplay[upmp]: %NAME% %TAN%x %WHITE%%QTY%{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p 
 ItemDisplay[(t10 OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t19 OR t20 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t30 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49) NMAG]: %WHITE%%NAME%%CONTINUE%
 ItemDisplay[(t12 OR t13 OR t21 OR t22 OR t23 OR t33 OR t16)]: %GRAY%[%DARK_GREEN%T1%GRAY%] %NAME% %DARK_GREEN%*%CONTINUE%
 ItemDisplay[(t11 OR t14 OR t15 OR t26 OR t34 OR t36)]: %GRAY%[%TAN%T2%GRAY%] %NAME% %TAN%*%CONTINUE%
-ItemDisplay[(t35 OR t32 OR t24 OR t25 OR t35 OR t37 OR t38 OR t39 OR t3a)]: %GRAY%[%ORANGE%T3%GRAY%] %NAME% %ORANGE%*%CONTINUE%
+ItemDisplay[(t31 OR t35 OR t32 OR t24 OR t25 OR t35 OR t37 OR t38 OR t39 OR t3a)]: %GRAY%[%ORANGE%T3%GRAY%] %NAME% %ORANGE%*%CONTINUE%
 ItemDisplay[(t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49)]: %GRAY%[%RED%Dungeon%GRAY%] %NAME% %RED%*%CONTINUE%
 ItemDisplay[(t10 OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t19 OR t20 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t30 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49 OR t3a) (!ID OR NMAG)]: %MAP-7F%%NAME%%CONTINUE%
 ItemDisplay[(t10 OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t19 OR t20 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t30 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49 OR t3a)]: %NAME%{%TAN%Note%WHITE%: To Modify Maps visit Anya}%CONTINUE%
@@ -872,7 +872,7 @@ ItemDisplay[t26]:%NAME%{%WHITE%Immunes: %RED%Fire110% %BLUE%Cold150% %TAN%Phys10
 ItemDisplay[t34]:%NAME%{%WHITE%Immunes: %RED%Fire120% %GREEN%Psn120% %TAN%Phys110% %NL%%NAME%} %CONTINUE%
 ItemDisplay[t36]:%NAME%{%WHITE%Immunes: %YELLOW%Light100% %NL%%NAME%} %CONTINUE%
 //---T3---//
-ItemDisplay[t35]:%NAME%{%WHITE%Immunes: %RED%Fire125% %BLUE%Cold180% %ORANGE%Mag100% %NL%%NAME%} %CONTINUE%
+ItemDisplay[t31]:%NAME%{%WHITE%Immunes: %RED%Fire125% %BLUE%Cold180% %ORANGE%Mag100% %NL%%NAME%} %CONTINUE%
 ItemDisplay[t32]:%NAME%{%WHITE%Immunes: %RED%Fire130% %GREEN%Psn1115% %NL%%NAME%} %CONTINUE%
 ItemDisplay[t24]:%NAME%{%WHITE%Immunes: %BLUE%Cold150% %YELLOW%Light120% %GREEN%Psn110% %TAN%Phys105% %NL%%NAME%} %CONTINUE%
 ItemDisplay[t25]:%NAME%{%WHITE%Immunes: %RED%Fire125% %YELLOW%Light135% %NL%%NAME%} %CONTINUE%
@@ -1380,6 +1380,9 @@ ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK266>2 (SOCK
 
 ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK257>2 (SOCK=0 OR SOCK=3) (SK275>0 OR SK277>0 OR SK267>0 OR SK258>0 OR SK263) !RW NMAG]: %NAME%{%NAME%} %RED%T1 Blade Sentinel Claw%PX-46%
 ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK257>2 (SOCK=0 OR SOCK=3) (SK264>0 OR SK268>0 OR SK279>0) !RW NMAG]: %NAME%{%NAME%} %RED%T2 Blade Sentinel Claw%PX-46%
+
+ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK275>2 (SOCK=0 OR SOCK=3) (SK252>0 OR SK277>0 OR SK267>0 OR SK258>0 OR SK263) !RW NMAG]: %NAME%{%NAME%} %RED%T1 Dragon Flight Claw%PX-46%
+ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK275>2 (SOCK=0 OR SOCK=3) (SK264>0 OR SK268>0 OR SK279>0) !RW NMAG]: %NAME%{%NAME%} %RED%T2 Dragon Flight%PX-46%
 
 ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
