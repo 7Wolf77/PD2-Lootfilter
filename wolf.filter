@@ -1,20 +1,13 @@
-
 //
 //7Wolf77's Lootfilter
-//
 //	
 //NOTES
 //DIFF=0-2 NORM-HELL
 //
 //This filter is geared towards end game farming with some options on leveling. Be **WARNED** at level 4 only good uniques, elite bases, and select magic items will show. All map, WSS, ect will show normally.
 //Level 4 was made to map a dungeon faster without having to stop to check items. 
-//Magic and Set rings are hidden. Norm and Elite bases are hidden. Large Charms are hidden. Low quality uniques are hidden. For a full list of uniques see listing below.
-//Rare gloves and Boots are ALWAYS shown. These can roll GG even from normal bases such as tri-res boots, 2/20 gloves, ect.
 //
 //Big shoutout to Kyrszard for his map, sockets, and armor notes. That is roughly 1,500 lines of code defining sockets, ability rolls on weapons, upgrade recipies, and map information.
-//I could recreate it.. but it would be almost exactly the same. Check his filter out, its awesome but not strict enough for me.
-//Thanks to Talrasha125 for some misc code examples. I combined and heavily modified all the code but it was a good reference to make sure I'm not missing anyhting.
-//OMG filterbird website is amazing. Without it, this would not be possible. https://betweenwalls.github.io/filterbird/?v=PD2
 /////////////////////////////////////////////////////////
 
 //Define Filter Strict Levels
@@ -221,11 +214,6 @@ ItemDisplay[r31s]: %NAME%{%NAME%%WHITE%Shield: +50 to Life%NL%Armor/Helm: Inc Ma
 ItemDisplay[r32s]: %NAME%{%NAME%%WHITE%Shield: Cannot be Frozen%NL%Armor/Helm: Cannot be Frozen%NL%Weapon: Freezes Target +3%NL%}
 ItemDisplay[r33s]: %NAME%{%NAME%%WHITE%Shield: Indestructible%NL%Armor/Helm: Indestructible%NL%Weapon: Indestructible%NL%}
 
-
-
-
-
-
 //////////////
 //---GEMS---//
 //////////////
@@ -374,7 +362,7 @@ ItemDisplay[cm2 !UNI LIFE=35 !(MFIND=6 OR MAXDMG>4 OR RES OR FRES>10 OR CRES>10 
 ItemDisplay[amu MAG !ID]:%BLUE%*** %NAME% ***%CONTINUE%
 ItemDisplay[rin MAG !ID FILTLVL>4]:%BLUE%*** %NAME% ***%CONTINUE%
 ItemDisplay[(GLOVES OR BOOTS) MAG !ID FILTLVL<4]:%NAME%%CONTINUE%
-ItemDisplay[CIRC MAG !UNI !RARE !CRAFT !RW]:%BLUE%*** %NAME% *** // ALLWAYS SHOW MAGIC CIRC
+ItemDisplay[CIRC MAG !UNI !RARE !CRAFT !RW !ID]:%BLUE%*** %NAME% *** // ALLWAYS SHOW MAGIC CIRC
 
 //---JEWEL FRAGMENTS---//
 ItemDisplay[jewf]:%BLUE%Jewel Fragments %WHITE%(x %QTY%)%DOT-97%
@@ -393,7 +381,10 @@ ItemDisplay[(GLOVES OR BOOTS) RARE !ID]:%YELLOW%*** %NAME% ***
 //////////////////////////////////////////////////////////////////////
 
 //---UBER KEYS AND ORGANS---//
-ItemDisplay[pk1 OR pk2 OR pk3]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %WHITE%(x %QTY%) %MAP-60%
+ItemDisplay[pk1]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %WHITE%(x %QTY%){%TAN%Note%WHITE%:Countess/Blood Raven} %MAP-60%
+ItemDisplay[pk2]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %WHITE%(x %QTY%){%TAN%Note%WHITE%:Summoner/Blood Witch} %MAP-60%
+ItemDisplay[pk3]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %WHITE%(x %QTY%){%TAN%Note%WHITE%:Izual/Nihlathak} %MAP-60%
+
 ItemDisplay[dhn OR bey OR mbr]:%RED%*%YELLOW%* %ORANGE%%NAME% %YELLOW%*%RED%* %MAP-60%
 ItemDisplay[ubtm]:%RED%*%YELLOW%* %PURPLE% UBERs %ORANGE%Pandemonium Talisman %YELLOW%*%RED%* %MAP-60%
 
@@ -844,7 +835,7 @@ ItemDisplay[rera]: %NAME% %TAN%x %WHITE%%QTY%{%YELLOW%Map %WHITE%+ %GOLD%Orb %WH
 ItemDisplay[upmp]: %NAME% %TAN%x %WHITE%%QTY%{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}
 
 //Project Diablo 2 Maps
-ItemDisplay[(t10 OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t19 OR t20 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t30 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49) NMAG]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[(t10 OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t19 OR t20 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t30 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49 OR t3a) NMAG]: %WHITE%%NAME%%CONTINUE%
 ItemDisplay[(t12 OR t13 OR t21 OR t22 OR t23 OR t33 OR t16)]: %GRAY%[%DARK_GREEN%T1%GRAY%] %NAME% %DARK_GREEN%*%CONTINUE%
 ItemDisplay[(t11 OR t14 OR t15 OR t26 OR t34 OR t36)]: %GRAY%[%TAN%T2%GRAY%] %NAME% %TAN%*%CONTINUE%
 ItemDisplay[(t31 OR t35 OR t32 OR t24 OR t25 OR t35 OR t37 OR t38 OR t39 OR t3a)]: %GRAY%[%ORANGE%T3%GRAY%] %NAME% %ORANGE%*%CONTINUE%
@@ -1297,9 +1288,9 @@ ItemDisplay[CHEST ED>9 !SOCK=1 !SOCK=2 xtp !UNI !MAG !RARE !CRAFT !RW !leg]:%NAM
 ItemDisplay[SWORD EXC ED>12 (SOCK=0 OR SOCK>2) !UNI !MAG !RARE !CRAFT !RW !leg FILTLVL<4]:%NAME%{%NAME%} %PX-20% //EXCEPTIONAL WEAPON
 ItemDisplay[SWORD ELT ED>12 !7ss !7sm !7sb !7fc !7b7 !SOCK=1 !SOCK=2 !UNI !MAG !RARE !CRAFT !RW !leg]:%NAME%{%NAME%} %PX-20% //ELITE WEAPON
 //---SWORDS SPECIFIC---//
-ItemDisplay[SOCK=3 crs !RW NMAG FILTLVL<4]:%TAN%[%TAN%Base%TAN%]%NAME%{%NAME%}{%WHITE%Note:%TAN%Crescent Moon or Lawbringer}
-ItemDisplay[SOCK=4 crs !RW NMAG FILTLVL<4]:%TAN%[%TAN%Base%TAN%]%NAME%{%NAME%}{%WHITE%Note:%TAN%Spirit}
-ItemDisplay[SOCK=5 crs !RW NMAG FILTLVL<4]:%TAN%[%TAN%Base%TAN%]%NAME%{%NAME%}{%WHITE%Note:%TAN%CTA or Eternity}
+ItemDisplay[SOCK=3 crs !RW NMAG FILTLVL<4]:%TAN%[%TAN%Base%TAN%]%NAME%{%NAME%}
+ItemDisplay[SOCK=4 crs !RW NMAG FILTLVL<4]:%TAN%[%TAN%Base%TAN%]%NAME%{%NAME%}
+ItemDisplay[SOCK=5 crs !RW NMAG FILTLVL<4]:%TAN%[%TAN%Base%TAN%]%NAME%{%NAME%}
 
 //---POLEARMS GENERAL---//
 ItemDisplay[POLEARM EXC ED>12 (SOCK=0 OR SOCK>3) !UNI !MAG !RARE !CRAFT !RW !leg FILTLVL<4]:%NAME%{%NAME%} %PX-20% //EXCEPTIONAL WEAPON
