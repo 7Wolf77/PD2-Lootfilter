@@ -54,11 +54,12 @@ ItemDisplay[ETH]: %GRAY%[%WHITE%eth%GRAY%] %NAME%%CONTINUE%
 //---SHOW SOCKETS---//
 ItemDisplay[SOCK>0 !RW]: %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%CONTINUE%
 
-//---SUPERIOR INFERIOR TAGS---//
+//---ITEM TAGS---//
 ItemDisplay[WEAPON NMAG !RW ED>0]: %NAME% %RED%%ED% ED %CONTINUE%
 ItemDisplay[(CHEST OR SHIELD) NMAG !RW ED>0]: %NAME% %BLUE%%ED% ED %CONTINUE%
 ItemDisplay[INF !(ARMOR OR WEAPON) ID]: %GRAY%Inf %NAME%%CONTINUE%
 ItemDisplay[SHIELD NMAG RES>0 !RW]: %TAN%[%GREEN%%RES% %WHITE%Res%TAN%] %NAME%{%NAME%} %CONTINUE%
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) ED>399 STAT360=0]: %NAME%{%NAME%%NL%%RED%***%GREEN%***%RED%***   %GREEN%High ED Weapon%RED%   ***%GREEN%***%RED%***}%CONTINUE%
 
 //---Quest Items---//
 ItemDisplay[hdm]:*%NAME%* // Horadric Malus
@@ -1286,7 +1287,7 @@ ItemDisplay[CL3 (SOCK=0 OR SOCK>2) (paa OR ELT) NMAG !RW]:%NAME% testshields{%NA
 //---SHIELD GENERAL---//
 ItemDisplay[uit (SOCK=0 OR SOCK=4) NMAG !RW ED=15]:%NAME%{%NAME%}%PX-20%	//MONARCH
 ItemDisplay[uit (SOCK=0 OR SOCK=4) NMAG !RW ED>9 FILTLVL<4]:%NAME%{%NAME%}	//MONARCH
-ItemDisplay[(ush OR xsh) (SOCK=0 OR SOCK>1) NMAG !RW FILTLVL<3]:%NAME%{%NAME%} %PX-20% //GRIM TROLL
+ItemDisplay[(ush OR xsh) (SOCK=0 OR SOCK>1) NMAG !RW FILTLVL<3]:%NAME%{%NAME%}  //GRIM TROLL
 
 //---SWORDS GENERAL---//
 ItemDisplay[SWORD EXC ED>9 (SOCK=0 OR SOCK>2) NMAG !RW FILTLVL<3]:%NAME%{%NAME%} %PX-20% //EXCEPTIONAL WEAPON
@@ -1446,9 +1447,15 @@ ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) SK275>2 (SOCK
 
 ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
+
+
 ///////////////////////
 //--FINAL HIDE/SHOW--//
 ///////////////////////
+
+//--FILTER LEVEL 2--//
+ItemDisplay[(ARMOR OR WEAPON) FILTERLVL<3]:%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) NORM (FILTERLVL<3 AND CLVL>30]:
 
 //--DISPLAY ALL ID AND CRAFT ITEMS--//
 ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv)) (MAG OR RARE OR SET OR UNI OR CRAFT OR RW) ID]:%NAME%{%NAME%}
