@@ -20,499 +20,499 @@ ItemDisplayFilterName[]: Very High/Dungeon
 //---GLOBAL FILTERS---//
 ////////////////////////
 //---SHORTEN ITEM NAMES FOR NMAG AND MAG---//
-ItemDisplay[(NMAG OR MAG) cap]: Cap%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xap]: War Hat%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uap]: Shako%CONTINUE%
-ItemDisplay[(NMAG OR MAG) skp]: Skull Cap%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xkp]: Sallet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ukp]: Hydraskull%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hlm]: Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xlm]: Casque%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ulm]: Armet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) fhl]: Full Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xhl]: Basinet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uhl]: Giant Conch%CONTINUE%
-ItemDisplay[(NMAG OR MAG) msk]: Mask%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xsk]: Death Mask%CONTINUE%
-ItemDisplay[(NMAG OR MAG) usk]: Demonhead%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bhm]: Bone Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xh9]: Grim Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uh9]: Bone Visage%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ghm]: Great Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xhm]: Winged Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uhm]: Spired Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) crn]: Crown%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xrn]: Grand Crown%CONTINUE%
-ItemDisplay[(NMAG OR MAG) urn]: Corona%CONTINUE%
-ItemDisplay[(NMAG OR MAG) qui]: Quilted Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xui]: Ghost Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uui]: Dusk Shroud%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lea]: Leather Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xea]: Serpentskin Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uea]: Wyrmhide%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hla]: Hard Leather Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xla]: Demonhide Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ula]: Scarab Husk%CONTINUE%
-ItemDisplay[(NMAG OR MAG) stu]: Studded Leather%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xtu]: Trellised Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) utu]: Wire Fleece%CONTINUE%
-ItemDisplay[(NMAG OR MAG) rng]: Ring Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xng]: Linked Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ung]: Diamond Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) scl]: Scale Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xcl]: Tigulated Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ucl]: Loricated Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) brs]: Breast Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xrs]: Cuirass%CONTINUE%
-ItemDisplay[(NMAG OR MAG) urs]: Great Hauberk%CONTINUE%
-ItemDisplay[(NMAG OR MAG) chn]: Chain Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xhn]: Mesh Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uhn]: Boneweave%CONTINUE%
-ItemDisplay[(NMAG OR MAG) spl]: Splint Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xpl]: Russet Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) upl]: Balrog Skin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ltp]: Light Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xtp]: Mage Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) utp]: Archon Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) fld]: Field Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xld]: Sharktooth Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uld]: Kraken Shell%CONTINUE%
-ItemDisplay[(NMAG OR MAG) plt]: Plate Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xlt]: Templar Coat%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ult]: Hellforge Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gth]: Gothic Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xth]: Embossed Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uth]: Lacquered Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ful]: Full Plate Mail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xul]: Chaos Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uul]: Shadow Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) aar]: Ancient Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xar]: Ornate Plate%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uar]: Sacred Armor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) buc]: Buckler%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xuc]: Defender%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uuc]: Heater%CONTINUE%
-ItemDisplay[(NMAG OR MAG) sml]: Small Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xml]: Round Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uml]: Luna%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lrg]: Large Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xrg]: Scutum%CONTINUE%
-ItemDisplay[(NMAG OR MAG) urg]: Hyperion%CONTINUE%
-ItemDisplay[(NMAG OR MAG) spk]: Spiked Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xpk]: Barbed Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) upk]: Blade Barrier%CONTINUE%
-ItemDisplay[(NMAG OR MAG) kit]: Kite Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xit]: Dragon Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uit]: Monarch%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bsh]: Bone Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xsh]: Grim Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ush]: Troll Nest%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tow]: Tower Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xow]: Pavise%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uow]: Aegis%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gts]: Gothic Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xts]: Ancient Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uts]: Ward%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lgl]: Leather Gloves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xlg]: Demonhide Gloves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ulg]: Bramble Mitts%CONTINUE%
-ItemDisplay[(NMAG OR MAG) vgl]: Heavy Gloves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xvg]: Sharkskin Gloves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uvg]: Vampirebone Gloves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mgl]: Chain Gloves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xmg]: Heavy Bracers%CONTINUE%
-ItemDisplay[(NMAG OR MAG) umg]: Vambraces%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tgl]: Light Gauntlets%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xtg]: Battle Gauntlets%CONTINUE%
-ItemDisplay[(NMAG OR MAG) utg]: Crusader Gauntlets%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hgl]: Gauntlets%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xhg]: War Gauntlets%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uhg]: Ogre Gauntlets%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lbt]: Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xlb]: Demonhide Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ulb]: Wyrmhide Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) vbt]: Heavy Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xvb]: Sharkskin Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uvb]: Scarabshell Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mbt]: Chain Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xmb]: Mesh Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) umb]: Boneweave Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tbt]: Light Plated Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xtb]: Battle Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) utb]: Mirrored Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hbt]: Greaves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) xhb]: War Boots%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uhb]: Myrmidon Greaves%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lbl]: Sash%CONTINUE%
-ItemDisplay[(NMAG OR MAG) zlb]: Demonhide Sash%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ulc]: Spiderweb Sash%CONTINUE%
-ItemDisplay[(NMAG OR MAG) vbl]: Light Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) zvb]: Sharkskin Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uvc]: Vampirefang Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mbl]: Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) zmb]: Mesh Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) umc]: Mithril Coil%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tbl]: Heavy Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ztb]: Battle Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) utc]: Troll Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hbl]: Plated Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) zhb]: War Belt%CONTINUE%
-ItemDisplay[(NMAG OR MAG) uhc]: Colossus Girdle%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ci0]: Circlet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ci2]: Tiara%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ci3]: Diadem%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ci1]: Coronet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr1]: Wolf Head%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr6]: Alpha Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) drb]: Blood Spirit%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr2]: Hawk Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr7]: Griffon Headress%CONTINUE%
-ItemDisplay[(NMAG OR MAG) drc]: Sun Spirit%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr3]: Antlers%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr8]: Hunter`s Guise%CONTINUE%
-ItemDisplay[(NMAG OR MAG) drd]: Earth Spirit%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr4]: Falcon Mask%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr9]: Sacred Feathers%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dre]: Sky Spirit%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dr5]: Spirit Mask%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dra]: Totemic Mask%CONTINUE%
-ItemDisplay[(NMAG OR MAG) drf]: Dream Spirit%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba1]: Jawbone Cap%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba6]: Jawbone Visor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bab]: Carnage Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba2]: Fanged Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba7]: Lion Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bac]: Fury Visor%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba3]: Horned Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba8]: Rage Mask%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bad]: Destroyer Helm%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba4]: Assault Helmet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba9]: Savage Helmet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bae]: Conqueror Crown%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ba5]: Avenger Guard%CONTINUE%
-ItemDisplay[(NMAG OR MAG) baa]: Slayer Guard%CONTINUE%
-ItemDisplay[(NMAG OR MAG) baf]: Guardian Crown%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa1]: Targe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa6]: Akaran Targe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pab]: Sacred Targe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa2]: Rondache%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa7]: Akaran Rondache%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pac]: Sacred Rondache%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa3]: Heraldic Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa8]: Protector Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pad]: Kurast Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa4]: Aerin Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa9]: Gilded Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pae]: Zakarum Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pa5]: Crown Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) paa]: Royal Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) paf]: Vortex Shield%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne1]: Preserved Head%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne6]: Mummified Trophy%CONTINUE%
-ItemDisplay[(NMAG OR MAG) neb]: Minion Skull%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne2]: Zombie Head%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne7]: Fetish Trophy%CONTINUE%
-ItemDisplay[(NMAG OR MAG) neg]: Hellspawn Skull%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne3]: Unraveller Head%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne8]: Sexton Trophy%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ned]: Overseer Skull%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne4]: Gargoyle Head%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne9]: Cantor Trophy%CONTINUE%
-ItemDisplay[(NMAG OR MAG) nee]: Succubus Skull%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ne5]: Demon Head%CONTINUE%
-ItemDisplay[(NMAG OR MAG) nea]: Heirophant Trophy%CONTINUE%
-ItemDisplay[(NMAG OR MAG) nef]: Bloodlord Skull%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hax]: Hand Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ha]: Hatchet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ha]: Tomahawk%CONTINUE%
-ItemDisplay[(NMAG OR MAG) axe]: Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ax]: Cleaver%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ax]: Small Crescent%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 2ax]: Double Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 92a]: Twin Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 72a]: Ettin Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mpi]: Military Pick%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9mp]: Crowbill%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7mp]: War Spike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wax]: War Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9wa]: Naga%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7wa]: Berserker Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lax]: Large Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9la]: Military Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7la]: Feral Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bax]: Broad Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ba]: Bearded Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ba]: Silver-edged Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) btx]: Battle Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9bt]: Tabar%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7bt]: Decapitator%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gax]: Great Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ga]: Gothic Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ga]: Champion Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gix]: Giant Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9gi]: Ancient Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7gi]: Glorious Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) clb]: Club%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9cl]: Cudgel%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7cl]: Truncheon%CONTINUE%
-ItemDisplay[(NMAG OR MAG) spc]: Spiked Club%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9sp]: Barbed Club%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7sp]: Tyrant Club%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mac]: Mace%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ma]: Flanged Mace%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ma]: Reinforced Mace%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mst]: Morning Star%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9mt]: Jagged Star%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7mt]: Devil Star%CONTINUE%
-ItemDisplay[(NMAG OR MAG) fla]: Flail%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9fl]: Knout%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7fl]: Scourge%CONTINUE%
-ItemDisplay[(NMAG OR MAG) whm]: War Hammer%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9wh]: Battle Hammer%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7wh]: Legendary Mallet%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mau]: Maul%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9m9]: War Club%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7m7]: Ogre Maul%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gma]: Great Maul%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9gm]: Martel de Fer%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7gm]: Thunder Maul%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ssd]: Short Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ss]: Gladius%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ss]: Falcata%CONTINUE%
-ItemDisplay[(NMAG OR MAG) scm]: Scimitar%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9sm]: Cutlass%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7sm]: Ataghan%CONTINUE%
-ItemDisplay[(NMAG OR MAG) sbr]: Saber%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9sb]: Shamshir%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7sb]: Elegant Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) flc]: Falchion%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9fc]: Tulwar%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7fc]: Hydra Edge%CONTINUE%
-ItemDisplay[(NMAG OR MAG) crs]: Crystal Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9cr]: Dimensional Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7cr]: Phase Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bsd]: Broad Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9bs]: Battle Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7bs]: Conquest Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lsd]: Long Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ls]: Rune Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ls]: Cryptic Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wsd]: War Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9wd]: Ancient Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7wd]: Mythical Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 2hs]: Two-handed Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 92h]: Espandon%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 72h]: Legend Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) clm]: Claymore%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9cm]: Dacian Falx%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7cm]: Highland Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gis]: Giant Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9gs]: Tusk Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7gs]: Balrog Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bsw]: Bastard Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9b9]: Gothic Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7b7]: Champion Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) flb]: Flamberge%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9fb]: Zweihander%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7fb]: Colossus Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gsd]: Great Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9gd]: Executioner Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7gd]: Colossus Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dgr]: Dagger%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9dg]: Poignard%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7dg]: Bone Knife%CONTINUE%
-ItemDisplay[(NMAG OR MAG) dir]: Dirk%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9di]: Rondel%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7di]: Mithril Point%CONTINUE%
-ItemDisplay[(NMAG OR MAG) kri]: Kris%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9kr]: Cinquedeas%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7kr]: Fanged Knife%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bld]: Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9bl]: Stiletto%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7bl]: Legend Spike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tkf]: Throwing Knife%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9tk]: Battle Dart%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7tk]: Flying Knife%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tax]: Throwing Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ta]: Francisca%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ta]: Flying Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bkf]: Balanced Knife%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9bk]: War Dart%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7bk]: Winged Knife%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bal]: Balanced Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9b8]: Hurlbat%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7b8]: Winged Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) jav]: Javelin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ja]: War Javelin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ja]: Hyperion Javelin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pil]: Pilum%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9pi]: Great Pilum%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7pi]: Stygian Pilum%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ssp]: Short Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9s9]: Simbilan%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7s7]: Balrog Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) glv]: Glaive%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9gl]: Spiculum%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7gl]: Ghost Glaive%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tsp]: Throwing Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ts]: Harpoon%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ts]: Winged Harpoon%CONTINUE%
-ItemDisplay[(NMAG OR MAG) spr]: Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9sr]: War Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7sr]: Hyperion Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) tri]: Trident%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9tr]: Fuscina%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7tr]: Stygian Pike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) brn]: Brandistock%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9br]: War Fork%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7br]: Mancatcher%CONTINUE%
-ItemDisplay[(NMAG OR MAG) spt]: Spetum%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9st]: Yari%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7st]: Ghost Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pik]: Pike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9p9]: Lance%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7p7]: War Pike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bar]: Bardiche%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9b7]: Lochaber Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7o7]: Ogre Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) vou]: Voulge%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9vo]: Bill%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7vo]: Colossus Voulge%CONTINUE%
-ItemDisplay[(NMAG OR MAG) scy]: Scythe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9s8]: Battle Scythe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7s8]: Thresher%CONTINUE%
-ItemDisplay[(NMAG OR MAG) pax]: Poleaxe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9pa]: Partizan%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7pa]: Cryptic Axe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hal]: Halberd%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9h9]: Bec-de-Corbin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7h7]: Great Poleaxe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wsc]: War Scythe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9wc]: Grim Scythe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7wc]: Giant Thresher%CONTINUE%
-ItemDisplay[(NMAG OR MAG) sbw]: Short Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8sb]: Edge Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6sb]: Spider Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hbw]: Hunter`s Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8hb]: Razor Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6hb]: Blade Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lbw]: Long Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8lb]: Cedar Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6lb]: Shadow Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) cbw]: Composite Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8cb]: Double Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6cb]: Great Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) sbb]: Short Battle Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8s8]: Short Siege Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6s7]: Diamond Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lbb]: Long Battle Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8l8]: Large Siege Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6l7]: Crusader Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) swb]: Short War Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8sw]: Rune Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6sw]: Ward Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lwb]: Long War Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8lw]: Gothic Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6lw]: Hydra Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lxb]: Light Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8lx]: Arbalest%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6lx]: Pellet Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) mxb]: Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8mx]: Siege Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6mx]: Gorgon Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) hxb]: Heavy Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8hx]: Ballista%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6hx]: Colossus Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) rxb]: Repeating Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8rx]: Chu-Ko-Nu%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6rx]: Demon Crossbow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) sst]: Short Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8ss]: Jo Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6ss]: Walking Stick%CONTINUE%
-ItemDisplay[(NMAG OR MAG) lst]: Long Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8ls]: Quarterstaff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6ls]: Stalagmite%CONTINUE%
-ItemDisplay[(NMAG OR MAG) cst]: Gnarled Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8cs]: Cedar Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6cs]: Elder Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bst]: Battle Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8bs]: Gothic Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6bs]: Shillelagh%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wst]: War Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 8ws]: Rune Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 6ws]: Archon Staff%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wnd]: Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9wn]: Burnt Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7wn]: Polished Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ywn]: Yew Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9yw]: Petrified Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7yw]: Ghost Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) bwn]: Bone Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9bw]: Tomb Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7bw]: Lich Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gwn]: Grim Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9gw]: Grave Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7gw]: Unearthed Wand%CONTINUE%
-ItemDisplay[(NMAG OR MAG) scp]: Scepter%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9sc]: Rune Scepter%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7sc]: Mighty Scepter%CONTINUE%
-ItemDisplay[(NMAG OR MAG) gsc]: Grand Scepter%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9qs]: Holy Water Sprinkler%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7qs]: Seraph Rod%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wsp]: War Scepter%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ws]: Divine Scepter%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ws]: Caduceus%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ktr]: Katar%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9ar]: Quhab%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7ar]: Suwayyah%CONTINUE%
-ItemDisplay[(NMAG OR MAG) wrb]: Wrist Blade%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9wb]: Wrist Spike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7wb]: Wrist Sword%CONTINUE%
-ItemDisplay[(NMAG OR MAG) axf]: Hatchet Hands%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9xf]: Fascia%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7xf]: War Fist%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ces]: Cestus%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9cs]: Hand Scythe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7cs]: Battle Cestus%CONTINUE%
-ItemDisplay[(NMAG OR MAG) clw]: Claws%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9lw]: Greater Claws%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7lw]: Feral Claws%CONTINUE%
-ItemDisplay[(NMAG OR MAG) btl]: Blade Talons%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9tw]: Greater Talons%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7tw]: Runic Talons%CONTINUE%
-ItemDisplay[(NMAG OR MAG) skr]: Scissors Katar%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 9qr]: Scissors Quhab%CONTINUE%
-ItemDisplay[(NMAG OR MAG) 7qr]: Scissors Suwayyah%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob1]: Eagle Orb%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob6]: Glowing Orb%CONTINUE%
-ItemDisplay[(NMAG OR MAG) obb]: Heavenly Stone%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob2]: Sacred Globe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob7]: Crystalline Globe%CONTINUE%
-ItemDisplay[(NMAG OR MAG) obc]: Eldritch Orb%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob3]: Smoked Sphere%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob8]: Cloudy Sphere%CONTINUE%
-ItemDisplay[(NMAG OR MAG) obd]: Demon Heart%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob4]: Clasped Orb%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob9]: Sparkling Ball%CONTINUE%
-ItemDisplay[(NMAG OR MAG) obe]: Vortex Orb%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ob5]: Jared's Stone%CONTINUE%
-ItemDisplay[(NMAG OR MAG) oba]: Swirling Crystal%CONTINUE%
-ItemDisplay[(NMAG OR MAG) obf]: Dimensional Shard%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am1]: Stag Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am6]: Ashwood Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) amb]: Matriarchal Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am2]: Reflex Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am7]: Ceremonial Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) amc]: Grand Matron Bow%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am3]: Maiden Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am8]: Ceremonial Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) amd]: Matriarchal Spear%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am4]: Maiden Pike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am9]: Ceremonial Pike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ame]: Matriarchal Pike%CONTINUE%
-ItemDisplay[(NMAG OR MAG) am5]: Maiden Javelin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) ama]: Ceremonial Javelin%CONTINUE%
-ItemDisplay[(NMAG OR MAG) amf]: Matriarchal Javelin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW cap]: Cap%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xap]: War Hat%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uap]: Shako%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW skp]: Skull Cap%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xkp]: Sallet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ukp]: Hydraskull%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hlm]: Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xlm]: Casque%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ulm]: Armet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW fhl]: Full Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xhl]: Basinet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uhl]: Giant Conch%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW msk]: Mask%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xsk]: Death Mask%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW usk]: Demonhead%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bhm]: Bone Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xh9]: Grim Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uh9]: Bone Visage%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ghm]: Great Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xhm]: Winged Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uhm]: Spired Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW crn]: Crown%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xrn]: Grand Crown%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW urn]: Corona%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW qui]: Quilted Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xui]: Ghost Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uui]: Dusk Shroud%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lea]: Leather Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xea]: Serpentskin Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uea]: Wyrmhide%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hla]: Hard Leather Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xla]: Demonhide Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ula]: Scarab Husk%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW stu]: Studded Leather%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xtu]: Trellised Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW utu]: Wire Fleece%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW rng]: Ring Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xng]: Linked Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ung]: Diamond Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW scl]: Scale Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xcl]: Tigulated Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ucl]: Loricated Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW brs]: Breast Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xrs]: Cuirass%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW urs]: Great Hauberk%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW chn]: Chain Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xhn]: Mesh Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uhn]: Boneweave%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW spl]: Splint Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xpl]: Russet Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW upl]: Balrog Skin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ltp]: Light Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xtp]: Mage Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW utp]: Archon Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW fld]: Field Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xld]: Sharktooth Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uld]: Kraken Shell%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW plt]: Plate Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xlt]: Templar Coat%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ult]: Hellforge Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gth]: Gothic Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xth]: Embossed Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uth]: Lacquered Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ful]: Full Plate Mail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xul]: Chaos Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uul]: Shadow Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW aar]: Ancient Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xar]: Ornate Plate%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uar]: Sacred Armor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW buc]: Buckler%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xuc]: Defender%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uuc]: Heater%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW sml]: Small Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xml]: Round Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uml]: Luna%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lrg]: Large Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xrg]: Scutum%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW urg]: Hyperion%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW spk]: Spiked Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xpk]: Barbed Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW upk]: Blade Barrier%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW kit]: Kite Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xit]: Dragon Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uit]: Monarch%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bsh]: Bone Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xsh]: Grim Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ush]: Troll Nest%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tow]: Tower Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xow]: Pavise%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uow]: Aegis%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gts]: Gothic Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xts]: Ancient Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uts]: Ward%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lgl]: Leather Gloves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xlg]: Demonhide Gloves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ulg]: Bramble Mitts%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW vgl]: Heavy Gloves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xvg]: Sharkskin Gloves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uvg]: Vampirebone Gloves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mgl]: Chain Gloves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xmg]: Heavy Bracers%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW umg]: Vambraces%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tgl]: Light Gauntlets%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xtg]: Battle Gauntlets%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW utg]: Crusader Gauntlets%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hgl]: Gauntlets%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xhg]: War Gauntlets%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uhg]: Ogre Gauntlets%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lbt]: Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xlb]: Demonhide Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ulb]: Wyrmhide Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW vbt]: Heavy Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xvb]: Sharkskin Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uvb]: Scarabshell Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mbt]: Chain Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xmb]: Mesh Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW umb]: Boneweave Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tbt]: Light Plated Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xtb]: Battle Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW utb]: Mirrored Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hbt]: Greaves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW xhb]: War Boots%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uhb]: Myrmidon Greaves%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lbl]: Sash%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW zlb]: Demonhide Sash%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ulc]: Spiderweb Sash%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW vbl]: Light Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW zvb]: Sharkskin Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uvc]: Vampirefang Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mbl]: Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW zmb]: Mesh Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW umc]: Mithril Coil%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tbl]: Heavy Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ztb]: Battle Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW utc]: Troll Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hbl]: Plated Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW zhb]: War Belt%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW uhc]: Colossus Girdle%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ci0]: Circlet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ci2]: Tiara%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ci3]: Diadem%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ci1]: Coronet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr1]: Wolf Head%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr6]: Alpha Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW drb]: Blood Spirit%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr2]: Hawk Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr7]: Griffon Headress%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW drc]: Sun Spirit%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr3]: Antlers%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr8]: Hunter`s Guise%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW drd]: Earth Spirit%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr4]: Falcon Mask%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr9]: Sacred Feathers%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dre]: Sky Spirit%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dr5]: Spirit Mask%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dra]: Totemic Mask%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW drf]: Dream Spirit%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba1]: Jawbone Cap%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba6]: Jawbone Visor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bab]: Carnage Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba2]: Fanged Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba7]: Lion Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bac]: Fury Visor%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba3]: Horned Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba8]: Rage Mask%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bad]: Destroyer Helm%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba4]: Assault Helmet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba9]: Savage Helmet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bae]: Conqueror Crown%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ba5]: Avenger Guard%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW baa]: Slayer Guard%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW baf]: Guardian Crown%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa1]: Targe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa6]: Akaran Targe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pab]: Sacred Targe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa2]: Rondache%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa7]: Akaran Rondache%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pac]: Sacred Rondache%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa3]: Heraldic Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa8]: Protector Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pad]: Kurast Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa4]: Aerin Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa9]: Gilded Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pae]: Zakarum Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pa5]: Crown Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW paa]: Royal Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW paf]: Vortex Shield%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne1]: Preserved Head%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne6]: Mummified Trophy%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW neb]: Minion Skull%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne2]: Zombie Head%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne7]: Fetish Trophy%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW neg]: Hellspawn Skull%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne3]: Unraveller Head%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne8]: Sexton Trophy%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ned]: Overseer Skull%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne4]: Gargoyle Head%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne9]: Cantor Trophy%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW nee]: Succubus Skull%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ne5]: Demon Head%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW nea]: Heirophant Trophy%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW nef]: Bloodlord Skull%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hax]: Hand Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ha]: Hatchet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ha]: Tomahawk%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW axe]: Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ax]: Cleaver%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ax]: Small Crescent%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 2ax]: Double Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 92a]: Twin Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 72a]: Ettin Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mpi]: Military Pick%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9mp]: Crowbill%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7mp]: War Spike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wax]: War Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9wa]: Naga%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7wa]: Berserker Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lax]: Large Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9la]: Military Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7la]: Feral Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bax]: Broad Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ba]: Bearded Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ba]: Silver-edged Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW btx]: Battle Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9bt]: Tabar%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7bt]: Decapitator%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gax]: Great Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ga]: Gothic Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ga]: Champion Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gix]: Giant Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9gi]: Ancient Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7gi]: Glorious Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW clb]: Club%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9cl]: Cudgel%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7cl]: Truncheon%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW spc]: Spiked Club%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9sp]: Barbed Club%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7sp]: Tyrant Club%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mac]: Mace%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ma]: Flanged Mace%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ma]: Reinforced Mace%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mst]: Morning Star%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9mt]: Jagged Star%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7mt]: Devil Star%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW fla]: Flail%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9fl]: Knout%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7fl]: Scourge%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW whm]: War Hammer%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9wh]: Battle Hammer%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7wh]: Legendary Mallet%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mau]: Maul%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9m9]: War Club%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7m7]: Ogre Maul%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gma]: Great Maul%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9gm]: Martel de Fer%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7gm]: Thunder Maul%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ssd]: Short Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ss]: Gladius%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ss]: Falcata%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW scm]: Scimitar%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9sm]: Cutlass%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7sm]: Ataghan%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW sbr]: Saber%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9sb]: Shamshir%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7sb]: Elegant Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW flc]: Falchion%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9fc]: Tulwar%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7fc]: Hydra Edge%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW crs]: Crystal Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9cr]: Dimensional Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7cr]: Phase Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bsd]: Broad Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9bs]: Battle Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7bs]: Conquest Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lsd]: Long Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ls]: Rune Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ls]: Cryptic Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wsd]: War Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9wd]: Ancient Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7wd]: Mythical Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 2hs]: Two-handed Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 92h]: Espandon%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 72h]: Legend Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW clm]: Claymore%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9cm]: Dacian Falx%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7cm]: Highland Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gis]: Giant Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9gs]: Tusk Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7gs]: Balrog Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bsw]: Bastard Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9b9]: Gothic Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7b7]: Champion Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW flb]: Flamberge%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9fb]: Zweihander%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7fb]: Colossus Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gsd]: Great Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9gd]: Executioner Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7gd]: Colossus Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dgr]: Dagger%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9dg]: Poignard%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7dg]: Bone Knife%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW dir]: Dirk%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9di]: Rondel%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7di]: Mithril Point%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW kri]: Kris%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9kr]: Cinquedeas%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7kr]: Fanged Knife%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bld]: Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9bl]: Stiletto%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7bl]: Legend Spike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tkf]: Throwing Knife%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9tk]: Battle Dart%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7tk]: Flying Knife%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tax]: Throwing Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ta]: Francisca%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ta]: Flying Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bkf]: Balanced Knife%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9bk]: War Dart%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7bk]: Winged Knife%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bal]: Balanced Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9b8]: Hurlbat%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7b8]: Winged Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW jav]: Javelin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ja]: War Javelin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ja]: Hyperion Javelin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pil]: Pilum%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9pi]: Great Pilum%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7pi]: Stygian Pilum%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ssp]: Short Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9s9]: Simbilan%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7s7]: Balrog Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW glv]: Glaive%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9gl]: Spiculum%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7gl]: Ghost Glaive%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tsp]: Throwing Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ts]: Harpoon%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ts]: Winged Harpoon%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW spr]: Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9sr]: War Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7sr]: Hyperion Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW tri]: Trident%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9tr]: Fuscina%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7tr]: Stygian Pike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW brn]: Brandistock%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9br]: War Fork%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7br]: Mancatcher%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW spt]: Spetum%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9st]: Yari%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7st]: Ghost Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pik]: Pike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9p9]: Lance%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7p7]: War Pike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bar]: Bardiche%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9b7]: Lochaber Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7o7]: Ogre Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW vou]: Voulge%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9vo]: Bill%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7vo]: Colossus Voulge%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW scy]: Scythe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9s8]: Battle Scythe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7s8]: Thresher%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW pax]: Poleaxe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9pa]: Partizan%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7pa]: Cryptic Axe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hal]: Halberd%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9h9]: Bec-de-Corbin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7h7]: Great Poleaxe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wsc]: War Scythe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9wc]: Grim Scythe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7wc]: Giant Thresher%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW sbw]: Short Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8sb]: Edge Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6sb]: Spider Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hbw]: Hunter`s Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8hb]: Razor Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6hb]: Blade Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lbw]: Long Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8lb]: Cedar Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6lb]: Shadow Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW cbw]: Composite Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8cb]: Double Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6cb]: Great Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW sbb]: Short Battle Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8s8]: Short Siege Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6s7]: Diamond Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lbb]: Long Battle Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8l8]: Large Siege Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6l7]: Crusader Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW swb]: Short War Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8sw]: Rune Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6sw]: Ward Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lwb]: Long War Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8lw]: Gothic Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6lw]: Hydra Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lxb]: Light Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8lx]: Arbalest%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6lx]: Pellet Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW mxb]: Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8mx]: Siege Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6mx]: Gorgon Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW hxb]: Heavy Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8hx]: Ballista%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6hx]: Colossus Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW rxb]: Repeating Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8rx]: Chu-Ko-Nu%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6rx]: Demon Crossbow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW sst]: Short Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8ss]: Jo Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6ss]: Walking Stick%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW lst]: Long Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8ls]: Quarterstaff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6ls]: Stalagmite%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW cst]: Gnarled Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8cs]: Cedar Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6cs]: Elder Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bst]: Battle Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8bs]: Gothic Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6bs]: Shillelagh%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wst]: War Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 8ws]: Rune Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 6ws]: Archon Staff%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wnd]: Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9wn]: Burnt Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7wn]: Polished Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ywn]: Yew Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9yw]: Petrified Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7yw]: Ghost Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW bwn]: Bone Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9bw]: Tomb Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7bw]: Lich Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gwn]: Grim Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9gw]: Grave Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7gw]: Unearthed Wand%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW scp]: Scepter%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9sc]: Rune Scepter%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7sc]: Mighty Scepter%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW gsc]: Grand Scepter%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9qs]: Holy Water Sprinkler%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7qs]: Seraph Rod%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wsp]: War Scepter%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ws]: Divine Scepter%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ws]: Caduceus%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ktr]: Katar%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9ar]: Quhab%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7ar]: Suwayyah%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW wrb]: Wrist Blade%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9wb]: Wrist Spike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7wb]: Wrist Sword%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW axf]: Hatchet Hands%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9xf]: Fascia%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7xf]: War Fist%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ces]: Cestus%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9cs]: Hand Scythe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7cs]: Battle Cestus%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW clw]: Claws%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9lw]: Greater Claws%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7lw]: Feral Claws%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW btl]: Blade Talons%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9tw]: Greater Talons%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7tw]: Runic Talons%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW skr]: Scissors Katar%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 9qr]: Scissors Quhab%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW 7qr]: Scissors Suwayyah%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob1]: Eagle Orb%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob6]: Glowing Orb%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW obb]: Heavenly Stone%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob2]: Sacred Globe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob7]: Crystalline Globe%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW obc]: Eldritch Orb%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob3]: Smoked Sphere%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob8]: Cloudy Sphere%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW obd]: Demon Heart%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob4]: Clasped Orb%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob9]: Sparkling Ball%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW obe]: Vortex Orb%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ob5]: Jared's Stone%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW oba]: Swirling Crystal%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW obf]: Dimensional Shard%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am1]: Stag Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am6]: Ashwood Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW amb]: Matriarchal Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am2]: Reflex Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am7]: Ceremonial Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW amc]: Grand Matron Bow%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am3]: Maiden Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am8]: Ceremonial Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW amd]: Matriarchal Spear%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am4]: Maiden Pike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am9]: Ceremonial Pike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ame]: Matriarchal Pike%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW am5]: Maiden Javelin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW ama]: Ceremonial Javelin%CONTINUE%
+ItemDisplay[(NMAG OR MAG) !RW amf]: Matriarchal Javelin%CONTINUE%
 
 //---DEFINE ITEM COLORING---//
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
