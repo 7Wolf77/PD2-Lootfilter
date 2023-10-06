@@ -2202,17 +2202,17 @@ ItemDisplay[uit (SOCK=0 OR SOCK>2) NMAG !RW ED=15]:%NAME%{%NAME%}%PX-20%		//MONA
 ItemDisplay[FILTLVL<3 (ush OR xsh) (SOCK=0 OR SOCK>1) NMAG !RW !INF]:%NAME%{%NAME%}  //GRIM TROLL
 
 //---Wands SPECIFIC---//
-ItemDisplay[FILTLVL<4 WAND SK79=3 (SK75=3 OR SK85=3 OR SK90=3 OR SK94=3) NMAG !RW]:%RED%*   %ORANGE%Golem %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
-ItemDisplay[FILTLVL<4 WAND SK69=3 (SK70=3 OR SK80=3 OR SK89=3) NMAG !RW]:%RED%*   %YELLOW%Summoning %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
-ItemDisplay[FILTLVL<4 WAND SK74=3 (SK66=3 OR SK83=3) NMAG !RW]:%RED%*   %RED%Corpse Explosion %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
-ItemDisplay[FILTLVL<4 WAND SK84=3 (SK67=3 OR SK68=3 OR SK93=3) NMAG !RW]:%RED%*   %ORANGE%Bone Spear %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
-ItemDisplay[FILTLVL<4 WAND SK92=3 (SK83=3 OR SK73=3) NMAG !RW]:%RED%*   %GREEN%Psn Nova Explosion %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
+ItemDisplay[WAND SK79=3 (SK75=3 OR SK85=3 OR SK90=3 OR SK94=3) NMAG !RW]:%RED%*   %ORANGE%Golem %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
+ItemDisplay[WAND SK69=3 (SK70=3 OR SK80=3 OR SK89=3) NMAG !RW]:%RED%*   %YELLOW%Summoning %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
+ItemDisplay[WAND SK74=3 (SK66=3 OR SK83=3) NMAG !RW]:%RED%*   %RED%Corpse Explosion %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
+ItemDisplay[WAND SK84=3 (SK67=3 OR SK68=3 OR SK93=3) NMAG !RW]:%RED%*   %ORANGE%Bone Spear %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
+ItemDisplay[WAND SK92=3 (SK83=3 OR SK73=3) NMAG !RW]:%RED%*   %GREEN%Psn Nova Explosion %WHITE%Wand   %RED%*{%NAME%}%PX-20% 
 
 ItemDisplay[FILTLVL<4 WAND SK79>=1 (SK75>=1 OR SK85>=1 OR SK91>=1 OR SK94>=1) NMAG !RW]:%RED%*   %ORANGE%lesser Golem %WHITE%Wand   %RED%*{%NAME%}
 ItemDisplay[FILTLVL<4 WAND SK69>=1 (SK71>=1 OR SK81>=1 OR SK89>=1) NMAG !RW]:%RED%*   %YELLOW%lesser Summoning %WHITE%Wand   %RED%*{%NAME%}
 ItemDisplay[FILTLVL<4 WAND SK84>=1 (SK67>=1 OR SK68>=1 OR SK93>=1) NMAG !RW]:%RED%*   %ORANGE%lesser Bone Spear %WHITE%Wand   %RED%*{%NAME%}
-ItemDisplay[FILTLVL<4 WAND SK92>=1 (SK83>=1 OR SK73>=1) NMAG !RW]:%RED%*   %GREEN%lesser Psn Nova Explosion %WHITE%Wand   %RED%*{%NAME%}
-ItemDisplay[FILTLVL<4 WAND SK74>=1 (SK66>=1 OR SK83>=0) NMAG !RW]:%RED%*   %RED%lesser Corpse Explosion %WHITE%Wand   %RED%*{%NAME%}
+ItemDisplay[FILTLVL<4 WAND (SK92=1 OR SK92=2 OR SK92=3) (SK83=1 OR SK83=2 OR SK83=3 OR SK73=1 OR SK73=2 OR SK73=3) NMAG !RW]:%RED%*   %GREEN%lesser Psn Nova Explosion %WHITE%Wand   %RED%*{%NAME%}
+ItemDisplay[FILTLVL<4 WAND (SK74=1 OR SK74=2 OR SK74=3) (SK66=1 OR SK66=2 OR SK66=3 OR SK83=1 OR SK83=2 OR SK83=3) NMAG !RW]:%RED%*   %RED%lesser Corpse Explosion %WHITE%Wand   %RED%*{%NAME%}
 
 //---SWORDS GENERAL---//
 ItemDisplay[FILTLVL<3 SWORD (EXC OR ELT) ED>8 (SOCK=0 OR SOCK>2) NMAG !RW]:%NAME%{%NAME%}%PX-20% //EXCEPTIONAL WEAPON
