@@ -1499,7 +1499,7 @@ ItemDisplay[dcma]:%PURPLE%*%RED%*%BLUE%* %NAME% %BLUE%*%RED%*%PURPLE%* %WHITE%(x
 
 //---BOSS ESSENCE AND RESPEC TOKEN---//
 ItemDisplay[bet OR ceh OR fed OR tes]:%RED%*%BLUE%*%TAN%* %ORANGE%%NAME% %TAN%*%BLUE%*%RED%* %WHITE%(x %QTY%)%MAP-97%
-ItemDisplay[toa]:%RED%*%BLUE%*%TAN%* %ORANGE%%NAME% %TAN%*%BLUE%*%RED%* %WHITE%(x %QTY%)%MAP-97%{%TAN%Respec Token}
+ItemDisplay[toa]:%RED%*%BLUE%*%TAN%* %ORANGE%Token of Absolution %TAN%*%BLUE%*%RED%* %WHITE%(x %QTY%)%MAP-97%{%TAN%Respec Token}
 
 //---UBER ANCIENTS---//
 ItemDisplay[ubaa]:%RED%*%YELLOW%* %ORANGE%%NAME%{Uber Ancients ingredient, from T1 maps} %YELLOW%*%RED%* %WHITE%(x %QTY%) %MAP-60%
@@ -2443,13 +2443,6 @@ ItemDisplay[SWORD ELT ED=15 !7ss !7sm !7sb !7fc !7b7 (SOCK=0 OR SOCK>2) NMAG !RW
 //---SWORDS SPECIFIC---//
 ItemDisplay[FILTLVL<3 (SOCK=4 OR SOCK=5) crs !RW NMAG]:%NAME%{%NAME%} //SPIRIT SWORD/CTA
 
-//---POLEARMS GENERAL---//
-ItemDisplay[FILTLVL<3 POLEARM (EXC OR ELT) ED>8 !9b7 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%}%PX-20% //EXCEPTIONAL WEAPON
-ItemDisplay[FILTLVL<4 POLEARM ELT ED>12 !7o7 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%}%PX-20%			 //ELITE WEAPON
-ItemDisplay[POLEARM ELT ED=15 !7o7 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%}%PX-20%			 //ELITE WEAPON
-
-//---POLEARM SPECIFIC---//
-
 //---MACES GENERAL---//
 ItemDisplay[FILTLVL<3 MACE (EXC OR ELT) ED>8 (SOCK=0 OR SOCK>2) NMAG !RW]:%NAME%{%NAME%}%PX-20%	//EXCEPTIONAL WEAPON
 ItemDisplay[FILTLVL<4 MACE ELT ED>12 (7gm OR 7m7 OR 7wh) (SOCK=0 OR SOCK>2) NMAG !RW]:%NAME%{%NAME%}%PX-20%	//ELITE WEAPON
@@ -2457,6 +2450,13 @@ ItemDisplay[MACE ELT ED=15 (7gm OR 7m7 OR 7wh) (SOCK=0 OR SOCK>2) NMAG !RW]:%NAM
 
 //---MACES SPECIFIC---//
 ItemDisplay[FILTLVL<3 fla (SOCK=4 OR SOCK=5) NMAG !RW]:%NAME%{%NAME%}
+
+//---POLEARMS GENERAL---//
+ItemDisplay[FILTLVL<3 POLEARM (EXC OR ELT) ED>8 !9b7 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%}%PX-20% //EXCEPTIONAL WEAPON
+ItemDisplay[FILTLVL<4 POLEARM ELT ED>12 !7o7 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%}%PX-20%			 //ELITE WEAPON
+ItemDisplay[POLEARM ELT ED=15 !7o7 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%}%PX-20%			 //ELITE WEAPON
+
+
 
 //---SPEAR GENERAL---//
 ItemDisplay[FILTLVL<3 SPEAR (EXC OR ELT) ED>8 (SOCK=0 OR SOCK>3) NMAG !RW]:%NAME%{%NAME%} %PX-20% //EXCEPTIONAL WEAPON
@@ -2522,7 +2522,6 @@ ItemDisplay[amu ID !CRAFT !RARE !UNI]:%NAME%{%RED%(B)%WHITE%Amn+PRuby+Jewel%NL%%
 ItemDisplay[MAG (am5 OR ama OR amf) ILVL>70 FILTLVL<3]:%WHITE%(%BLUE%C%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%BLUE%C%WHITE%)%WHITE%Tir+PAmy+Jewel}
 ItemDisplay[ETH ELT THROWING ILVL>70 FILTLVL<3]:%WHITE%(%RED%C%WHITE%) %NAME% {%WHITE%(%RED%B%WHITE%)%WHITE%Ort+PRuby+Jewel}//THROWING ETH WEAPON
 
-
 //---CLAW GENERAL---//
 //ItemDisplay[(9tw OR 7tw OR 9lw OR 7lw OR 7xf OR 7ar OR 7qr OR 7wb) CL5 ASSASSIN RARE]: %NAME%{%NAME%}%PX-46%
 //
@@ -2556,6 +2555,7 @@ ItemDisplay[ETH ELT THROWING ILVL>70 FILTLVL<3]:%WHITE%(%RED%C%WHITE%) %NAME% {%
 //ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
 //////////////////////////////////////////////////////////////
+
 //---ALWAYS SHOWS EQUPPED ITEMS---//
 ItemDisplay[EQUIPPED]:%NAME%{%NAME%}
 
@@ -2573,6 +2573,7 @@ ItemDisplay[(ARMOR OR WEAPON) UNI NORM !ID FILTLVL=4]:
 //---BLOOD AND CASTER CRAFTING WEAPONS---//
 ItemDisplay[(ob5 OR oba OR obf) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%NAME%{%NAME%} 
 ItemDisplay[(7gm OR 7m7) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%NAME%{%NAME%}
+ItemDisplay[(MAG OR RARE) (BOW OR XBOW) ILVL>70 FILTLVL<4]:%WHITE%(%GREEN%S%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%GREEN%S%WHITE%)%WHITE%Sol+PEmerald+Jewel}
 
 //---Shows all items in town, may have to hit reload lootfilter (0) to update---//
 //ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:%NAME%{%NAME%}
@@ -2604,7 +2605,6 @@ ItemDisplay[(FILTLVL>1 OR CLVL>40 OR DIFF>0) (ARMOR OR WEAPON) NORM RARE !leg]:
 ItemDisplay[(FILTLVL>2 OR CLVL>70 OR DIFF>1) (ARMOR OR WEAPON) EXC RARE !leg]:
 ItemDisplay[FILTLVL>2 (ARMOR OR WEAPON) ELT RARE !leg]:
 
-
 //---Show & Hide Arrows/Bolts---//
 ItemDisplay[(aqv OR cqv) (NMAG OR MAG) (CLVL>20 OR DIFF>0 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
 ItemDisplay[(aqv OR cqv) RARE (CLVL>40 OR DIFF>1 OR FILTLVL>2)]:{%NAME%}%CONTINUE%
@@ -2612,7 +2612,9 @@ ItemDisplay[(aqv OR cqv) RARE (CLVL>40 OR DIFF>1 OR FILTLVL>2)]:{%NAME%}%CONTINU
 //---Show & Hide Healing Potions---//
 ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2) (CLVL>20 OR DIFF>0 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
 ItemDisplay[(hp3 OR hp4 OR mp3 OR mp4) (CLVL>40 OR DIFF>1 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
-ItemDisplay[(hp5 OR mp5) FILTLVL=4]:{%NAME%}%CONTINUE%
+//ItemDisplay[hp5 FILTLVL>2]:{%NAME%}%CONTINUE% //HIDES HEALING POTS ON 3 OR 4, DELETE THE BEGINNING // TO SHOW
+ItemDisplay[mp5 FILTLVL=4]:{%NAME%}%CONTINUE%
+
 
 //---Show & Hide Antidote---//
 ItemDisplay[yps FILTLVL=4 !(MAPID>160 MAPID<164)]:{%NAME%}%CONTINUE%
@@ -2648,4 +2650,4 @@ ItemDisplay[jew MAG !UNI !ID FILTLVL=4]:{%NAME%}%CONTINUE%
 
 //---Show & Hide Magic Boots and Gloves---//
 ItemDisplay[BOOTS MAG !ID FILTLVL>2]:{%NAME%}%CONTINUE%
-ItemDisplay[GLOVES MAG !ID FILTLVL=4]:{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG !ID FILTLVL>2]:{%NAME%}%CONTINUE%
