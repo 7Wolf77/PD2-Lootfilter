@@ -513,6 +513,10 @@ ItemDisplay[(NMAG OR MAG OR RARE) !RW ame]: Matriarchal Pike%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE) !RW am5]: Maiden Javelin%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE) !RW ama]: Ceremonial Javelin%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE) !RW amf]: Matriarchal Javelin%CONTINUE%
+ItemDisplay[MAG ID cm1]: SC%CONTINUE%
+ItemDisplay[MAG ID cm2]: LC%CONTINUE%
+ItemDisplay[MAG ID cm3]: GC%CONTINUE%
+
 
 //---DEFINE ITEM COLORING---//
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
@@ -2573,7 +2577,7 @@ ItemDisplay[(ARMOR OR WEAPON) UNI NORM !ID FILTLVL=4]:
 //---BLOOD AND CASTER CRAFTING WEAPONS---//
 ItemDisplay[(ob5 OR oba OR obf) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%NAME%{%NAME%} 
 ItemDisplay[(7gm OR 7m7) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%NAME%{%NAME%}
-ItemDisplay[(MAG OR RARE) (BOW OR XBOW) ILVL>70 FILTLVL<4]:%WHITE%(%GREEN%S%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%GREEN%S%WHITE%)%WHITE%Sol+PEmerald+Jewel}
+ItemDisplay[(MAG OR RARE) (BOW OR XBOW) ELT ILVL>70 FILTLVL<4]:%WHITE%(%GREEN%S%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%GREEN%S%WHITE%)%WHITE%Sol+PEmerald+Jewel}
 
 //---Shows all items in town, may have to hit reload lootfilter (0) to update---//
 //ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:%NAME%{%NAME%}
@@ -2613,7 +2617,7 @@ ItemDisplay[(aqv OR cqv) RARE (CLVL>40 OR DIFF>1 OR FILTLVL>2)]:{%NAME%}%CONTINU
 ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2) (CLVL>20 OR DIFF>0 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
 ItemDisplay[(hp3 OR hp4 OR mp3 OR mp4) (CLVL>40 OR DIFF>1 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
 //ItemDisplay[hp5 FILTLVL>2]:{%NAME%}%CONTINUE% //HIDES HEALING POTS ON 3 OR 4, DELETE THE BEGINNING // TO SHOW
-ItemDisplay[mp5 FILTLVL=4]:{%NAME%}%CONTINUE%
+//ItemDisplay[mp5 FILTLVL=4]:{%NAME%}%CONTINUE%
 
 
 //---Show & Hide Antidote---//
