@@ -2559,6 +2559,9 @@ ItemDisplay[ETH ELT THROWING ILVL>70 FILTLVL<3]:%WHITE%(%RED%C%WHITE%) %NAME% {%
 //ItemDisplay[(7xf OR 7ar OR 7qr OR 7wb) NMAG !RW ETH ED>13]:%RED%ED Eth Base %GRAY%%NAME%{%NAME%}  //SHOW ETH HIGH ED CLAWS
 
 //////////////////////////////////////////////////////////////
+ItemDisplay[FILTLVL<4 SOCK=5 crs !RW NMAG]:%NAME%{%NAME%} //SPIRIT SWORD/CTA
+
+
 
 //---ALWAYS SHOWS EQUPPED ITEMS---//
 ItemDisplay[EQUIPPED]:%NAME%{%NAME%}
@@ -2577,7 +2580,7 @@ ItemDisplay[(ARMOR OR WEAPON) UNI NORM !ID FILTLVL=4]:
 //---BLOOD AND CASTER CRAFTING WEAPONS---//
 ItemDisplay[(ob5 OR oba OR obf) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%NAME%{%NAME%} 
 ItemDisplay[(7gm OR 7m7) MAG !RW !CRAFT ILVL>70 FILTLVL<4]:%NAME%{%NAME%}
-ItemDisplay[(MAG OR RARE) (BOW OR XBOW) ELT ILVL>70 FILTLVL<4]:%WHITE%(%GREEN%S%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%GREEN%S%WHITE%)%WHITE%Sol+PEmerald+Jewel}
+ItemDisplay[(MAG OR RARE) (lbw OR 8lb OR 6lb OR lwb OR 8lw OR 6lw OR am2 OR am7 OR amc) ILVL>70 FILTLVL<4]:%WHITE%(%GREEN%S%WHITE%) %NAME% {%TAN%Crafting: %WHITE%(%GREEN%S%WHITE%)%WHITE%Sol+PEmerald+Jewel}
 
 //---Shows all items in town, may have to hit reload lootfilter (0) to update---//
 //ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:%NAME%{%NAME%}
@@ -2617,7 +2620,7 @@ ItemDisplay[(aqv OR cqv) RARE (CLVL>40 OR DIFF>1 OR FILTLVL>2)]:{%NAME%}%CONTINU
 ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2) (CLVL>20 OR DIFF>0 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
 ItemDisplay[(hp3 OR hp4 OR mp3 OR mp4) (CLVL>40 OR DIFF>1 OR FILTLVL>1)]:{%NAME%}%CONTINUE%
 //ItemDisplay[hp5 FILTLVL>2]:{%NAME%}%CONTINUE% //HIDES HEALING POTS ON 3 OR 4, DELETE THE BEGINNING // TO SHOW
-//ItemDisplay[mp5 FILTLVL=4]:{%NAME%}%CONTINUE%
+ItemDisplay[mp5 FILTLVL=4]:{%NAME%}%CONTINUE%
 
 
 //---Show & Hide Antidote---//
