@@ -1170,15 +1170,15 @@ ItemDisplay[(SIN OR DAGGER) ASSASSIN (MAG OR RARE) !ID]: %NAME%
 
 //---CRAFTING BASES---//
 //CORRUPT ETH ITEMS NMAG
-ItemDisplay[(7ja OR 7pi OR 7s7 OR 7gl OR 7ts OR 7ta) NMAG ETH ILVL>71 STAT360=0 (FILTLVL<4 OR BARBBARIAN)]: %NAME%{%WHITE%Next: You Can %ORANGE%Craft %WHITE%With This Base%NL%%TAN%Note%WHITE%: You can %RED%Corrupt %WHITE%to Imbue into %YELLOW%Rare %GRAY%(%WHITE%50% Chance%GRAY%)}
-ItemDisplay[(7ja OR 7pi OR 7s7 OR 7gl OR 7ts OR 7ta) NMAG ETH ILVL>71 STAT360>0 (FILTLVL<4 OR BARBBARIAN)]: %NAME%{%TAN%Note%WHITE%: Unlucky... Maybe Next Time :)}
+ItemDisplay[(7ja OR 7pi OR 7s7 OR 7gl OR 7ts OR 7ta) NMAG ETH ILVL>71 STAT360=0 (FILTLVL<4 OR BARBARIAN)]: %NAME%{%WHITE%Next: You Can %ORANGE%Craft %WHITE%With This Base%NL%%TAN%Note%WHITE%: You can %RED%Corrupt %WHITE%to Imbue into %YELLOW%Rare %GRAY%(%WHITE%50% Chance%GRAY%)}
+ItemDisplay[(7ja OR 7pi OR 7s7 OR 7gl OR 7ts OR 7ta) NMAG ETH ILVL>71 STAT360>0 (FILTLVL<4 OR BARBARIAN)]: %NAME%{%TAN%Note%WHITE%: Unlucky... Maybe Next Time :)}
 
 //MAGICAL CRAFTING BASES
 ItemDisplay[(7wa OR 7gi OR 7bt OR 7ja OR 7gm OR 7wh OR 7m7 OR 7p7 OR 7gd OR 7fb OR 7b7 OR 7gs OR 72a) ETH ILVL>74]: %NAME%
 ItemDisplay[(am1 OR am2 OR am6 OR am7 OR amb OR amc) (MAG OR RARE) !ID ILVL>74 (FILTLVL<4 OR AMAZON)]: %NAME%
 ItemDisplay[(am5 OR ama OR amf) (MAG OR RARE) !ID ILVL>74 (FILTLVL<4 OR AMAZON)]: %NAME%
 ItemDisplay[(hxb OR 8hx OR 6hx OR rxb OR 8rx OR 6rx) (MAG OR RARE) ELT !ID ILVL>74 (FILTLVL<4 OR AMAZON)]: %NAME%
-ItemDisplay[(ob5 OR oba OR obf) (MAG OR RARE) !ID ILVL>74 (FILTLVL<4 OR SORCERCESS)]: %NAME%
+ItemDisplay[(ob5 OR oba OR obf) (MAG OR RARE) !ID ILVL>74 (FILTLVL<4 OR SORCERESS)]: %NAME%
 ItemDisplay[(jav OR pil OR ssp OR glv OR tsp OR 9ja OR 9pi OR 9s9 OR 9gl OR 9ts OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) ETH (MAG OR RARE) !ID ILVL>74 FILTLVL<5]: %NAME%
 ItemDisplay[GLOVES ((EXC OR ELT) !(utg OR uhg)) MAG !ETH !ID ILVL>74 FILTLVL<4]: %NAME%
 
