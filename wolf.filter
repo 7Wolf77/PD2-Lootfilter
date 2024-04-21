@@ -2792,11 +2792,19 @@ ItemDisplay[(tsc OR isc OR vps OR wms) (FILTLVL>1 OR DIFF>0) !SHOP]: {%NAME%}
 ItemDisplay[key (ASSASSIN OR FILTLVL>1)]: {%NAME%}
 
 //Arrows & Bolts
+ItemDisplay[(aqv OR cqv) RARE FILTLVL=5]: 
 ItemDisplay[(aqv OR cqv) !NMAG !ID]: %TAN%x  %NAME%  %TAN%x%CONTINUE%
-ItemDisplay[(aqv OR cqv) RARE !ID !AMAZON FILTLVL<5]: %NAME%{%NAME%}
-ItemDisplay[(aqv OR cqv) RARE !ID FILTLVL<4]: %NAME%{%NAME%}
-ItemDisplay[(aqv OR cqv) MAG !ID CLVL<31 FILTLVL>1]: %NAME%{%NAME%}
-ItemDisplay[(aqv OR cqv) NMAG (CLVL<5 OR FILTLVL<1)]: %NAME%{%NAME%}
+ItemDisplay[(aqv OR cqv) RARE !ID ILVL>74 (FILTLVL<4 OR AMAZON)]: %NAME%{%NAME%}
+ItemDisplay[(aqv OR cqv) MAG !ID CLVL<31 FILTLVL<2]: %NAME%{%NAME%}
+ItemDisplay[(aqv OR cqv) NMAG (CLVL<5 OR FILTLVL<2)]: %NAME%{%NAME%}
+ItemDisplay[(aqv OR cqv)]: 
+
+ItemDisplay[(aqv OR cqv) !NMAG !ID]: %TAN%x  %NAME%  %TAN%x%CONTINUE%
+ItemDisplay[(aqv OR cqv) RARE !ID AMAZON]: %NAME%{%NAME%}
+ItemDisplay[(aqv OR cqv) RARE !ID FILTLVL>3]:
+ItemDisplay[(aqv OR cqv) MAG !ID (CLVL>29 OR FILTLVL>1)]:
+ItemDisplay[(aqv OR cqv) NMAG (CLVL>5 OR FILTLVL>1)]:
+ItemDisplay[(aqv OR cqv)]: %NAME%{%NAME%}
 
 //Choking, Exploding, Fulminating, Oil, Rancid, Strangling, and New PD2 Throwing Potions
 ItemDisplay[opm OR tpfm]: %NAME%{%WHITE%Exoplo. Potion, Perf %RED%O%WHITE%, %BLUE%Ring %WHITE%= Fire Res %BLUE%Ring%NL%%TAN%Note%WHITE%: Crafting Recipe:}%CONTINUE%
