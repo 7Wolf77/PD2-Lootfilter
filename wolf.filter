@@ -26,11 +26,13 @@ ItemDisplay[box FILTLVL=3]: %NAME%{%NAME%%NL%3 - %TAN%Filter - Maps Simistrict%N
 ItemDisplay[box FILTLVL=4]: %NAME%{%NAME%%NL%4 - %TAN%Filter - Maps Strict%NL%%WHITE%Will show class based crafting bases and hand picked uniques.%NL%%TAN%Note%WHITE%: No magic rings or ammys.}
 ItemDisplay[box FILTLVL=5]: %NAME%{%NAME%%NL%4 - %TAN%Filter - Dungeons%NL%%WHITE%Items with perfect ED/DEF, elite uniques and Runes Pul and above.%NL%%TAN%Note%WHITE%: Only the best will show. No charms, rings, or misc items.}
 
-ItemDisplay[GOLD<500 CLVL>10]:
-ItemDisplay[GOLD<1000 CLVL>30]:
-ItemDisplay[GOLD<1500 CLVL>50]:
-ItemDisplay[GOLD<3000 CLVL>60]:
-ItemDisplay[GOLD>0 CLVL>70 FILTLVL>2]:
+ItemDisplay[GOLD<100 (CLVL>11 OR FILTLVL>3)]:
+ItemDisplay[GOLD<200 (CLVL>23 OR FILTLVL>3)]:
+ItemDisplay[GOLD<400 (CLVL>39 OR FILTLVL>3)]:
+ItemDisplay[GOLD<1000 CLVL>79]:
+ItemDisplay[GOLD<2000 CLVL>79 FILTLVL>1]:
+ItemDisplay[GOLD<3000 CLVL>79 FILTLVL>2]:
+ItemDisplay[GOLD<5000 CLVL>79 FILTLVL>3]:
 
 ////////////////////////
 //---GLOBAL FILTERS---//
@@ -2783,7 +2785,7 @@ ItemDisplay[mp3]: %BLUE%!%WHITE%mana{%NAME%}%CONTINUE%
 ItemDisplay[mp4]: %BLUE%!%WHITE%great mp{%NAME%}%CONTINUE%
 ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2) (CLVL>20 OR DIFF>0 OR FILTLVL>1) !SHOP]: {%NAME%}
 ItemDisplay[(hp3 OR hp4 OR mp3 OR mp4) (CLVL>40 OR DIFF>1 OR FILTLVL>1) !SHOP]: {%NAME%}
-ItemDisplay[(hp5 OR mp5) AMAZON FILTLVL>4 CLVL>90]:  //WOLF HIDES HIS POTS
+ItemDisplay[(hp5 OR mp5) AMAZON FILTLVL>3 CLVL>90]:  //WOLF HIDES HIS POTS
 ItemDisplay[(hp5 OR mp5)]: %NAME%{%NAME%}
 
 //---TP, ID, STAM, THAW, ANTIDOTE, AND KEY---//
